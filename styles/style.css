@@ -64,12 +64,20 @@ aside {
   background-color: #eee;
 }
 
+.games-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 #games-row-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: game1;
-  background-color: black;
 }
 
 #games-row-2 {
@@ -77,6 +85,14 @@ aside {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: game2;
-  background-color: #bbff00;
+}
+
+.game-table {
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  background-color: purple;
+  height: 300px;
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */

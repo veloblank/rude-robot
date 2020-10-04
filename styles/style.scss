@@ -53,11 +53,24 @@ aside {
 	background-color: #eee;
 }
 
+.games-row {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 #games-row-1 {
 	grid-area: game1;
-	background-color: black;
 }
+
 #games-row-2 {
 	grid-area: game2;
-	background-color: rgb(187, 255, 0);
+}
+
+.game-table {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	background-color: purple;
+	height: 300px;
+	width: 300px;
 }
