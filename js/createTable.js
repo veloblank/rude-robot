@@ -1,3 +1,4 @@
+import Table from "./Table";
 function createTable() {
-  let table = new Table;
+
 }
