@@ -73,11 +73,15 @@ aside {
 	width: 400px;
 }
 
-table {
+.grid {
 	margin: auto;
 	padding: auto;
 	height: 100%;
 	width: 100%;
+}
+
+table:hover {
+	cursor: pointer;
 }
 
 td {
