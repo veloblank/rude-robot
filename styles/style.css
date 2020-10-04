@@ -51,17 +51,16 @@ header {
   background-color: white;
 }
 
-aside {
-  font-size: 35px;
+#range-slider {
+  font-size: 2.5em;
   font-family: 'Russo One', sans-serif;
   color: black;
-  vertical-align: middle;
   background-color: #cacaca;
-  margin: auto;
-  margin-top: 10px;
-  padding: 15px;
-  height: 65px;
+  padding: 5px;
+  margin: 5px auto;
+  height: 1.75em;
   width: 75%;
+  border: 6px solid black;
 }
 
 .games-row {
@@ -92,18 +91,22 @@ table:hover {
 }
 
 td {
-  border: 1px solid black;
   background-color: black;
   border-radius: 30%;
-  padding: 2px 1px 2px 1px;
-  vertical-align: middle;
   text-align: center;
-  margin: auto;
+  vertical-align: middle;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   font-size: 12px;
   display: inline-block;
   height: 100%;
   width: 30px;
+}
+
+span#range-value {
+  border: 6px solid black;
+  padding: 6px 6px;
+  color: white;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
