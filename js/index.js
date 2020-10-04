@@ -1,0 +1,1 @@
+window.onload = alert("Up and running!")
