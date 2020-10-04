@@ -71,6 +71,7 @@ aside {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 5px;
 }
 
 #games-row-1 {
