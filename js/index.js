@@ -7,7 +7,6 @@ function addListeners() {
     table.addEventListener("mouseenter", (e) => {
       table.addEventListener("click", () => {
         let rangeValue = (parseInt(e.target.getAttribute("data-range")))
-        console.log(rangeValue)
         slider.innerHTML = rangeValue + "%";
       })
     })
