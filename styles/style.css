@@ -7,8 +7,6 @@
 
 body {
   background-color: red;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Russo One', sans-serif;
 }
 
 .container {
@@ -22,6 +20,7 @@ body {
 header {
   width: 70%;
   margin: auto;
+  font-family: 'Russo One', sans-serif;
 }
 
 .logo-container {
@@ -46,54 +45,56 @@ header {
 }
 
 .games-container {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
   background-color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 30% 30% 30%;
-      grid-template-columns: auto 30% 30% 30%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-      grid-template-areas: 'range game1 game1 game1' 'range game2 game2 game2';
 }
 
 aside {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: range;
-  background-color: #eee;
+  font-size: 35px;
+  font-family: 'Russo One', sans-serif;
+  color: black;
+  vertical-align: middle;
+  background-color: #cacaca;
+  margin: auto;
+  margin-top: 10px;
+  padding: 15px;
+  height: 65px;
+  width: 75%;
 }
 
 .games-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: inline-block;
   margin: 5px;
-}
-
-#games-row-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: game1;
-}
-
-#games-row-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: game2;
+  width: 100%;
 }
 
 .game-table {
+  display: inline-block;
   text-align: center;
   vertical-align: middle;
-  margin: auto;
+  margin: 5px;
   background-color: purple;
   height: 300px;
-  width: 300px;
+  width: 400px;
+}
+
+table {
+  margin: auto;
+  padding: auto;
+  height: 100%;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
 }
 /*# sourceMappingURL=style.css.map */
