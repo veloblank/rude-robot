@@ -1,3 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: red;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Russo One', sans-serif;
+}
+
+.container {
+	color: white;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	background-color: black;
+}
+
+header {
+	width: 70%;
+	margin: auto;
+}
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logo {
+	height: 100px;
+	border-radius: 50%;
+}
+
+#title-text {
+	text-align: center;
+	font-size: 75px;
 }
