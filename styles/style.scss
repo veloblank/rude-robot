@@ -48,11 +48,10 @@ header {
 	font-size: 2.5em;
 	font-family: 'Russo One', sans-serif;
 	color: black;
-	background-color: rgb(202, 202, 202);
-	padding: 5px;
-	margin: 5px auto;
-	height: 1.75em;
+	margin: 10px auto;
+	height: 65px;
 	width: 75%;
+	background-color: rgb(202, 202, 202);
 	border: 6px solid black;
 }
 
@@ -97,8 +96,8 @@ td {
 }
 
 span#range-value {
+	vertical-align: middle;
 	border: 6px solid black;
-	padding: 6px 6px;
 	color: white;
 	background-color: green;
 }
