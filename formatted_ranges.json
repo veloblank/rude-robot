@@ -2,2033 +2,2033 @@
   "bloch_call": {
     "chs1": {
       "code": "cell_AA",
-        "string_f": "AA",
-          "type": "pair",
-            "combos": 6
+      "string_f": "AA",
+      "type": "pair",
+      "combos": 6
     },
     "chs2": {
       "code": "cell_KK",
-        "string_f": "KK",
-          "type": "pair",
-            "combos": 6
+      "string_f": "KK",
+      "type": "pair",
+      "combos": 6
     },
     "chs3": {
       "code": "cell_AK",
-        "string_f": "AK",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AK",
+      "type": "suited",
+      "combos": 4
     },
     "chs4": {
       "code": "cell_QQ",
-        "string_f": "QQ",
-          "type": "pair",
-            "combos": 6
+      "string_f": "QQ",
+      "type": "pair",
+      "combos": 6
     },
     "chs5": {
       "code": "cell_KA",
-        "string_f": "KA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "KA",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs6": {
       "code": "cell_JJ",
-        "string_f": "JJ",
-          "type": "pair",
-            "combos": 6
+      "string_f": "JJ",
+      "type": "pair",
+      "combos": 6
     },
     "chs7": {
       "code": "cell_TT",
-        "string_f": "TT",
-          "type": "pair",
-            "combos": 6
+      "string_f": "TT",
+      "type": "pair",
+      "combos": 6
     },
     "chs8": {
       "code": "cell_AQ",
-        "string_f": "AQ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AQ",
+      "type": "suited",
+      "combos": 4
     },
     "chs9": {
       "code": "cell_99",
-        "string_f": "99",
-          "type": "pair",
-            "combos": 6
+      "string_f": "99",
+      "type": "pair",
+      "combos": 6
     },
     "chs10": {
       "code": "cell_QA",
-        "string_f": "QA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "QA",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs11": {
       "code": "cell_88",
-        "string_f": "88",
-          "type": "pair",
-            "combos": 6
+      "string_f": "88",
+      "type": "pair",
+      "combos": 6
     },
     "chs12": {
       "code": "cell_AJ",
-        "string_f": "AJ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AJ",
+      "type": "suited",
+      "combos": 4
     },
     "chs13": {
       "code": "cell_77",
-        "string_f": "77",
-          "type": "pair",
-            "combos": 6
+      "string_f": "77",
+      "type": "pair",
+      "combos": 6
     },
     "chs14": {
       "code": "cell_AT",
-        "string_f": "AT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AT",
+      "type": "suited",
+      "combos": 4
     },
     "chs15": {
       "code": "cell_JA",
-        "string_f": "JA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "JA",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs16": {
       "code": "cell_66",
-        "string_f": "66",
-          "type": "pair",
-            "combos": 6
+      "string_f": "66",
+      "type": "pair",
+      "combos": 6
     },
     "chs17": {
       "code": "cell_KQ",
-        "string_f": "KQ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "KQ",
+      "type": "suited",
+      "combos": 4
     },
     "chs18": {
       "code": "cell_TA",
-        "string_f": "TA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TA",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs19": {
       "code": "cell_A9",
-        "string_f": "A9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A9",
+      "type": "suited",
+      "combos": 4
     },
     "chs20": {
       "code": "cell_KJ",
-        "string_f": "KJ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "KJ",
+      "type": "suited",
+      "combos": 4
     },
     "chs21": {
       "code": "cell_A8",
-        "string_f": "A8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A8",
+      "type": "suited",
+      "combos": 4
     },
     "chs22": {
       "code": "cell_55",
-        "string_f": "55",
-          "type": "pair",
-            "combos": 6
+      "string_f": "55",
+      "type": "pair",
+      "combos": 6
     },
     "chs23": {
       "code": "cell_QK",
-        "string_f": "QK",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "QK",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs24": {
       "code": "cell_9A",
-        "string_f": "9A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs25": {
       "code": "cell_A7",
-        "string_f": "A7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A7",
+      "type": "suited",
+      "combos": 4
     },
     "chs26": {
       "code": "cell_8A",
-        "string_f": "8A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs27": {
       "code": "cell_KT",
-        "string_f": "KT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "KT",
+      "type": "suited",
+      "combos": 4
     },
     "chs28": {
       "code": "cell_A6",
-        "string_f": "A6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A6",
+      "type": "suited",
+      "combos": 4
     },
     "chs29": {
       "code": "cell_44",
-        "string_f": "44",
-          "type": "pair",
-            "combos": 6
+      "string_f": "44",
+      "type": "pair",
+      "combos": 6
     },
     "chs30": {
       "code": "cell_A5",
-        "string_f": "A5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A5",
+      "type": "suited",
+      "combos": 4
     },
     "chs31": {
       "code": "cell_7A",
-        "string_f": "7A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs32": {
       "code": "cell_QJ",
-        "string_f": "QJ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "QJ",
+      "type": "suited",
+      "combos": 4
     },
     "chs33": {
       "code": "cell_A4",
-        "string_f": "A4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A4",
+      "type": "suited",
+      "combos": 4
     },
     "chs34": {
       "code": "cell_JK",
-        "string_f": "JK",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "JK",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs35": {
       "code": "cell_A3",
-        "string_f": "A3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A3",
+      "type": "suited",
+      "combos": 4
     },
     "chs36": {
       "code": "cell_A2",
-        "string_f": "A2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A2",
+      "type": "suited",
+      "combos": 4
     },
     "chs37": {
       "code": "cell_K9",
-        "string_f": "K9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K9",
+      "type": "suited",
+      "combos": 4
     },
     "chs38": {
       "code": "cell_TK",
-        "string_f": "TK",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TK",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs39": {
       "code": "cell_33",
-        "string_f": "33",
-          "type": "pair",
-            "combos": 6
+      "string_f": "33",
+      "type": "pair",
+      "combos": 6
     },
     "chs40": {
       "code": "cell_QT",
-        "string_f": "QT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "QT",
+      "type": "suited",
+      "combos": 4
     },
     "chs41": {
       "code": "cell_5A",
-        "string_f": "5A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs42": {
       "code": "cell_6A",
-        "string_f": "6A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs43": {
       "code": "cell_JQ",
-        "string_f": "JQ",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "JQ",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs44": {
       "code": "cell_K8",
-        "string_f": "K8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K8",
+      "type": "suited",
+      "combos": 4
     },
     "chs45": {
       "code": "cell_JT",
-        "string_f": "JT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "JT",
+      "type": "suited",
+      "combos": 4
     },
     "chs46": {
       "code": "cell_4A",
-        "string_f": "4A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs47": {
       "code": "cell_9K",
-        "string_f": "9K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs48": {
       "code": "cell_3A",
-        "string_f": "3A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs49": {
       "code": "cell_Q9",
-        "string_f": "Q9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q9",
+      "type": "suited",
+      "combos": 4
     },
     "chs50": {
       "code": "cell_2A",
-        "string_f": "2A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2A",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs51": {
       "code": "cell_K7",
-        "string_f": "K7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K7",
+      "type": "suited",
+      "combos": 4
     },
     "chs52": {
       "code": "cell_TQ",
-        "string_f": "TQ",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TQ",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs53": {
       "code": "cell_22",
-        "string_f": "22",
-          "type": "pair",
-            "combos": 6
+      "string_f": "22",
+      "type": "pair",
+      "combos": 6
     },
     "chs54": {
       "code": "cell_K6",
-        "string_f": "K6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K6",
+      "type": "suited",
+      "combos": 4
     },
     "chs55": {
       "code": "cell_8K",
-        "string_f": "8K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs56": {
       "code": "cell_Q8",
-        "string_f": "Q8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q8",
+      "type": "suited",
+      "combos": 4
     },
     "chs57": {
       "code": "cell_K5",
-        "string_f": "K5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K5",
+      "type": "suited",
+      "combos": 4
     },
     "chs58": {
       "code": "cell_J9",
-        "string_f": "J9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J9",
+      "type": "suited",
+      "combos": 4
     },
     "chs59": {
       "code": "cell_7K",
-        "string_f": "7K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs60": {
       "code": "cell_TJ",
-        "string_f": "TJ",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TJ",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs61": {
       "code": "cell_9Q",
-        "string_f": "9Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs62": {
       "code": "cell_K4",
-        "string_f": "K4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K4",
+      "type": "suited",
+      "combos": 4
     },
     "chs63": {
       "code": "cell_K3",
-        "string_f": "K3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K3",
+      "type": "suited",
+      "combos": 4
     },
     "chs64": {
       "code": "cell_T9",
-        "string_f": "T9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T9",
+      "type": "suited",
+      "combos": 4
     },
     "chs65": {
       "code": "cell_6K",
-        "string_f": "6K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs66": {
       "code": "cell_Q7",
-        "string_f": "Q7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q7",
+      "type": "suited",
+      "combos": 4
     },
     "chs67": {
       "code": "cell_J8",
-        "string_f": "J8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J8",
+      "type": "suited",
+      "combos": 4
     },
     "chs68": {
       "code": "cell_K2",
-        "string_f": "K2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K2",
+      "type": "suited",
+      "combos": 4
     },
     "chs69": {
       "code": "cell_8Q",
-        "string_f": "8Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs70": {
       "code": "cell_Q6",
-        "string_f": "Q6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q6",
+      "type": "suited",
+      "combos": 4
     },
     "chs71": {
       "code": "cell_5K",
-        "string_f": "5K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs72": {
       "code": "cell_9J",
-        "string_f": "9J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs73": {
       "code": "cell_T8",
-        "string_f": "T8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T8",
+      "type": "suited",
+      "combos": 4
     },
     "chs74": {
       "code": "cell_Q5",
-        "string_f": "Q5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q5",
+      "type": "suited",
+      "combos": 4
     },
     "chs75": {
       "code": "cell_4K",
-        "string_f": "4K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs76": {
       "code": "cell_J7",
-        "string_f": "J7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J7",
+      "type": "suited",
+      "combos": 4
     },
     "chs77": {
       "code": "cell_3K",
-        "string_f": "3K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs78": {
       "code": "cell_Q4",
-        "string_f": "Q4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q4",
+      "type": "suited",
+      "combos": 4
     },
     "chs79": {
       "code": "cell_9T",
-        "string_f": "9T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs80": {
       "code": "cell_98",
-        "string_f": "98",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "98",
+      "type": "suited",
+      "combos": 4
     },
     "chs81": {
       "code": "cell_7Q",
-        "string_f": "7Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs82": {
       "code": "cell_Q3",
-        "string_f": "Q3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q3",
+      "type": "suited",
+      "combos": 4
     },
     "chs83": {
       "code": "cell_2K",
-        "string_f": "2K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2K",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs84": {
       "code": "cell_J3",
-        "string_f": "J3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J3",
+      "type": "suited",
+      "combos": 4
     },
     "chs85": {
       "code": "cell_8J",
-        "string_f": "8J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs86": {
       "code": "cell_6Q",
-        "string_f": "6Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs87": {
       "code": "cell_T7",
-        "string_f": "T7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T7",
+      "type": "suited",
+      "combos": 4
     },
     "chs88": {
       "code": "cell_Q2",
-        "string_f": "Q2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q2",
+      "type": "suited",
+      "combos": 4
     },
     "chs89": {
       "code": "cell_J6",
-        "string_f": "J6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J6",
+      "type": "suited",
+      "combos": 4
     },
     "chs90": {
       "code": "cell_5Q",
-        "string_f": "5Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs91": {
       "code": "cell_J5",
-        "string_f": "J5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J5",
+      "type": "suited",
+      "combos": 4
     },
     "chs92": {
       "code": "cell_97",
-        "string_f": "97",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "97",
+      "type": "suited",
+      "combos": 4
     },
     "chs93": {
       "code": "cell_87",
-        "string_f": "87",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "87",
+      "type": "suited",
+      "combos": 4
     },
     "chs94": {
       "code": "cell_8T",
-        "string_f": "8T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs95": {
       "code": "cell_7J",
-        "string_f": "7J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs96": {
       "code": "cell_4Q",
-        "string_f": "4Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs97": {
       "code": "cell_T6",
-        "string_f": "T6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T6",
+      "type": "suited",
+      "combos": 4
     },
     "chs98": {
       "code": "cell_J4",
-        "string_f": "J4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J4",
+      "type": "suited",
+      "combos": 4
     },
     "chs99": {
       "code": "cell_3Q",
-        "string_f": "3Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs100": {
       "code": "cell_89",
-        "string_f": "89",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "89",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs101": {
       "code": "cell_96",
-        "string_f": "96",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "96",
+      "type": "suited",
+      "combos": 4
     },
     "chs102": {
       "code": "cell_86",
-        "string_f": "86",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "86",
+      "type": "suited",
+      "combos": 4
     },
     "chs103": {
       "code": "cell_7T",
-        "string_f": "7T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs104": {
       "code": "cell_6J",
-        "string_f": "6J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs105": {
       "code": "cell_2Q",
-        "string_f": "2Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs106": {
       "code": "cell_J2",
-        "string_f": "J2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J2",
+      "type": "suited",
+      "combos": 4
     },
     "chs107": {
       "code": "cell_T5",
-        "string_f": "T5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T5",
+      "type": "suited",
+      "combos": 4
     },
     "chs108": {
       "code": "cell_76",
-        "string_f": "76",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "76",
+      "type": "suited",
+      "combos": 4
     },
     "chs109": {
       "code": "cell_5J",
-        "string_f": "5J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs110": {
       "code": "cell_T4",
-        "string_f": "T4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T4",
+      "type": "suited",
+      "combos": 4
     },
     "chs111": {
       "code": "cell_79",
-        "string_f": "79",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "79",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs112": {
       "code": "cell_4J",
-        "string_f": "4J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs113": {
       "code": "cell_95",
-        "string_f": "95",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "95",
+      "type": "suited",
+      "combos": 4
     },
     "chs114": {
       "code": "cell_T3",
-        "string_f": "T3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T3",
+      "type": "suited",
+      "combos": 4
     },
     "chs115": {
       "code": "cell_65",
-        "string_f": "65",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "65",
+      "type": "suited",
+      "combos": 4
     },
     "chs116": {
       "code": "cell_78",
-        "string_f": "78",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "78",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs117": {
       "code": "cell_85",
-        "string_f": "85",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "85",
+      "type": "suited",
+      "combos": 4
     },
     "chs118": {
       "code": "cell_75",
-        "string_f": "75",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "75",
+      "type": "suited",
+      "combos": 4
     },
     "chs119": {
       "code": "cell_54",
-        "string_f": "54",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "54",
+      "type": "suited",
+      "combos": 4
     },
     "chs120": {
       "code": "cell_6T",
-        "string_f": "6T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs121": {
       "code": "cell_3J",
-        "string_f": "3J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs122": {
       "code": "cell_T2",
-        "string_f": "T2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T2",
+      "type": "suited",
+      "combos": 4
     },
     "chs123": {
       "code": "cell_94",
-        "string_f": "94",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "94",
+      "type": "suited",
+      "combos": 4
     },
     "chs124": {
       "code": "cell_69",
-        "string_f": "69",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "69",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs125": {
       "code": "cell_64",
-        "string_f": "64",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "64",
+      "type": "suited",
+      "combos": 4
     },
     "chs126": {
       "code": "cell_84",
-        "string_f": "84",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "84",
+      "type": "suited",
+      "combos": 4
     },
     "chs127": {
       "code": "cell_74",
-        "string_f": "74",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "74",
+      "type": "suited",
+      "combos": 4
     },
     "chs128": {
       "code": "cell_68",
-        "string_f": "68",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "68",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs129": {
       "code": "cell_67",
-        "string_f": "67",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "67",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs130": {
       "code": "cell_53",
-        "string_f": "53",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "53",
+      "type": "suited",
+      "combos": 4
     },
     "chs131": {
       "code": "cell_2J",
-        "string_f": "2J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2J",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs132": {
       "code": "cell_5T",
-        "string_f": "5T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs133": {
       "code": "cell_4T",
-        "string_f": "4T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs134": {
       "code": "cell_93",
-        "string_f": "93",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "93",
+      "type": "suited",
+      "combos": 4
     },
     "chs135": {
       "code": "cell_59",
-        "string_f": "59",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "59",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs136": {
       "code": "cell_92",
-        "string_f": "92",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "92",
+      "type": "suited",
+      "combos": 4
     },
     "chs137": {
       "code": "cell_43",
-        "string_f": "43",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "43",
+      "type": "suited",
+      "combos": 4
     },
     "chs138": {
       "code": "cell_63",
-        "string_f": "63",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "63",
+      "type": "suited",
+      "combos": 4
     },
     "chs139": {
       "code": "cell_83",
-        "string_f": "83",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "83",
+      "type": "suited",
+      "combos": 4
     },
     "chs140": {
       "code": "cell_56",
-        "string_f": "56",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "56",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs141": {
       "code": "cell_73",
-        "string_f": "73",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "73",
+      "type": "suited",
+      "combos": 4
     },
     "chs142": {
       "code": "cell_58",
-        "string_f": "58",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "58",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs143": {
       "code": "cell_57",
-        "string_f": "57",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "57",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs144": {
       "code": "cell_82",
-        "string_f": "82",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "82",
+      "type": "suited",
+      "combos": 4
     },
     "chs145": {
       "code": "cell_52",
-        "string_f": "52",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "52",
+      "type": "suited",
+      "combos": 4
     },
     "chs146": {
       "code": "cell_3T",
-        "string_f": "3T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs147": {
       "code": "cell_2T",
-        "string_f": "2T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2T",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs148": {
       "code": "cell_49",
-        "string_f": "49",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "49",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs149": {
       "code": "cell_45",
-        "string_f": "45",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "45",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs150": {
       "code": "cell_42",
-        "string_f": "42",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "42",
+      "type": "suited",
+      "combos": 4
     },
     "chs151": {
       "code": "cell_62",
-        "string_f": "62",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "62",
+      "type": "suited",
+      "combos": 4
     },
     "chs152": {
       "code": "cell_72",
-        "string_f": "72",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "72",
+      "type": "suited",
+      "combos": 4
     },
     "chs153": {
       "code": "cell_46",
-        "string_f": "46",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "46",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs154": {
       "code": "cell_32",
-        "string_f": "32",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "32",
+      "type": "suited",
+      "combos": 4
     },
     "chs155": {
       "code": "cell_48",
-        "string_f": "48",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "48",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs156": {
       "code": "cell_47",
-        "string_f": "47",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "47",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs157": {
       "code": "cell_35",
-        "string_f": "35",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "35",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs158": {
       "code": "cell_34",
-        "string_f": "34",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "34",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs159": {
       "code": "cell_93",
-        "string_f": "93",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "93",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs160": {
       "code": "cell_29",
-        "string_f": "29",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "29",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs161": {
       "code": "cell_36",
-        "string_f": "36",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "36",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs162": {
       "code": "cell_38",
-        "string_f": "38",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "38",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs163": {
       "code": "cell_28",
-        "string_f": "28",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "28",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs164": {
       "code": "cell_73",
-        "string_f": "73",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "73",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs165": {
       "code": "cell_25",
-        "string_f": "25",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "25",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs166": {
       "code": "cell_42",
-        "string_f": "42",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "42",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs167": {
       "code": "cell_72",
-        "string_f": "72",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "72",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs168": {
       "code": "cell_26",
-        "string_f": "26",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "26",
+      "type": "unsuited",
+      "combos": 12
     },
     "chs169": {
       "code": "cell_23",
-        "string_f": "23",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "23",
+      "type": "unsuited",
+      "combos": 12
     }
   },
   "bloch_jam": {
     "phs1": {
       "code": "cell_AA",
-        "string_f": "AA",
-          "type": "pair",
-            "combos": 6
+      "string_f": "AA",
+      "type": "pair",
+      "combos": 6
     },
     "phs2": {
       "code": "cell_AK",
-        "string_f": "AK",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AK",
+      "type": "suited",
+      "combos": 4
     },
     "phs3": {
       "code": "cell_KA",
-        "string_f": "KA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "KA",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs4": {
       "code": "cell_KK",
-        "string_f": "KK",
-          "type": "pair",
-            "combos": 6
+      "string_f": "KK",
+      "type": "pair",
+      "combos": 6
     },
     "phs5": {
       "code": "cell_A4",
-        "string_f": "A4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A4",
+      "type": "suited",
+      "combos": 4
     },
     "phs6": {
       "code": "cell_A5",
-        "string_f": "A5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A5",
+      "type": "suited",
+      "combos": 4
     },
     "phs7": {
       "code": "cell_QQ",
-        "string_f": "QQ",
-          "type": "pair",
-            "combos": 6
+      "string_f": "QQ",
+      "type": "pair",
+      "combos": 6
     },
     "phs8": {
       "code": "cell_AQ",
-        "string_f": "AQ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AQ",
+      "type": "suited",
+      "combos": 4
     },
     "phs9": {
       "code": "cell_JJ",
-        "string_f": "JJ",
-          "type": "pair",
-            "combos": 6
+      "string_f": "JJ",
+      "type": "pair",
+      "combos": 6
     },
     "phs10": {
       "code": "cell_TT",
-        "string_f": "TT",
-          "type": "pair",
-            "combos": 6
+      "string_f": "TT",
+      "type": "pair",
+      "combos": 6
     },
     "phs11": {
       "code": "cell_AJ",
-        "string_f": "AJ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AJ",
+      "type": "suited",
+      "combos": 4
     },
     "phs12": {
       "code": "cell_KQ",
-        "string_f": "KQ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "KQ",
+      "type": "suited",
+      "combos": 4
     },
     "phs13": {
       "code": "cell_QA",
-        "string_f": "QA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "QA",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs14": {
       "code": "cell_AT",
-        "string_f": "AT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "AT",
+      "type": "suited",
+      "combos": 4
     },
     "phs15": {
       "code": "cell_KJ",
-        "string_f": "KJ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "KJ",
+      "type": "suited",
+      "combos": 4
     },
     "phs16": {
       "code": "cell_QJ",
-        "string_f": "QJ",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "QJ",
+      "type": "suited",
+      "combos": 4
     },
     "phs17": {
       "code": "cell_KT",
-        "string_f": "KT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "KT",
+      "type": "suited",
+      "combos": 4
     },
     "phs18": {
       "code": "cell_99",
-        "string_f": "99",
-          "type": "pair",
-            "combos": 6
+      "string_f": "99",
+      "type": "pair",
+      "combos": 6
     },
     "phs19": {
       "code": "cell_QT",
-        "string_f": "QT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "QT",
+      "type": "suited",
+      "combos": 4
     },
     "phs20": {
       "code": "cell_88",
-        "string_f": "88",
-          "type": "pair",
-            "combos": 6
+      "string_f": "88",
+      "type": "pair",
+      "combos": 6
     },
     "phs21": {
       "code": "cell_JA",
-        "string_f": "JA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "JA",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs22": {
       "code": "cell_JT",
-        "string_f": "JT",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "JT",
+      "type": "suited",
+      "combos": 4
     },
     "phs23": {
       "code": "cell_66",
-        "string_f": "66",
-          "type": "pair",
-            "combos": 6
+      "string_f": "66",
+      "type": "pair",
+      "combos": 6
     },
     "phs24": {
       "code": "cell_77",
-        "string_f": "77",
-          "type": "pair",
-            "combos": 6
+      "string_f": "77",
+      "type": "pair",
+      "combos": 6
     },
     "phs25": {
       "code": "cell_55",
-        "string_f": "55",
-          "type": "pair",
-            "combos": 6
+      "string_f": "55",
+      "type": "pair",
+      "combos": 6
     },
     "phs26": {
       "code": "cell_A9",
-        "string_f": "A9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A9",
+      "type": "suited",
+      "combos": 4
     },
     "phs27": {
       "code": "cell_QK",
-        "string_f": "QK",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "QK",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs28": {
       "code": "cell_K9",
-        "string_f": "K9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K9",
+      "type": "suited",
+      "combos": 4
     },
     "phs29": {
       "code": "cell_44",
-        "string_f": "44",
-          "type": "pair",
-            "combos": 6
+      "string_f": "44",
+      "type": "pair",
+      "combos": 6
     },
     "phs30": {
       "code": "cell_T9",
-        "string_f": "T9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T9",
+      "type": "suited",
+      "combos": 4
     },
     "phs31": {
       "code": "cell_A8",
-        "string_f": "A8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A8",
+      "type": "suited",
+      "combos": 4
     },
     "phs32": {
       "code": "cell_J9",
-        "string_f": "J9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J9",
+      "type": "suited",
+      "combos": 4
     },
     "phs33": {
       "code": "cell_Q9",
-        "string_f": "Q9",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q9",
+      "type": "suited",
+      "combos": 4
     },
     "phs34": {
       "code": "cell_JK",
-        "string_f": "JK",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "JK",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs35": {
       "code": "cell_33",
-        "string_f": "33",
-          "type": "pair",
-            "combos": 6
+      "string_f": "33",
+      "type": "pair",
+      "combos": 6
     },
     "phs36": {
       "code": "cell_TA",
-        "string_f": "TA",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TA",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs37": {
       "code": "cell_A7",
-        "string_f": "A7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A7",
+      "type": "suited",
+      "combos": 4
     },
     "phs38": {
       "code": "cell_K8",
-        "string_f": "K8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K8",
+      "type": "suited",
+      "combos": 4
     },
     "phs39": {
       "code": "cell_A3",
-        "string_f": "A3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A3",
+      "type": "suited",
+      "combos": 4
     },
     "phs40": {
       "code": "cell_T8",
-        "string_f": "T8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T8",
+      "type": "suited",
+      "combos": 4
     },
     "phs41": {
       "code": "cell_98",
-        "string_f": "98",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "98",
+      "type": "suited",
+      "combos": 4
     },
     "phs42": {
       "code": "cell_22",
-        "string_f": "22",
-          "type": "pair",
-            "combos": 6
+      "string_f": "22",
+      "type": "pair",
+      "combos": 6
     },
     "phs43": {
       "code": "cell_A6",
-        "string_f": "A6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A6",
+      "type": "suited",
+      "combos": 4
     },
     "phs44": {
       "code": "cell_Q8",
-        "string_f": "Q8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q8",
+      "type": "suited",
+      "combos": 4
     },
     "phs45": {
       "code": "cell_JQ",
-        "string_f": "JQ",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "JQ",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs46": {
       "code": "cell_J8",
-        "string_f": "J8",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J8",
+      "type": "suited",
+      "combos": 4
     },
     "phs47": {
       "code": "cell_K7",
-        "string_f": "K7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K7",
+      "type": "suited",
+      "combos": 4
     },
     "phs48": {
       "code": "cell_A2",
-        "string_f": "A2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "A2",
+      "type": "suited",
+      "combos": 4
     },
     "phs49": {
       "code": "cell_9A",
-        "string_f": "9A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs50": {
       "code": "cell_8A",
-        "string_f": "8A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs51": {
       "code": "cell_87",
-        "string_f": "87",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "87",
+      "type": "suited",
+      "combos": 4
     },
     "phs52": {
       "code": "cell_7A",
-        "string_f": "7A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs53": {
       "code": "cell_TQ",
-        "string_f": "TQ",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TQ",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs54": {
       "code": "cell_TJ",
-        "string_f": "TJ",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TJ",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs55": {
       "code": "cell_TK",
-        "string_f": "TK",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "TK",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs56": {
       "code": "cell_5A",
-        "string_f": "5A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs57": {
       "code": "cell_K6",
-        "string_f": "K6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K6",
+      "type": "suited",
+      "combos": 4
     },
     "phs58": {
       "code": "cell_T7",
-        "string_f": "T7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T7",
+      "type": "suited",
+      "combos": 4
     },
     "phs59": {
       "code": "cell_97",
-        "string_f": "97",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "97",
+      "type": "suited",
+      "combos": 4
     },
     "phs60": {
       "code": "cell_76",
-        "string_f": "76",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "76",
+      "type": "suited",
+      "combos": 4
     },
     "phs61": {
       "code": "cell_4A",
-        "string_f": "4A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs62": {
       "code": "cell_6A",
-        "string_f": "6A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs63": {
       "code": "cell_K5",
-        "string_f": "K5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K5",
+      "type": "suited",
+      "combos": 4
     },
     "phs64": {
       "code": "cell_J7",
-        "string_f": "J7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J7",
+      "type": "suited",
+      "combos": 4
     },
     "phs65": {
       "code": "cell_86",
-        "string_f": "86",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "86",
+      "type": "suited",
+      "combos": 4
     },
     "phs66": {
       "code": "cell_3A",
-        "string_f": "3A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs67": {
       "code": "cell_2A",
-        "string_f": "2A",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2A",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs68": {
       "code": "cell_65",
-        "string_f": "65",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "65",
+      "type": "suited",
+      "combos": 4
     },
     "phs69": {
       "code": "cell_Q6",
-        "string_f": "Q6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q6",
+      "type": "suited",
+      "combos": 4
     },
     "phs70": {
       "code": "cell_9T",
-        "string_f": "9T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs71": {
       "code": "cell_96",
-        "string_f": "96",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "96",
+      "type": "suited",
+      "combos": 4
     },
     "phs72": {
       "code": "cell_Q7",
-        "string_f": "Q7",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q7",
+      "type": "suited",
+      "combos": 4
     },
     "phs73": {
       "code": "cell_K4",
-        "string_f": "K4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K4",
+      "type": "suited",
+      "combos": 4
     },
     "phs74": {
       "code": "cell_9K",
-        "string_f": "9K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs75": {
       "code": "cell_9J",
-        "string_f": "9J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs76": {
       "code": "cell_75",
-        "string_f": "75",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "75",
+      "type": "suited",
+      "combos": 4
     },
     "phs77": {
       "code": "cell_54",
-        "string_f": "54",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "54",
+      "type": "suited",
+      "combos": 4
     },
     "phs78": {
       "code": "cell_9Q",
-        "string_f": "9Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "9Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs79": {
       "code": "cell_T6",
-        "string_f": "T6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T6",
+      "type": "suited",
+      "combos": 4
     },
     "phs80": {
       "code": "cell_K3",
-        "string_f": "K3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K3",
+      "type": "suited",
+      "combos": 4
     },
     "phs81": {
       "code": "cell_Q5",
-        "string_f": "Q5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q5",
+      "type": "suited",
+      "combos": 4
     },
     "phs82": {
       "code": "cell_89",
-        "string_f": "89",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "89",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs83": {
       "code": "cell_K2",
-        "string_f": "K2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "K2",
+      "type": "suited",
+      "combos": 4
     },
     "phs84": {
       "code": "cell_J6",
-        "string_f": "J6",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J6",
+      "type": "suited",
+      "combos": 4
     },
     "phs85": {
       "code": "cell_85",
-        "string_f": "85",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "85",
+      "type": "suited",
+      "combos": 4
     },
     "phs86": {
       "code": "cell_8K",
-        "string_f": "8K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs87": {
       "code": "cell_7K",
-        "string_f": "7K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs88": {
       "code": "cell_8T",
-        "string_f": "8T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs89": {
       "code": "cell_64",
-        "string_f": "64",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "64",
+      "type": "suited",
+      "combos": 4
     },
     "phs90": {
       "code": "cell_6K",
-        "string_f": "6K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs91": {
       "code": "cell_Q4",
-        "string_f": "Q4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q4",
+      "type": "suited",
+      "combos": 4
     },
     "phs92": {
       "code": "cell_J5",
-        "string_f": "J5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J5",
+      "type": "suited",
+      "combos": 4
     },
     "phs93": {
       "code": "cell_5K",
-        "string_f": "5K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs94": {
       "code": "cell_Q3",
-        "string_f": "Q3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q3",
+      "type": "suited",
+      "combos": 4
     },
     "phs95": {
       "code": "cell_J4",
-        "string_f": "J4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J4",
+      "type": "suited",
+      "combos": 4
     },
     "phs96": {
       "code": "cell_95",
-        "string_f": "95",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "95",
+      "type": "suited",
+      "combos": 4
     },
     "phs97": {
       "code": "cell_78",
-        "string_f": "78",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "78",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs98": {
       "code": "cell_8Q",
-        "string_f": "8Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs99": {
       "code": "cell_4K",
-        "string_f": "4K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs100": {
       "code": "cell_8J",
-        "string_f": "8J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "8J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs101": {
       "code": "cell_3K",
-        "string_f": "3K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs102": {
       "code": "cell_2K",
-        "string_f": "2K",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2K",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs103": {
       "code": "cell_Q2",
-        "string_f": "Q2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "Q2",
+      "type": "suited",
+      "combos": 4
     },
     "phs104": {
       "code": "cell_74",
-        "string_f": "74",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "74",
+      "type": "suited",
+      "combos": 4
     },
     "phs105": {
       "code": "cell_J3",
-        "string_f": "J3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J3",
+      "type": "suited",
+      "combos": 4
     },
     "phs106": {
       "code": "cell_T5",
-        "string_f": "T5",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T5",
+      "type": "suited",
+      "combos": 4
     },
     "phs107": {
       "code": "cell_T4",
-        "string_f": "T4",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T4",
+      "type": "suited",
+      "combos": 4
     },
     "phs108": {
       "code": "cell_79",
-        "string_f": "79",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "79",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs109": {
       "code": "cell_7Q",
-        "string_f": "7Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs110": {
       "code": "cell_6Q",
-        "string_f": "6Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs111": {
       "code": "cell_67",
-        "string_f": "67",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "67",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs112": {
       "code": "cell_5Q",
-        "string_f": "5Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs113": {
       "code": "cell_7T",
-        "string_f": "7T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs114": {
       "code": "cell_7J",
-        "string_f": "7J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "7J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs115": {
       "code": "cell_J2",
-        "string_f": "J2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "J2",
+      "type": "suited",
+      "combos": 4
     },
     "phs116": {
       "code": "cell_4Q",
-        "string_f": "4Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs117": {
       "code": "cell_84",
-        "string_f": "84",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "84",
+      "type": "suited",
+      "combos": 4
     },
     "phs118": {
       "code": "cell_3Q",
-        "string_f": "3Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3Q",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs119": {
       "code": "cell_T3",
-        "string_f": "T3",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T3",
+      "type": "suited",
+      "combos": 4
     },
     "phs120": {
       "code": "cell_68",
-        "string_f": "68",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "68",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs121": {
       "code": "cell_6J",
-        "string_f": "6J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs122": {
       "code": "cell_5J",
-        "string_f": "5J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs123": {
       "code": "cell_T2",
-        "string_f": "T2",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "T2",
+      "type": "suited",
+      "combos": 4
     },
     "phs124": {
       "code": "cell_94",
-        "string_f": "94",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "94",
+      "type": "suited",
+      "combos": 4
     },
     "phs125": {
       "code": "cell_4J",
-        "string_f": "4J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs126": {
       "code": "cell_6T",
-        "string_f": "6T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "6T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs127": {
       "code": "cell_3J",
-        "string_f": "3J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs128": {
       "code": "cell_69",
-        "string_f": "69",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "69",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs129": {
       "code": "cell_2J",
-        "string_f": "2J",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2J",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs130": {
       "code": "cell_93",
-        "string_f": "93",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "93",
+      "type": "suited",
+      "combos": 4
     },
     "phs131": {
       "code": "cell_5T",
-        "string_f": "5T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "5T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs132": {
       "code": "cell_4T",
-        "string_f": "4T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "4T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs133": {
       "code": "cell_59",
-        "string_f": "59",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "59",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs134": {
       "code": "cell_3T",
-        "string_f": "3T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "3T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs135": {
       "code": "cell_92",
-        "string_f": "92",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "92",
+      "type": "suited",
+      "combos": 4
     },
     "phs136": {
       "code": "cell_2T",
-        "string_f": "2T",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2T",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs137": {
       "code": "cell_58",
-        "string_f": "58",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "58",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs138": {
       "code": "cell_83",
-        "string_f": "83",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "83",
+      "type": "suited",
+      "combos": 4
     },
     "phs139": {
       "code": "cell_57",
-        "string_f": "57",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "57",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs140": {
       "code": "cell_82",
-        "string_f": "82",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "82",
+      "type": "suited",
+      "combos": 4
     },
     "phs141": {
       "code": "cell_49",
-        "string_f": "49",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "49",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs142": {
       "code": "cell_39",
-        "string_f": "39",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "39",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs143": {
       "code": "cell_56",
-        "string_f": "56",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "56",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs144": {
       "code": "cell_73",
-        "string_f": "73",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "73",
+      "type": "suited",
+      "combos": 4
     },
     "phs145": {
       "code": "cell_53",
-        "string_f": "53",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "53",
+      "type": "suited",
+      "combos": 4
     },
     "phs146": {
       "code": "cell_63",
-        "string_f": "63",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "63",
+      "type": "suited",
+      "combos": 4
     },
     "phs147": {
       "code": "cell_48",
-        "string_f": "48",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "48",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs148": {
       "code": "cell_43",
-        "string_f": "43",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "43",
+      "type": "suited",
+      "combos": 4
     },
     "phs149": {
       "code": "cell_47",
-        "string_f": "47",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "47",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs150": {
       "code": "cell_45",
-        "string_f": "45",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "45",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs151": {
       "code": "cell_72",
-        "string_f": "72",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "72",
+      "type": "suited",
+      "combos": 4
     },
     "phs152": {
       "code": "cell_46",
-        "string_f": "46",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "46",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs153": {
       "code": "cell_52",
-        "string_f": "52",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "52",
+      "type": "suited",
+      "combos": 4
     },
     "phs154": {
       "code": "cell_29",
-        "string_f": "29",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "29",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs155": {
       "code": "cell_62",
-        "string_f": "62",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "62",
+      "type": "suited",
+      "combos": 4
     },
     "phs156": {
       "code": "cell_38",
-        "string_f": "38",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "38",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs157": {
       "code": "cell_42",
-        "string_f": "42",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "42",
+      "type": "suited",
+      "combos": 4
     },
     "phs158": {
       "code": "cell_28",
-        "string_f": "28",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "28",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs159": {
       "code": "cell_37",
-        "string_f": "37",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "37",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs160": {
       "code": "cell_35",
-        "string_f": "35",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "35",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs161": {
       "code": "cell_36",
-        "string_f": "36",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "36",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs162": {
       "code": "cell_32",
-        "string_f": "32",
-          "type": "unsuited",
-            "combos": 4
+      "string_f": "32",
+      "type": "suited",
+      "combos": 4
     },
     "phs163": {
       "code": "cell_34",
-        "string_f": "34",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "34",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs164": {
       "code": "cell_27",
-        "string_f": "27",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "27",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs165": {
       "code": "cell_25",
-        "string_f": "25",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "25",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs166": {
       "code": "cell_26",
-        "string_f": "26",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "26",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs167": {
       "code": "cell_24",
-        "string_f": "24",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "24",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs168": {
       "code": "cell_23",
-        "string_f": "23",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "23",
+      "type": "unsuited",
+      "combos": 12
     },
     "phs169": {
       "code": "cell_2Q",
-        "string_f": "2Q",
-          "type": "unsuited",
-            "combos": 12
+      "string_f": "2Q",
+      "type": "unsuited",
+      "combos": 12
     }
   }
 }
