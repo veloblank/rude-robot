@@ -5,8 +5,7 @@ window.onload = addTableListeners();
 function addTableListeners() {
   let tables = document.querySelectorAll(".grid");
   for (let table of tables) {
-    table.addEventListener("mouseover", (e) => {
-      console.log(e.relatedTarget)
+    table.addEventListener("mouseenter", (e) => {
       findRange(e);
     });
   }
