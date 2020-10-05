@@ -1,39 +1,46 @@
-import * as ranges from "./ranges.js";
-
+import { BLOCH_CALL } from "./blochCallArray.js"
 window.onload = addTableListeners();
 
 function addTableListeners() {
   let tables = document.querySelectorAll(".grid");
   for (let table of tables) {
     table.addEventListener("mouseenter", (e) => {
-      findRange(e);
+      findEmptyTableTds(e);
     });
   }
 }
 
-function findRange(e) {
+function findEmptyTableTds(e) {
   let gridTarget = e.target;
+  let tableId = e.target.getAttribute("id");
   let gridValue = parseInt(gridTarget.getAttribute("data-range"));
-  document.getElementById("range-value").innerText = gridValue
+  let rangeArray = BLOCH_CALL.splice(0, gridValue)
   gridTarget.onwheel = (e) => {
-    handleScroll(e, gridValue, gridTarget)
+    handleScroll(e, rangeArray, tableId, gridValue, gridTarget)
   };
 }
 
-function handleScroll(e, gridValue, gridTarget) {
+function handleScroll(e, rangeArray, tableId, gridValue, gridTarget) {
   e.preventDefault();
   if (e.deltaY < 0 && gridValue < 100) {
     gridValue += 1
-    console.log("We're scrolling up!")
-    document.getElementById("range-value").innerText = gridValue
     gridTarget.setAttribute("data-range", gridValue)
+    addClassesToTds(e, rangeArray, tableId)
   } else if (e.deltaY > 0 && gridValue > 0) {
     gridValue -= 1
-    console.log("We're scrolling down!")
-    document.getElementById("range-value").innerText = gridValue
     gridTarget.setAttribute("data-range", gridValue)
+    addClassesToTds(e, rangeArray, tableId)
   } else {
     console.log("Nothing!")
+  }
+}
+
+function addClassesToTds(e, rangeArray, table) {
+  let tds = document.querySelectorAll(`#${table} td`);
+  for (let td of tds) {
+    if (rangeArray.includes(`${td.getAttribute("id")}`)) {
+      document.querySelector(`#${td.getAttribute("id")}`).classList.add("highlight")
+    }
   }
 }
 
