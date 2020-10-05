@@ -1,42 +1,39 @@
-window.onload = addListeners();
+import * as ranges from "./ranges.js";
 
-function addListeners() {
-  addTableListeners();
-  addSliderListeners();
-}
+window.onload = addTableListeners();
 
 function addTableListeners() {
-  let tables = document.getElementsByClassName("grid");
-  let slider = document.getElementById("range-slider");
+  let tables = document.querySelectorAll(".grid");
   for (let table of tables) {
-    table.addEventListener("mouseenter", (e) => {
-      table.onwheel = scrollNumbers;
-    })
+    table.addEventListener("mouseover", (e) => {
+      console.log(e.relatedTarget)
+      findRange(e);
+    });
   }
 }
 
-function addSliderListeners() {
-  let slider = document.getElementById("range-slider");
+function findRange(e) {
+  let gridTarget = e.target;
+  let gridValue = parseInt(gridTarget.getAttribute("data-range"));
+  document.getElementById("range-value").innerText = gridValue
+  gridTarget.onwheel = (e) => {
+    handleScroll(e, gridValue, gridTarget)
+  };
 }
 
-function scrollNumbers(e) {
-  e.preventDefault()
-  let target = e.target
-  if (!!target.classList && target.classList[0].includes("grid")) {
-    let targetDataRange = parseInt(target.getAttribute("data-range"))
-    let newDivValue;
-    if (e.deltaY < 0) {
-      newDivValue = targetDataRange + 1
-      target.setAttribute("data-range", newDivValue)
-      console.log(target.getAttribute("data-range"))
-      slider.innerHTML = `<span id="range-value">${rangeInt}%</span>`;
-    } else {
-      newDivValue = targetDataRange - 1
-      target.setAttribute("data-range", newDivValue)
-      slider.innerHTML = `<span id="range-value">${rangeInt}%</span>`;
-    }
-    console.log(target)
+function handleScroll(e, gridValue, gridTarget) {
+  e.preventDefault();
+  if (e.deltaY < 0 && gridValue < 100) {
+    gridValue += 1
+    console.log("We're scrolling up!")
+    document.getElementById("range-value").innerText = gridValue
+    gridTarget.setAttribute("data-range", gridValue)
+  } else if (e.deltaY > 0 && gridValue > 0) {
+    gridValue -= 1
+    console.log("We're scrolling down!")
+    document.getElementById("range-value").innerText = gridValue
+    gridTarget.setAttribute("data-range", gridValue)
   } else {
-    console.log(target)
+    console.log("Nothing!")
   }
 }
