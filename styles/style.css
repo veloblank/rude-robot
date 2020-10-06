@@ -159,7 +159,7 @@ span#range-value {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: red;
 }
 
 input:focus + .slider {
@@ -179,5 +179,23 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.switch-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+}
+
+.btn-text {
+  font-size: 28px;
+  color: red;
+  font-family: 'Russo One', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
