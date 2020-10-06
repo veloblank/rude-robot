@@ -1,4 +1,3 @@
-import { BLOCH_CALL } from "./blochCallArray.js"
 import RangeCounter from "./RangeCounter.js"
 
 window.onload = addTableListener();
@@ -17,7 +16,7 @@ function addTableListener() {
 function addWheelListener(target) {
   target.onwheel = (e) => {
     e.preventDefault();
-    let targetRange = parseInt(target.getAttribute("data-range"));
+    let targetRange = parseFloat(target.getAttribute("data-range"));
     if (e.deltaY < 0) {
       incrementRange(target, targetRange)
     } else if (e.deltaY > 0) {
@@ -28,7 +27,7 @@ function addWheelListener(target) {
 
 function incrementRange(target, range) {
   if (range < 100) {
-    let newRange = range + 1
+    let newRange = range + 0.5
     let targetId = target.getAttribute("id")
     document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
     updateSliderRange(newRange)
@@ -37,9 +36,8 @@ function incrementRange(target, range) {
 }
 
 function decrementRange(target, range) {
-  if (range > 1) {
-
-    let newRange = range - 1
+  if (range > 0) {
+    let newRange = range - 0.5
     let targetId = target.getAttribute("id")
     document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
     updateSliderRange(newRange)
@@ -71,12 +69,31 @@ function deconstructJSON(target, range) {
       let blochCalling = json.bloch_call;
       let blochJamming = json.bloch_jam;
       //colorizeRange(target, blochCalling, range)
-      parseCallingJSON(blochCalling, target, range)
+      calcCallingRange(blochCalling, target, range)
     })
 }
 
-function parseCallingJSON(callingData, target, range) {
+function calcCallingRange(callingData, target, range) {
   let json = callingData;
-
-  console.log(json[range])
+  let restriction = range;
+  let callingCombos = 0;
+  let index;
+  let handStringValues = [];
+  let filteredHandObjects;
+  json.some(function (a, i) {
+    index = i;
+    if (convertToPercent((callingCombos + a.combos)) > restriction) {
+      return true
+    }
+    callingCombos += a.combos;
+    handStringValues.push(a.code)
+  });
+  filteredHandObjects = json.splice(0, index)
+  console.log(handStringValues, filteredHandObjects)
 }
+
+function convertToPercent(combos) {
+  return (combos / 1326) * 100
+}
+
+
