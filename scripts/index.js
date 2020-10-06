@@ -57,14 +57,16 @@ function colorizeRange(target, filteredStringArr, filteredObjArr) {
   let table = document.getElementById(target.getAttribute("id"));
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
+  let bottomRange = filteredStringArr.slice(-4);
+  let callingRange = filteredStringArr;
+  //let callingRange = filteredStringArr.filter(x => bottomRange.includes(x));
   for (let td of tds) {
-    if (filteredStringArr.includes(`${td.getAttribute("id")}`)) {
+    if (callingRange.includes(`${td.getAttribute("id")}`)) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.add("highlight")
     } else {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
   }
-
 }
 
 function deconstructJSON(target, range) {
