@@ -53,12 +53,17 @@ function updateSliderOnMouseEnter(target) {
   document.querySelector("#range-value").innerText = parseInt(target.getAttribute("data-range"));
 }
 
-function colorizeRange(target, blochCalling, range) {
-  let targetGrid = target;
-  let callingJSON = blochCalling;
-  let currentRange = range;
-
-
+function colorizeRange(target, filteredStringArr, filteredObjArr) {
+  let table = document.getElementById(target.getAttribute("id"));
+  let tableId = table.getAttribute("id");
+  let tds = document.querySelectorAll(`#${tableId} td`);
+  for (let td of tds) {
+    if (filteredStringArr.includes(`${td.getAttribute("id")}`)) {
+      document.querySelector(`#${td.getAttribute("id")}`).classList.add("highlight")
+    } else {
+      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+    }
+  }
 
 }
 
@@ -68,7 +73,6 @@ function deconstructJSON(target, range) {
     .then(json => {
       let blochCalling = json.bloch_call;
       let blochJamming = json.bloch_jam;
-      //colorizeRange(target, blochCalling, range)
       calcCallingRange(blochCalling, target, range)
     })
 }
@@ -89,7 +93,7 @@ function calcCallingRange(callingData, target, range) {
     handStringValues.push(a.code)
   });
   filteredHandObjects = json.splice(0, index)
-  console.log(handStringValues, filteredHandObjects)
+  colorizeRange(target, handStringValues, filteredHandObjects)
 }
 
 function convertToPercent(combos) {
