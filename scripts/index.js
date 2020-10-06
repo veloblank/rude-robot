@@ -27,19 +27,24 @@ function addWheelListener(target) {
 }
 
 function incrementRange(target, range) {
-  let newRange = range + 1
-  let targetId = target.getAttribute("id")
-  document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
-  updateSliderRange(newRange)
-  deconstructJSON(target, newRange)
+  if (range < 100) {
+    let newRange = range + 1
+    let targetId = target.getAttribute("id")
+    document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
+    updateSliderRange(newRange)
+    deconstructJSON(target, newRange)
+  }
 }
 
 function decrementRange(target, range) {
-  let newRange = range - 1
-  let targetId = target.getAttribute("id")
-  document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
-  updateSliderRange(newRange)
-  deconstructJSON(target, newRange)
+  if (range > 1) {
+
+    let newRange = range - 1
+    let targetId = target.getAttribute("id")
+    document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
+    updateSliderRange(newRange)
+    deconstructJSON(target, newRange)
+  }
 }
 
 function updateSliderRange(range) {
@@ -72,5 +77,6 @@ function deconstructJSON(target, range) {
 
 function parseCallingJSON(callingData, target, range) {
   let json = callingData;
-  console.log(json)
+
+  console.log(json[range])
 }
