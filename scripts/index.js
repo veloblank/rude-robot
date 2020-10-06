@@ -70,25 +70,42 @@ function colorizeRange(target, filteredStringArr, filteredObjArr) {
 }
 
 function deconstructJSON(target, range) {
+  let toggle = document.getElementById("mySwitch")
+  if (toggle.checked === true) {
+    fetchJammingJSON(target, range)
+  } else {
+    fetchCallingJSON(target, range)
+  }
+}
+
+function fetchJammingJSON(target, range) {
+  fetch("../formatted_jamming.json")
+    .then(response => response.json())
+    .then(json => {
+      let blochJamming = json.bloch_jam;
+      calcRange(blochJamming, target, range)
+    })
+}
+
+function fetchCallingJSON(target, range) {
   fetch("../formatted_calling.json")
     .then(response => response.json())
     .then(json => {
       let blochCalling = json.bloch_call;
-      let blochJamming = json.bloch_jam;
-      calcCallingRange(blochCalling, target, range)
+      calcRange(blochCalling, target, range)
     })
 }
 
-function calcCallingRange(callingData, target, range) {
-  let json = callingData;
-  let restriction = range;
+function calcRange(rangeData, target, range) {
+  let json = rangeData;
+  let userRestriction = range;
   let callingCombos = 0;
   let index;
   let handStringValues = [];
   let filteredHandObjects;
   json.some(function (a, i) {
     index = i;
-    if (convertToPercent((callingCombos + a.combos)) > restriction) {
+    if (convertToPercent((callingCombos + a.combos)) > userRestriction) {
       return true
     }
     callingCombos += a.combos;
