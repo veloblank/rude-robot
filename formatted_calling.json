@@ -1,0 +1,1187 @@
+{
+  "bloch_call": [
+    {
+      "name": "chs1",
+      "code": "cell_AA",
+      "string_f": "AA",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs2",
+      "code": "cell_KK",
+      "string_f": "KK",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs3",
+      "code": "cell_AK",
+      "string_f": "AK",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs4",
+      "code": "cell_QQ",
+      "string_f": "QQ",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs5",
+      "code": "cell_KA",
+      "string_f": "KA",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs6",
+      "code": "cell_JJ",
+      "string_f": "JJ",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs7",
+      "code": "cell_TT",
+      "string_f": "TT",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs8",
+      "code": "cell_AQ",
+      "string_f": "AQ",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs9",
+      "code": "cell_99",
+      "string_f": "99",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs10",
+      "code": "cell_QA",
+      "string_f": "QA",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs11",
+      "code": "cell_88",
+      "string_f": "88",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs12",
+      "code": "cell_AJ",
+      "string_f": "AJ",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs13",
+      "code": "cell_77",
+      "string_f": "77",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs14",
+      "code": "cell_AT",
+      "string_f": "AT",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs15",
+      "code": "cell_JA",
+      "string_f": "JA",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs16",
+      "code": "cell_66",
+      "string_f": "66",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs17",
+      "code": "cell_KQ",
+      "string_f": "KQ",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs18",
+      "code": "cell_TA",
+      "string_f": "TA",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs19",
+      "code": "cell_A9",
+      "string_f": "A9",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs20",
+      "code": "cell_KJ",
+      "string_f": "KJ",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs21",
+      "code": "cell_A8",
+      "string_f": "A8",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs22",
+      "code": "cell_55",
+      "string_f": "55",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs23",
+      "code": "cell_QK",
+      "string_f": "QK",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs24",
+      "code": "cell_9A",
+      "string_f": "9A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs25",
+      "code": "cell_A7",
+      "string_f": "A7",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs26",
+      "code": "cell_8A",
+      "string_f": "8A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs27",
+      "code": "cell_KT",
+      "string_f": "KT",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs28",
+      "code": "cell_A6",
+      "string_f": "A6",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs29",
+      "code": "cell_44",
+      "string_f": "44",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs30",
+      "code": "cell_A5",
+      "string_f": "A5",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs31",
+      "code": "cell_7A",
+      "string_f": "7A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs32",
+      "code": "cell_QJ",
+      "string_f": "QJ",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs33",
+      "code": "cell_A4",
+      "string_f": "A4",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs34",
+      "code": "cell_JK",
+      "string_f": "JK",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs35",
+      "code": "cell_A3",
+      "string_f": "A3",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs36",
+      "code": "cell_A2",
+      "string_f": "A2",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs37",
+      "code": "cell_K9",
+      "string_f": "K9",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs38",
+      "code": "cell_TK",
+      "string_f": "TK",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs39",
+      "code": "cell_33",
+      "string_f": "33",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs40",
+      "code": "cell_QT",
+      "string_f": "QT",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs41",
+      "code": "cell_5A",
+      "string_f": "5A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs42",
+      "code": "cell_6A",
+      "string_f": "6A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs43",
+      "code": "cell_JQ",
+      "string_f": "JQ",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs44",
+      "code": "cell_K8",
+      "string_f": "K8",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs45",
+      "code": "cell_JT",
+      "string_f": "JT",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs46",
+      "code": "cell_4A",
+      "string_f": "4A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs47",
+      "code": "cell_9K",
+      "string_f": "9K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs48",
+      "code": "cell_3A",
+      "string_f": "3A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs49",
+      "code": "cell_Q9",
+      "string_f": "Q9",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs50",
+      "code": "cell_2A",
+      "string_f": "2A",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs51",
+      "code": "cell_K7",
+      "string_f": "K7",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs52",
+      "code": "cell_TQ",
+      "string_f": "TQ",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs53",
+      "code": "cell_22",
+      "string_f": "22",
+      "type": "pair",
+      "combos": 6
+    },
+    {
+      "name": "chs54",
+      "code": "cell_K6",
+      "string_f": "K6",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs55",
+      "code": "cell_8K",
+      "string_f": "8K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs56",
+      "code": "cell_Q8",
+      "string_f": "Q8",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs57",
+      "code": "cell_K5",
+      "string_f": "K5",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs58",
+      "code": "cell_J9",
+      "string_f": "J9",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs59",
+      "code": "cell_7K",
+      "string_f": "7K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs60",
+      "code": "cell_TJ",
+      "string_f": "TJ",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs61",
+      "code": "cell_9Q",
+      "string_f": "9Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs62",
+      "code": "cell_K4",
+      "string_f": "K4",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs63",
+      "code": "cell_K3",
+      "string_f": "K3",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs64",
+      "code": "cell_T9",
+      "string_f": "T9",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs65",
+      "code": "cell_6K",
+      "string_f": "6K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs66",
+      "code": "cell_Q7",
+      "string_f": "Q7",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs67",
+      "code": "cell_J8",
+      "string_f": "J8",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs68",
+      "code": "cell_K2",
+      "string_f": "K2",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs69",
+      "code": "cell_8Q",
+      "string_f": "8Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs70",
+      "code": "cell_Q6",
+      "string_f": "Q6",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs71",
+      "code": "cell_5K",
+      "string_f": "5K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs72",
+      "code": "cell_9J",
+      "string_f": "9J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs73",
+      "code": "cell_T8",
+      "string_f": "T8",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs74",
+      "code": "cell_Q5",
+      "string_f": "Q5",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs75",
+      "code": "cell_4K",
+      "string_f": "4K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs76",
+      "code": "cell_J7",
+      "string_f": "J7",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs77",
+      "code": "cell_3K",
+      "string_f": "3K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs78",
+      "code": "cell_Q4",
+      "string_f": "Q4",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs79",
+      "code": "cell_9T",
+      "string_f": "9T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs80",
+      "code": "cell_98",
+      "string_f": "98",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs81",
+      "code": "cell_7Q",
+      "string_f": "7Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs82",
+      "code": "cell_Q3",
+      "string_f": "Q3",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs83",
+      "code": "cell_2K",
+      "string_f": "2K",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs84",
+      "code": "cell_J3",
+      "string_f": "J3",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs85",
+      "code": "cell_8J",
+      "string_f": "8J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs86",
+      "code": "cell_6Q",
+      "string_f": "6Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs87",
+      "code": "cell_T7",
+      "string_f": "T7",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs88",
+      "code": "cell_Q2",
+      "string_f": "Q2",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs89",
+      "code": "cell_J6",
+      "string_f": "J6",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs90",
+      "code": "cell_5Q",
+      "string_f": "5Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs91",
+      "code": "cell_J5",
+      "string_f": "J5",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs92",
+      "code": "cell_97",
+      "string_f": "97",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs93",
+      "code": "cell_87",
+      "string_f": "87",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs94",
+      "code": "cell_8T",
+      "string_f": "8T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs95",
+      "code": "cell_7J",
+      "string_f": "7J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs96",
+      "code": "cell_4Q",
+      "string_f": "4Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs97",
+      "code": "cell_T6",
+      "string_f": "T6",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs98",
+      "code": "cell_J4",
+      "string_f": "J4",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs99",
+      "code": "cell_3Q",
+      "string_f": "3Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs100",
+      "code": "cell_89",
+      "string_f": "89",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs101",
+      "code": "cell_96",
+      "string_f": "96",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs102",
+      "code": "cell_86",
+      "string_f": "86",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs103",
+      "code": "cell_7T",
+      "string_f": "7T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs104",
+      "code": "cell_6J",
+      "string_f": "6J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs105",
+      "code": "cell_2Q",
+      "string_f": "2Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs106",
+      "code": "cell_J2",
+      "string_f": "J2",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs107",
+      "code": "cell_T5",
+      "string_f": "T5",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs108",
+      "code": "cell_76",
+      "string_f": "76",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs109",
+      "code": "cell_5J",
+      "string_f": "5J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs110",
+      "code": "cell_T4",
+      "string_f": "T4",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs111",
+      "code": "cell_79",
+      "string_f": "79",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs112",
+      "code": "cell_4J",
+      "string_f": "4J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs113",
+      "code": "cell_95",
+      "string_f": "95",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs114",
+      "code": "cell_T3",
+      "string_f": "T3",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs115",
+      "code": "cell_65",
+      "string_f": "65",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs116",
+      "code": "cell_78",
+      "string_f": "78",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs117",
+      "code": "cell_85",
+      "string_f": "85",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs118",
+      "code": "cell_75",
+      "string_f": "75",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs119",
+      "code": "cell_54",
+      "string_f": "54",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs120",
+      "code": "cell_6T",
+      "string_f": "6T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs121",
+      "code": "cell_3J",
+      "string_f": "3J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs122",
+      "code": "cell_T2",
+      "string_f": "T2",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs123",
+      "code": "cell_94",
+      "string_f": "94",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs124",
+      "code": "cell_69",
+      "string_f": "69",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs125",
+      "code": "cell_64",
+      "string_f": "64",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs126",
+      "code": "cell_84",
+      "string_f": "84",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs127",
+      "code": "cell_74",
+      "string_f": "74",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs128",
+      "code": "cell_68",
+      "string_f": "68",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs129",
+      "code": "cell_67",
+      "string_f": "67",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs130",
+      "code": "cell_53",
+      "string_f": "53",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs131",
+      "code": "cell_2J",
+      "string_f": "2J",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs132",
+      "code": "cell_5T",
+      "string_f": "5T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs133",
+      "code": "cell_4T",
+      "string_f": "4T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs134",
+      "code": "cell_93",
+      "string_f": "93",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs135",
+      "code": "cell_59",
+      "string_f": "59",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs136",
+      "code": "cell_92",
+      "string_f": "92",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs137",
+      "code": "cell_43",
+      "string_f": "43",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs138",
+      "code": "cell_63",
+      "string_f": "63",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs139",
+      "code": "cell_83",
+      "string_f": "83",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs140",
+      "code": "cell_56",
+      "string_f": "56",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs141",
+      "code": "cell_73",
+      "string_f": "73",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs142",
+      "code": "cell_58",
+      "string_f": "58",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs143",
+      "code": "cell_57",
+      "string_f": "57",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs144",
+      "code": "cell_82",
+      "string_f": "82",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs145",
+      "code": "cell_52",
+      "string_f": "52",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs146",
+      "code": "cell_3T",
+      "string_f": "3T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs147",
+      "code": "cell_2T",
+      "string_f": "2T",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs148",
+      "code": "cell_49",
+      "string_f": "49",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs149",
+      "code": "cell_45",
+      "string_f": "45",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs150",
+      "code": "cell_42",
+      "string_f": "42",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs151",
+      "code": "cell_62",
+      "string_f": "62",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs152",
+      "code": "cell_72",
+      "string_f": "72",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs153",
+      "code": "cell_46",
+      "string_f": "46",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs154",
+      "code": "cell_32",
+      "string_f": "32",
+      "type": "suited",
+      "combos": 4
+    },
+    {
+      "name": "chs155",
+      "code": "cell_48",
+      "string_f": "48",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs156",
+      "code": "cell_47",
+      "string_f": "47",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs157",
+      "code": "cell_35",
+      "string_f": "35",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs158",
+      "code": "cell_34",
+      "string_f": "34",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs159",
+      "code": "cell_93",
+      "string_f": "93",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs160",
+      "code": "cell_29",
+      "string_f": "29",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs161",
+      "code": "cell_36",
+      "string_f": "36",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs162",
+      "code": "cell_38",
+      "string_f": "38",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs163",
+      "code": "cell_28",
+      "string_f": "28",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs164",
+      "code": "cell_73",
+      "string_f": "73",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs165",
+      "code": "cell_25",
+      "string_f": "25",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs166",
+      "code": "cell_42",
+      "string_f": "42",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs167",
+      "code": "cell_72",
+      "string_f": "72",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs168",
+      "code": "cell_26",
+      "string_f": "26",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "chs169",
+      "code": "cell_23",
+      "string_f": "23",
+      "type": "unsuited",
+      "combos": 12
+    }
+  ]
+}
