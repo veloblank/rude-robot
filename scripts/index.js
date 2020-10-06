@@ -7,6 +7,7 @@ function addTableListener() {
   for (let grid of grids) {
     grid.addEventListener("mouseenter", e => {
       let target = e.target;
+      updateSliderOnMouseEnter(target)
       addWheelListener(target);
     })
   }
@@ -15,11 +16,33 @@ function addTableListener() {
 function addWheelListener(target) {
   target.onwheel = (e) => {
     e.preventDefault();
-    let targetRange = target.getAttribute("data-range");
+    let targetRange = parseInt(target.getAttribute("data-range"));
     if (e.deltaY > 0) {
-      console.log("Scrolling up!")
+      incrementRange(target, targetRange)
     } else if (e.deltaY < 0) {
-      console.log("Scrolling down!")
+      decrementRange(target, targetRange)
     }
   }
+}
+
+function incrementRange(target, range) {
+  let newRange = range + 1
+  let targetId = target.getAttribute("id")
+  document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
+  updateSliderRange(newRange)
+}
+
+function decrementRange(target, range) {
+  let newRange = range - 1
+  let targetId = target.getAttribute("id")
+  document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
+  updateSliderRange(newRange)
+}
+
+function updateSliderRange(range) {
+  document.querySelector("#range-value").innerText = range;
+}
+
+function updateSliderOnMouseEnter(target) {
+  document.querySelector("#range-value").innerText = parseInt(target.getAttribute("data-range"));
 }
