@@ -13,13 +13,15 @@ function addTableListener() {
 }
 
 function updateSliderOnMouseEnter(target) {
-  document.querySelector("#range-value").innerText = parseInt(target.getAttribute("data-range"));
+  let range = target.getAttribute("data-range")
+  document.querySelector("#range-value").innerText = range;
 }
 
 function addWheelListener(target) {
   target.onwheel = (e) => {
     e.preventDefault();
-    let targetRange = parseFloat(target.getAttribute("data-range"));
+    let range = parseFloat(target.getAttribute("data-range"));
+    let targetRange = parseFloat(range.toFixed(1))
     if (e.deltaY < 0) {
       incrementRange(target, targetRange)
     } else if (e.deltaY > 0) {
@@ -43,26 +45,26 @@ function addClickListener(e) {
 
 function incrementRange(target, range) {
   if (range < 100) {
-    let newRange = range + 0.5
+    range += 0.1
     let targetId = target.getAttribute("id")
-    document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
-    updateSliderRange(newRange)
-    deconstructJSON(target, newRange)
+    document.querySelector(`#${targetId}`).setAttribute("data-range", range)
+    updateSliderRange(range)
+    deconstructJSON(target, range)
   }
 }
 
 function decrementRange(target, range) {
   if (range > 0) {
-    let newRange = range - 0.5
+    range -= 0.1
     let targetId = target.getAttribute("id")
-    document.querySelector(`#${targetId}`).setAttribute("data-range", newRange)
-    updateSliderRange(newRange)
-    deconstructJSON(target, newRange)
+    document.querySelector(`#${targetId}`).setAttribute("data-range", range)
+    updateSliderRange(range)
+    deconstructJSON(target, range)
   }
 }
 
 function updateSliderRange(range) {
-  document.querySelector("#range-value").innerText = range;
+  document.querySelector("#range-value").innerText = range.toFixed(1);
 }
 
 
