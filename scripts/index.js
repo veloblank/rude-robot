@@ -1,5 +1,3 @@
-import RangeCounter from "./RangeCounter.js"
-
 window.onload = addTableListener();
 
 function addTableListener() {
@@ -8,9 +6,14 @@ function addTableListener() {
     grid.addEventListener("mouseenter", e => {
       let target = e.target;
       updateSliderOnMouseEnter(target)
+      addClickListener()
       addWheelListener(target);
     })
   }
+}
+
+function updateSliderOnMouseEnter(target) {
+  document.querySelector("#range-value").innerText = parseInt(target.getAttribute("data-range"));
 }
 
 function addWheelListener(target) {
@@ -22,6 +25,19 @@ function addWheelListener(target) {
     } else if (e.deltaY > 0) {
       decrementRange(target, targetRange)
     }
+  }
+}
+
+function addClickListener(e) {
+  let tds = document.querySelectorAll("td")
+  for (let td of tds) {
+    td.addEventListener("click", (e) => {
+      for (let td of tds) {
+        td.classList.remove("lowlight")
+      }
+      td.classList.add("lowlight")
+      document.querySelector("#hand-value").innerText = td.innerText
+    })
   }
 }
 
@@ -49,9 +65,6 @@ function updateSliderRange(range) {
   document.querySelector("#range-value").innerText = range;
 }
 
-function updateSliderOnMouseEnter(target) {
-  document.querySelector("#range-value").innerText = parseInt(target.getAttribute("data-range"));
-}
 
 function colorizeRange(target, filteredStringArr, filteredObjArr) {
   let table = document.getElementById(target.getAttribute("id"));

@@ -52,10 +52,17 @@ header {
 }
 
 #range-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 2.5em;
   font-family: 'Russo One', sans-serif;
   color: black;
   margin: 10px auto;
+  padding: 0px 10px 0px 10px;
   height: 65px;
   width: 78%;
   background-color: #cacaca;
@@ -102,13 +109,6 @@ td {
   height: 100%;
   width: 30px;
   padding: 3px;
-}
-
-span#range-value {
-  vertical-align: middle;
-  border: 6px solid black;
-  color: white;
-  background-color: green;
 }
 
 .highlight {
