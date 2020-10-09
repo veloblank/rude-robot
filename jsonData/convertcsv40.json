@@ -1,0 +1,847 @@
+[
+ {
+   "hand": "AA",
+   "equity": 85.56,
+   "odds against range": "5.9:1"
+ },
+ {
+   "hand": "KK",
+   "equity": 78.04,
+   "odds against range": "3.6:1"
+ },
+ {
+   "hand": "QQ",
+   "equity": 72.65,
+   "odds against range": "2.7:1"
+ },
+ {
+   "hand": "JJ",
+   "equity": 68.91,
+   "odds against range": "2.2:1"
+ },
+ {
+   "hand": "AKs",
+   "equity": 66.77,
+   "odds against range": "2.0:1"
+ },
+ {
+   "hand": "TT",
+   "equity": 65.94,
+   "odds against range": "1.9:1"
+ },
+ {
+   "hand": "AKo",
+   "equity": 65.14,
+   "odds against range": "1.9:1"
+ },
+ {
+   "hand": "AQs",
+   "equity": 63.99,
+   "odds against range": "1.8:1"
+ },
+ {
+   "hand": "99",
+   "equity": 62.37,
+   "odds against range": "1.7:1"
+ },
+ {
+   "hand": "AQo",
+   "equity": 62.14,
+   "odds against range": "1.6:1"
+ },
+ {
+   "hand": "AJs",
+   "equity": 61.88,
+   "odds against range": "1.6:1"
+ },
+ {
+   "hand": "ATs",
+   "equity": 60.06,
+   "odds against range": "1.5:1"
+ },
+ {
+   "hand": "AJo",
+   "equity": 59.86,
+   "odds against range": "1.5:1"
+ },
+ {
+   "hand": "88",
+   "equity": 59.34,
+   "odds against range": "1.5:1"
+ },
+ {
+   "hand": "ATo",
+   "equity": 57.91,
+   "odds against range": "1.4:1"
+ },
+ {
+   "hand": "A9s",
+   "equity": 57.02,
+   "odds against range": "1.3:1"
+ },
+ {
+   "hand": "77",
+   "equity": 56.86,
+   "odds against range": "1.3:1"
+ },
+ {
+   "hand": "KQs",
+   "equity": 55.35,
+   "odds against range": "1.2:1"
+ },
+ {
+   "hand": "A8s",
+   "equity": 55.08,
+   "odds against range": "1.2:1"
+ },
+ {
+   "hand": "66",
+   "equity": 54.78,
+   "odds against range": "1.2:1"
+ },
+ {
+   "hand": "A9o",
+   "equity": 54.66,
+   "odds against range": "1.2:1"
+ },
+ {
+   "hand": "KJs",
+   "equity": 53.48,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "A7s",
+   "equity": 53.16,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "KQo",
+   "equity": 52.98,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "55",
+   "equity": 52.7,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "A8o",
+   "equity": 52.57,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "KTs",
+   "equity": 51.88,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "A6s",
+   "equity": 51.66,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "A5s",
+   "equity": 51.47,
+   "odds against range": "1.1:1"
+ },
+ {
+   "hand": "KJo",
+   "equity": 50.96,
+   "odds against range": "1.0:1"
+ },
+ {
+   "hand": "44",
+   "equity": 50.59,
+   "odds against range": "1.0:1"
+ },
+ {
+   "hand": "A7o",
+   "equity": 50.5,
+   "odds against range": "1.0:1"
+ },
+ {
+   "hand": "A4s",
+   "equity": 50.41,
+   "odds against range": "1.0:1"
+ },
+ {
+   "hand": "A3s",
+   "equity": 49.84,
+   "odds against range": "(1.0:1)"
+ },
+ {
+   "hand": "A2s",
+   "equity": 49.27,
+   "odds against range": "(1.0:1)"
+ },
+ {
+   "hand": "KTo",
+   "equity": 49.24,
+   "odds against range": "(1.0:1)"
+ },
+ {
+   "hand": "K9s",
+   "equity": 48.9,
+   "odds against range": "(1.0:1)"
+ },
+ {
+   "hand": "A6o",
+   "equity": 48.9,
+   "odds against range": "(1.0:1)"
+ },
+ {
+   "hand": "A5o",
+   "equity": 48.7,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "33",
+   "equity": 48.62,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "QJs",
+   "equity": 48.05,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "A4o",
+   "equity": 47.56,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "A3o",
+   "equity": 46.94,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "22",
+   "equity": 46.63,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "QTs",
+   "equity": 46.61,
+   "odds against range": "(1.1:1)"
+ },
+ {
+   "hand": "A2o",
+   "equity": 46.32,
+   "odds against range": "(1.2:1)"
+ },
+ {
+   "hand": "K8s",
+   "equity": 46.27,
+   "odds against range": "(1.2:1)"
+ },
+ {
+   "hand": "K9o",
+   "equity": 46.05,
+   "odds against range": "(1.2:1)"
+ },
+ {
+   "hand": "QJo",
+   "equity": 45.2,
+   "odds against range": "(1.2:1)"
+ },
+ {
+   "hand": "K7s",
+   "equity": 44.83,
+   "odds against range": "(1.2:1)"
+ },
+ {
+   "hand": "JTs",
+   "equity": 44.34,
+   "odds against range": "(1.3:1)"
+ },
+ {
+   "hand": "K6s",
+   "equity": 43.75,
+   "odds against range": "(1.3:1)"
+ },
+ {
+   "hand": "Q9s",
+   "equity": 43.73,
+   "odds against range": "(1.3:1)"
+ },
+ {
+   "hand": "QTo",
+   "equity": 43.67,
+   "odds against range": "(1.3:1)"
+ },
+ {
+   "hand": "K8o",
+   "equity": 43.24,
+   "odds against range": "(1.3:1)"
+ },
+ {
+   "hand": "K5s",
+   "equity": 42.76,
+   "odds against range": "(1.3:1)"
+ },
+ {
+   "hand": "K4s",
+   "equity": 42.06,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "K7o",
+   "equity": 41.68,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "J9s",
+   "equity": 41.51,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "K3s",
+   "equity": 41.5,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "T9s",
+   "equity": 41.39,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "Q8s",
+   "equity": 41.29,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "JTo",
+   "equity": 41.27,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "K2s",
+   "equity": 40.94,
+   "odds against range": "(1.4:1)"
+ },
+ {
+   "hand": "Q9o",
+   "equity": 40.58,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "K6o",
+   "equity": 40.53,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "98s",
+   "equity": 40.07,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "T8s",
+   "equity": 39.9,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "87s",
+   "equity": 39.73,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "J8s",
+   "equity": 39.57,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "K5o",
+   "equity": 39.47,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "Q7s",
+   "equity": 39.46,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "76s",
+   "equity": 39.3,
+   "odds against range": "(1.5:1)"
+ },
+ {
+   "hand": "Q6s",
+   "equity": 39.16,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "97s",
+   "equity": 39.11,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "K4o",
+   "equity": 38.68,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "T7s",
+   "equity": 38.68,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "Q5s",
+   "equity": 38.53,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "65s",
+   "equity": 38.51,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "86s",
+   "equity": 38.49,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "J7s",
+   "equity": 38.28,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "J9o",
+   "equity": 38.24,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "Q4s",
+   "equity": 38.15,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "T9o",
+   "equity": 38.11,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "K3o",
+   "equity": 38.07,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "54s",
+   "equity": 38.02,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "Q8o",
+   "equity": 37.97,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "75s",
+   "equity": 37.82,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "96s",
+   "equity": 37.79,
+   "odds against range": "(1.6:1)"
+ },
+ {
+   "hand": "Q3s",
+   "equity": 37.58,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "K2o",
+   "equity": 37.47,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "T6s",
+   "equity": 37.34,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "64s",
+   "equity": 37.21,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "Q2s",
+   "equity": 37.01,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "J6s",
+   "equity": 36.96,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "85s",
+   "equity": 36.96,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "98o",
+   "equity": 36.72,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "J5s",
+   "equity": 36.68,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "T8o",
+   "equity": 36.51,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "74s",
+   "equity": 36.49,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "53s",
+   "equity": 36.45,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "J4s",
+   "equity": 36.39,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "87o",
+   "equity": 36.37,
+   "odds against range": "(1.7:1)"
+ },
+ {
+   "hand": "95s",
+   "equity": 36.25,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "J8o",
+   "equity": 36.13,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "43s",
+   "equity": 36,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "Q7o",
+   "equity": 35.97,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "76o",
+   "equity": 35.93,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "J3s",
+   "equity": 35.83,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "T5s",
+   "equity": 35.8,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "T4s",
+   "equity": 35.78,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "97o",
+   "equity": 35.69,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "Q6o",
+   "equity": 35.64,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "84s",
+   "equity": 35.62,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "63s",
+   "equity": 35.61,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "J2s",
+   "equity": 35.24,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "T7o",
+   "equity": 35.22,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "T3s",
+   "equity": 35.21,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "65o",
+   "equity": 35.09,
+   "odds against range": "(1.8:1)"
+ },
+ {
+   "hand": "86o",
+   "equity": 35.05,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "Q5o",
+   "equity": 34.98,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "94s",
+   "equity": 34.93,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "73s",
+   "equity": 34.89,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "52s",
+   "equity": 34.82,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "J7o",
+   "equity": 34.77,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "T2s",
+   "equity": 34.62,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "93s",
+   "equity": 34.62,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "54o",
+   "equity": 34.58,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "Q4o",
+   "equity": 34.58,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "42s",
+   "equity": 34.41,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "75o",
+   "equity": 34.36,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "96o",
+   "equity": 34.29,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "92s",
+   "equity": 34.04,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "83s",
+   "equity": 34.01,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "62s",
+   "equity": 33.98,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "Q3o",
+   "equity": 33.97,
+   "odds against range": "(1.9:1)"
+ },
+ {
+   "hand": "T6o",
+   "equity": 33.79,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "32s",
+   "equity": 33.78,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "64o",
+   "equity": 33.7,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "82s",
+   "equity": 33.7,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "85o",
+   "equity": 33.41,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "J6o",
+   "equity": 33.36,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "Q2o",
+   "equity": 33.35,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "72s",
+   "equity": 33.27,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "J5o",
+   "equity": 33.07,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "74o",
+   "equity": 32.93,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "53o",
+   "equity": 32.9,
+   "odds against range": "(2.0:1)"
+ },
+ {
+   "hand": "J4o",
+   "equity": 32.76,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "95o",
+   "equity": 32.66,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "43o",
+   "equity": 32.43,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "T5o",
+   "equity": 32.16,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "J3o",
+   "equity": 32.14,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "T4o",
+   "equity": 32.13,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "63o",
+   "equity": 31.99,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "84o",
+   "equity": 31.98,
+   "odds against range": "(2.1:1)"
+ },
+ {
+   "hand": "T3o",
+   "equity": 31.52,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "J2o",
+   "equity": 31.51,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "94o",
+   "equity": 31.23,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "73o",
+   "equity": 31.22,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "52o",
+   "equity": 31.15,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "93o",
+   "equity": 30.9,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "T2o",
+   "equity": 30.89,
+   "odds against range": "(2.2:1)"
+ },
+ {
+   "hand": "42o",
+   "equity": 30.72,
+   "odds against range": "(2.3:1)"
+ },
+ {
+   "hand": "92o",
+   "equity": 30.27,
+   "odds against range": "(2.3:1)"
+ },
+ {
+   "hand": "83o",
+   "equity": 30.26,
+   "odds against range": "(2.3:1)"
+ },
+ {
+   "hand": "62o",
+   "equity": 30.25,
+   "odds against range": "(2.3:1)"
+ },
+ {
+   "hand": "32o",
+   "equity": 30.05,
+   "odds against range": "(2.3:1)"
+ },
+ {
+   "hand": "82o",
+   "equity": 29.92,
+   "odds against range": "(2.3:1)"
+ },
+ {
+   "hand": "72o",
+   "equity": 29.48,
+   "odds against range": "(2.4:1)"
+ }
+]
