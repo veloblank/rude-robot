@@ -5,16 +5,10 @@ function addTableListener() {
   for (let grid of grids) {
     grid.addEventListener("mouseenter", e => {
       let target = e.target;
-      updateSliderOnMouseEnter(target)
       addClickListener()
       addWheelListener(target);
     })
   }
-}
-
-function updateSliderOnMouseEnter(target) {
-  let range = target.getAttribute("data-range")
-  document.querySelector("#range-value").innerText = range;
 }
 
 function addWheelListener(target) {
