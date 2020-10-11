@@ -44,7 +44,7 @@ function incrementRange(target, range) {
     let targetId = target.getAttribute("id");
     document.querySelector(`#${targetId}`).setAttribute("data-range", range);
     updateSliderRange(range);
-    deconstructJSON(target, range);
+    checkToggle(target, range);
   }
 }
 
@@ -54,7 +54,7 @@ function decrementRange(target, range) {
     let targetId = target.getAttribute("id")
     document.querySelector(`#${targetId}`).setAttribute("data-range", range)
     updateSliderRange(range)
-    deconstructJSON(target, range)
+    checkToggle(target, range)
   }
 }
 
@@ -63,7 +63,7 @@ function updateSliderRange(range) {
   document.querySelector("#range-value").innerText = range.toFixed(1);
 }
 
-function deconstructJSON(target, range) {
+function checkToggle(target, range) {
   let toggle = document.getElementById("mySwitch");
   if (toggle.checked === true) {
     fetchJammingJSON(target, range)
