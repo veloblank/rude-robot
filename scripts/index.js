@@ -1,25 +1,26 @@
-window.onload = addTableListener();
+window.onload = addListeners();
+
+function addListeners() {
+  addTableListener();
+  addClickListener()
+}
 
 function addTableListener() {
-  let grids = document.querySelectorAll(".grid");
-  for (let grid of grids) {
-    grid.addEventListener("mouseenter", e => {
-      let target = e.target;
-      addClickListener()
-      addWheelListener(target);
-    })
-  }
+  let grid = document.querySelector(".grid")
+  grid.addEventListener("mouseenter", e => {
+    addWheelListener(e.target);
+  })
 }
 
 function addWheelListener(target) {
-  target.onwheel = (e) => {
+  target.onwheel = e => {
     e.preventDefault();
     let range = parseFloat(target.getAttribute("data-range"));
-    let targetRange = parseFloat(range.toFixed(1))
+    //let targetRange = parseFloat(range.toFixed(1))
     if (e.deltaY < 0) {
-      incrementRange(target, targetRange)
+      incrementRange(target, range)
     } else if (e.deltaY > 0) {
-      decrementRange(target, targetRange)
+      decrementRange(target, range)
     }
   }
 }
@@ -40,10 +41,10 @@ function addClickListener(e) {
 function incrementRange(target, range) {
   if (range < 100) {
     range += 0.1
-    let targetId = target.getAttribute("id")
-    document.querySelector(`#${targetId}`).setAttribute("data-range", range)
-    updateSliderRange(range)
-    deconstructJSON(target, range)
+    let targetId = target.getAttribute("id");
+    document.querySelector(`#${targetId}`).setAttribute("data-range", range);
+    updateSliderRange(range);
+    deconstructJSON(target, range);
   }
 }
 
@@ -58,9 +59,18 @@ function decrementRange(target, range) {
 }
 
 function updateSliderRange(range) {
+  //necessary because of large trailing decimal
   document.querySelector("#range-value").innerText = range.toFixed(1);
 }
 
+function deconstructJSON(target, range) {
+  let toggle = document.getElementById("mySwitch");
+  if (toggle.checked === true) {
+    fetchJammingJSON(target, range)
+  } else {
+    fetchCallingJSON(target, range)
+  }
+}
 
 function colorizeRange(target, filteredStringArr, filteredObjArr) {
   let table = document.getElementById(target.getAttribute("id"));
@@ -75,15 +85,6 @@ function colorizeRange(target, filteredStringArr, filteredObjArr) {
     } else {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
-  }
-}
-
-function deconstructJSON(target, range) {
-  let toggle = document.getElementById("mySwitch")
-  if (toggle.checked === true) {
-    fetchJammingJSON(target, range)
-  } else {
-    fetchCallingJSON(target, range)
   }
 }
 
@@ -107,14 +108,13 @@ function fetchCallingJSON(target, range) {
 
 function calcRange(rangeData, target, range) {
   let json = rangeData;
-  let userRestriction = range;
   let callingCombos = 0;
   let index;
   let handStringValues = [];
   let filteredHandObjects;
   json.some(function (a, i) {
     index = i;
-    if (convertToPercent((callingCombos + a.combos)) > userRestriction) {
+    if (convertToPercent((callingCombos + a.combos)) > range) {
       return true
     }
     callingCombos += a.combos;
