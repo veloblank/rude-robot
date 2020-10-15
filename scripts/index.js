@@ -33,7 +33,7 @@ function addClickListener(e) {
         td.classList.remove("lowlight")
       }
       td.classList.add("lowlight")
-      document.querySelector("#hand-value").innerText = td.innerText
+      document.querySelector("#hand-value").innerText = `${td.getAttribute("data-bvb") + " pts"}`
     })
   }
 }
