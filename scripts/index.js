@@ -39,20 +39,64 @@ function addClickListener(e) {
 }
 
 function incrementRange(target, range) {
+  let targetId = target.getAttribute("id");
   if (range < 100) {
     range += 0.1
-    let targetId = target.getAttribute("id");
     document.querySelector(`#${targetId}`).setAttribute("data-range", range);
+    document.querySelector("#call-range").innerText = convertRangeToPoints(range);
     updateSliderRange(range);
     checkToggle(target, range);
   }
 }
 
+function convertRangeToPoints(range) {
+  let fixedRange = parseFloat(range.toFixed(1))
+  let points;
+  if (fixedRange < 7) {
+    points = "13"
+  } else if (fixedRange < 9) {
+    points = "12"
+  } else if (fixedRange < 12) {
+    points = "11"
+  } else if (fixedRange < 14) {
+    points = "10"
+  } else if (fixedRange < 17) {
+    points = "9"
+  } else if (fixedRange < 20) {
+    points = "8"
+  } else if (fixedRange < 22) {
+    points = "7"
+  } else if (fixedRange < 25) {
+    points = "6"
+  } else if (fixedRange < 27) {
+    points = "5"
+  } else if (fixedRange < 30) {
+    points = "4"
+  } else if (fixedRange < 35) {
+    points = "3"
+  } else if (fixedRange < 40) {
+    points = "2"
+  } else if (fixedRange < 50) {
+    points = "1"
+  } else if (fixedRange < 60) {
+    points = "0"
+  } else if (fixedRange < 70) {
+    points = "-1"
+  } else if (fixedRange < 80) {
+    points = "-2"
+  } else {
+    points = "-3"
+  }
+  return points
+
+}
+
 function decrementRange(target, range) {
+  let targetId = target.getAttribute("id")
   if (range > 0) {
     range -= 0.1
-    let targetId = target.getAttribute("id")
     document.querySelector(`#${targetId}`).setAttribute("data-range", range)
+    document.querySelector("#call-range").innerText = convertRangeToPoints(range);
     updateSliderRange(range)
     checkToggle(target, range)
   }

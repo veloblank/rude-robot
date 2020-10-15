@@ -46,7 +46,6 @@ header {
 
 #range-slider {
 	display: flex;
-	justify-content: space-between;
 	font-size: 2.5em;
 	font-family: 'Russo One', sans-serif;
 	color: black;
@@ -56,6 +55,10 @@ header {
 	width: 78%;
 	background-color: rgb(202, 202, 202);
 	border: 6px solid black;
+}
+
+#range-slider div {
+	width: 33%;
 }
 
 .games-row {
@@ -107,6 +110,11 @@ td {
 .lowlight {
 	background-color: red;
 	color: white;
+}
+
+#call-range,
+#hand-value {
+	font-size: 16px;
 }
 
 .switch {
