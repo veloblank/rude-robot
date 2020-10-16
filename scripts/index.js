@@ -15,14 +15,14 @@ function addTableListener() {
   grid.addEventListener("mouseenter", e => {
     addWheelListener(e.target);
   })
-  grid.addEventListener("mouseleave", (e) => {
-    let table = document.getElementById(e.target.getAttribute("id"));
-    let tableId = table.getAttribute("id");
-    let tds = document.querySelectorAll(`#${tableId} td`);
-    for (let td of tds) {
-      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-    }
-  })
+  // grid.addEventListener("mouseleave", (e) => {
+  //   let table = document.getElementById(e.target.getAttribute("id"));
+  //   let tableId = table.getAttribute("id");
+  //   let tds = document.querySelectorAll(`#${tableId} td`);
+  //   for (let td of tds) {
+  //     document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+  //   }
+  // })
 }
 
 function addWheelListener(target) {
