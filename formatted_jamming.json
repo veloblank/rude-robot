@@ -848,6 +848,13 @@
       "combos": 12
     },
     {
+      "name": "phs169",
+      "code": "cell_2Q",
+      "string_f": "2Q",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
       "name": "phs122",
       "code": "cell_5J",
       "string_f": "5J",
@@ -1173,13 +1180,6 @@
       "name": "phs168",
       "code": "cell_23",
       "string_f": "23",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs169",
-      "code": "cell_2Q",
-      "string_f": "2Q",
       "type": "unsuited",
       "combos": 12
     }
