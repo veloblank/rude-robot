@@ -41,7 +41,7 @@ function addClickListener(e) {
 function incrementRange(target, range) {
   let targetId = target.getAttribute("id");
   if (range < 100) {
-    range += 0.1
+    range += 0.2
     document.querySelector(`#${targetId}`).setAttribute("data-range", range);
     document.querySelector("#call-range").innerText = convertRangeToPoints(range);
     updateSliderRange(range);
@@ -94,7 +94,7 @@ function convertRangeToPoints(range) {
 function decrementRange(target, range) {
   let targetId = target.getAttribute("id")
   if (range > 0) {
-    range -= 0.1
+    range -= 0.2
     document.querySelector(`#${targetId}`).setAttribute("data-range", range)
     document.querySelector("#call-range").innerText = convertRangeToPoints(range);
     updateSliderRange(range)
