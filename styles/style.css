@@ -157,6 +157,7 @@ td {
 .highlight {
   background-color: yellow;
   color: black;
+  border: 1px solid #0127ff;
 }
 
 .lowlight {
