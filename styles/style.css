@@ -270,6 +270,10 @@ input:checked + .slider:before {
   font-size: 25px;
 }
 
+.disp-hand:hover {
+  cursor: pointer;
+}
+
 #equity-list {
   width: 100%;
 }
