@@ -33,242 +33,575 @@
 				<nav></nav>
 			</header>
 			<main>
-				<div class="games-container">
+				<div class="grid-container">
 					<div id="range-slider">
 						<div class="range-value">
-              <span id="range-value">0</span>
-            </div>
-            <div class="call-range">
-              <span id="call-range"></span>
-            </div>
-            <div class="hand-value">
-              <span id="hand-value"></span>
-            </div>
-            <div class="totals">
-              <span id="var-totals" ></span>
-            </div>
+							<span id="range-value">0</span>
+						</div>
+						<div class="call-range">
+							<span id="call-range"></span>
+						</div>
+						<div class="hand-value">
+							<span id="hand-value"></span>
+						</div>
+						<div class="totals">
+							<span id="var-totals"></span>
+						</div>
 					</div>
-					<div class="games-row" id="games-row-1">
-						<div class="game-table" id="game-table-1">
-							<table id="grid-1" class="grid" data-range="35">
-								<tr>
-									<td id="cell_AA" data-bvb="10" class="event01">AA</td>
-									<td id="cell_AK" data-bvb="10" class="event01">AKs</td>
-									<td id="cell_AQ" data-bvb="10" class="event01">AQs</td>
-									<td id="cell_AJ" data-bvb="9" class="event02">AJs</td>
-									<td id="cell_AT" data-bvb="9" class="event02">ATs</td>
-									<td id="cell_A9" data-bvb="9" class="event02">A9s</td>
-									<td id="cell_A8" data-bvb="9" class="event02">A8s</td>
-									<td id="cell_A7" data-bvb="8" class="event03">A7s</td>
-									<td id="cell_A6" data-bvb="8" class="event03">A6s</td>
-									<td id="cell_A5" data-bvb="8" class="event03">A5s</td>
-									<td id="cell_A4" data-bvb="8" class="event03">A4s</td>
-									<td id="cell_A3" data-bvb="8" class="event03">A3s</td>
-									<td id="cell_A2" data-bvb="8" class="event03">A2s</td>
-								</tr>
-								<tr>
-									<td id="cell_KA" data-bvb="10" class="event01">AKo</td>
-									<td id="cell_KK" data-bvb="10" class="event01">KK</td>
-									<td id="cell_KQ" data-bvb="9" class="event02">KQs</td>
-									<td id="cell_KJ" data-bvb="9" class="event02">KJs</td>
-									<td id="cell_KT" data-bvb="9" class="event02">KTs</td>
-									<td id="cell_K9" data-bvb="8" class="event03">K9s</td>
-									<td id="cell_K8" data-bvb="8" class="event03">K8s</td>
-									<td id="cell_K7" data-bvb="8" class="event03">K7s</td>
-									<td id="cell_K6" data-bvb="7" class="event04">K6s</td>
-									<td id="cell_K5" data-bvb="7" class="event04">K5s</td>
-									<td id="cell_K4" data-bvb="6" class="event05">K4s</td>
-									<td id="cell_K3" data-bvb="6" class="event05">K3s</td>
-									<td id="cell_K2" data-bvb="6" class="event05">K2s</td>
-								</tr>
-								<tr>
-									<td id="cell_QA" data-bvb="9" class="event02">AQo</td>
-									<td id="cell_QK" data-bvb="8" class="event03">KQo</td>
-									<td id="cell_QQ" data-bvb="10" class="event01">QQ</td>
-									<td id="cell_QJ" data-bvb="8" class="event03">QJs</td>
-									<td id="cell_QT" data-bvb="8" class="event03">QTs</td>
-									<td id="cell_Q9" data-bvb="7" class="event04">Q9s</td>
-									<td id="cell_Q8" data-bvb="7" class="event04">Q8s</td>
-									<td id="cell_Q7" data-bvb="6" class="event05">Q7s</td>
-									<td id="cell_Q6" data-bvb="6" class="event05">Q6s</td>
-									<td id="cell_Q5" data-bvb="6" class="event05">Q5s</td>
-									<td id="cell_Q4" data-bvb="6" class="event05">Q4s</td>
-									<td id="cell_Q3" data-bvb="6" class="event05">Q3s</td>
-									<td id="cell_Q2" data-bvb="5" class="event06">Q2s</td>
-								</tr>
-								<tr>
-									<td id="cell_JA" data-bvb="9" class="event02">AJo</td>
-									<td id="cell_JK" data-bvb="8" class="event03">KJo</td>
-									<td id="cell_JQ" data-bvb="7" class="event04">QJo</td>
-									<td id="cell_JJ" data-bvb="10" class="event01">JJ</td>
-									<td id="cell_JT" data-bvb="8" class="event03">JTs</td>
-									<td id="cell_J9" data-bvb="7" class="event04">J9s</td>
-									<td id="cell_J8" data-bvb="6" class="event05">J8s</td>
-									<td id="cell_J7" data-bvb="6" class="event05">J7s</td>
-									<td id="cell_J6" data-bvb="6" class="event05">J6s</td>
-									<td id="cell_J5" data-bvb="5" class="event06">J5s</td>
-									<td id="cell_J4" data-bvb="5" class="event06">J4s</td>
-									<td id="cell_J3" data-bvb="5" class="event06">J3s</td>
-									<td id="cell_J2" data-bvb="4" class="event07">J2s</td>
-								</tr>
-								<tr>
-									<td id="cell_TA" data-bvb="9" class="event02">ATo</td>
-									<td id="cell_TK" data-bvb="8" class="event03">KTo</td>
-									<td id="cell_TQ" data-bvb="7" class="event04">QTo</td>
-									<td id="cell_TJ" data-bvb="6" class="event05">JTo</td>
-									<td id="cell_TT" data-bvb="10" class="event01">TT</td>
-									<td id="cell_T9" data-bvb="6" class="event05">T9s</td>
-									<td id="cell_T8" data-bvb="6" class="event05">T8s</td>
-									<td id="cell_T7" data-bvb="5" class="event06">T7s</td>
-									<td id="cell_T6" data-bvb="5" class="event06">T6s</td>
-									<td id="cell_T5" data-bvb="4" class="event07">T5s</td>
-									<td id="cell_T4" data-bvb="4" class="event07">T4s</td>
-									<td id="cell_T3" data-bvb="4" class="event07">T3s</td>
-									<td id="cell_T2" data-bvb="4" class="event07">T2s</td>
-								</tr>
-								<tr>
-									<td id="cell_9A" data-bvb="8" class="event03">A9o</td>
-									<td id="cell_9K" data-bvb="7" class="event04">K9o</td>
-									<td id="cell_9Q" data-bvb="6" class="event05">Q9o</td>
-									<td id="cell_9J" data-bvb="6" class="event05">J9o</td>
-									<td id="cell_9T" data-bvb="6" class="event05">T9o</td>
-									<td id="cell_99" data-bvb="10" class="event01">99</td>
-									<td id="cell_98" data-bvb="6" class="event05">98s</td>
-									<td id="cell_97" data-bvb="5" class="event06">97s</td>
-									<td id="cell_96" data-bvb="4" class="event07">96s</td>
-									<td id="cell_95" data-bvb="4" class="event07">95s</td>
-									<td id="cell_94" data-bvb="4" class="event07">94s</td>
-									<td id="cell_93" data-bvb="3" class="event08">93s</td>
-									<td id="cell_92" data-bvb="3" class="event08">92s</td>
-								</tr>
-								<tr>
-									<td id="cell_8A" data-bvb="8" class="event03">A8o</td>
-									<td id="cell_8K" data-bvb="7" class="event04">K8o</td>
-									<td id="cell_8Q" data-bvb="6" class="event05">Q8o</td>
-									<td id="cell_8J" data-bvb="6" class="event05">J8o</td>
-									<td id="cell_8T" data-bvb="5" class="event06">T8o</td>
-									<td id="cell_89" data-bvb="5" class="event06">98o</td>
-									<td id="cell_88" data-bvb="10" class="event01">88</td>
-									<td id="cell_87" data-bvb="5" class="event06">87s</td>
-									<td id="cell_86" data-bvb="4" class="event07">86s</td>
-									<td id="cell_85" data-bvb="4" class="event07">85s</td>
-									<td id="cell_84" data-bvb="3" class="event08">84s</td>
-									<td id="cell_83" data-bvb="3" class="event08">83s</td>
-									<td id="cell_82" data-bvb="2" class="event09">82s</td>
-								</tr>
-								<tr>
-									<td id="cell_7A" data-bvb="8" class="event03">A7o</td>
-									<td id="cell_7K" data-bvb="6" class="event05">K7o</td>
-									<td id="cell_7Q" data-bvb="5" class="event06">Q7o</td>
-									<td id="cell_7J" data-bvb="5" class="event06">J7o</td>
-									<td id="cell_7T" data-bvb="4" class="event07">T7o</td>
-									<td id="cell_79" data-bvb="4" class="event07">97o</td>
-									<td id="cell_78" data-bvb="4" class="event07">87o</td>
-									<td id="cell_77" data-bvb="10" class="event01">77</td>
-									<td id="cell_76" data-bvb="4" class="event07">76s</td>
-									<td id="cell_75" data-bvb="3" class="event08">75s</td>
-									<td id="cell_74" data-bvb="3" class="event08">74s</td>
-									<td id="cell_73" data-bvb="2" class="event09">73s</td>
-									<td id="cell_72" data-bvb="1" class="event10">72s</td>
-								</tr>
-								<tr>
-									<td id="cell_6A" data-bvb="8" class="event03">A6o</td>
-									<td id="cell_6K" data-bvb="6" class="event05">K6o</td>
-									<td id="cell_6Q" data-bvb="5" class="event06">Q6o</td>
-									<td id="cell_6J" data-bvb="4" class="event07">J6o</td>
-									<td id="cell_6T" data-bvb="4" class="event07">T6o</td>
-									<td id="cell_69" data-bvb="4" class="event07">96o</td>
-									<td id="cell_68" data-bvb="3" class="event08">86o</td>
-									<td id="cell_67" data-bvb="3" class="event08">76o</td>
-									<td id="cell_66" data-bvb="9" class="event02">66</td>
-									<td id="cell_65" data-bvb="3" class="event08">65s</td>
-									<td id="cell_64" data-bvb="3" class="event08">64s</td>
-									<td id="cell_63" data-bvb="2" class="event09">63s</td>
-									<td id="cell_62" data-bvb="1" class="event10">62s</td>
-								</tr>
-								<tr>
-									<td id="cell_5A" data-bvb="8" class="event03">A5o</td>
-									<td id="cell_5K" data-bvb="6" class="event05">K5o</td>
-									<td id="cell_5Q" data-bvb="5" class="event06">Q5o</td>
-									<td id="cell_5J" data-bvb="4" class="event07">J5o</td>
-									<td id="cell_5T" data-bvb="4" class="event07">T5o</td>
-									<td id="cell_59" data-bvb="3" class="event08">95o</td>
-									<td id="cell_58" data-bvb="3" class="event08">85o</td>
-									<td id="cell_57" data-bvb="2" class="event09">75o</td>
-									<td id="cell_56" data-bvb="2" class="event09">65o</td>
-									<td id="cell_55" data-bvb="8" class="event03">55</td>
-									<td id="cell_54" data-bvb="3" class="event08">54s</td>
-									<td id="cell_53" data-bvb="2" class="event09">53s</td>
-									<td id="cell_52" data-bvb="1" class="event10">52s</td>
-								</tr>
-								<tr>
-									<td id="cell_4A" data-bvb="7" class="event04">A4o</td>
-									<td id="cell_4K" data-bvb="6" class="event05">K4o</td>
-									<td id="cell_4Q" data-bvb="5" class="event06">Q4o</td>
-									<td id="cell_4J" data-bvb="4" class="event07">J4o</td>
-									<td id="cell_4T" data-bvb="3" class="event08">T4o</td>
-									<td id="cell_49" data-bvb="3" class="event08">94o</td>
-									<td id="cell_48" data-bvb="2" class="event09">84o</td>
-									<td id="cell_47" data-bvb="1" class="event10">74o</td>
-									<td id="cell_46" data-bvb="1" class="event10">64o</td>
-									<td id="cell_45" data-bvb="1" class="event10">54o</td>
-									<td id="cell_44" data-bvb="7" class="event04">44</td>
-									<td id="cell_43" data-bvb="2" class="event09">43s</td>
-									<td id="cell_42" data-bvb="1" class="event10">42s</td>
-								</tr>
-								<tr>
-									<td id="cell_3A" data-bvb="7" class="event04">A3o</td>
-									<td id="cell_3K" data-bvb="6" class="event05">K3o</td>
-									<td id="cell_3Q" data-bvb="5" class="event06">Q3o</td>
-									<td id="cell_3J" data-bvb="4" class="event07">J3o</td>
-									<td id="cell_3T" data-bvb="3" class="event08">T3o</td>
-									<td id="cell_39" data-bvb="2" class="event09">93o</td>
-									<td id="cell_38" data-bvb="1" class="event10">83o</td>
-									<td id="cell_37" data-bvb="1" class="event10">73o</td>
-									<td id="cell_36" data-bvb="1" class="event10">63o</td>
-									<td id="cell_35" data-bvb="1" class="event10">53o</td>
-									<td id="cell_34" data-bvb="1" class="event10">43o</td>
-									<td id="cell_33" data-bvb="6" class="event05">33</td>
-									<td id="cell_32" data-bvb="1" class="event10">32s</td>
-								</tr>
-								<tr>
-									<td id="cell_2A" data-bvb="6" class="event05">A2o</td>
-									<td id="cell_2K" data-bvb="6" class="event05">K2o</td>
-									<td id="cell_2Q" data-bvb="4" class="event07">Q2o</td>
-									<td id="cell_2J" data-bvb="4" class="event07">J2o</td>
-									<td id="cell_2T" data-bvb="3" class="event08">T2o</td>
-									<td id="cell_29" data-bvb="1" class="event10">92o</td>
-									<td id="cell_28" data-bvb="1" class="event10">82o</td>
-									<td id="cell_27" data-bvb="1" class="event10">72o</td>
-									<td id="cell_26" data-bvb="1" class="event10">62o</td>
-									<td id="cell_25" data-bvb="1" class="event10">52o</td>
-									<td id="cell_24" data-bvb="1" class="event10">42o</td>
-									<td id="cell_23" data-bvb="1" class="event10">32o</td>
-									<td id="cell_22" data-bvb="6" class="event05">22</td>
-								</tr>
-              </table>
-              <div class="switch-btn">
-                <div class="btn-text">Call</div>
-                <label class="switch">
-                  <input type="checkbox" id="mySwitch" unchecked>
-                  <span class="slider round"></span>
-                </label>
-                <div class="btn-text">Push</div>
-              </div>
-            </div>
-          </div>						
-        </div>
-       <div id="equity-list">
-         <div id="equity-list">
-            <div class="call-hands hidden">
-              <div class="hand" id="chs1">AA</div><div class="hand" id="chs2">KK</div><div class="hand" id="chs3">AK</div><div class="hand" id="chs4">QQ</div><div class="hand" id="chs5">AKo</div><div class="hand" id="chs6">JJ</div><div class="hand" id="chs7">TT</div><div class="hand" id="chs8">AQs</div><div class="hand" id="chs9">99</div><div class="hand" id="chs10">AQo</div><div class="hand" id="chs11">88</div><div class="hand" id="chs12">AJs</div><div class="hand" id="chs13">77</div><div class="hand" id="chs14">ATs</div><div class="hand" id="chs15">AJo</div><div class="hand" id="chs16">66</div><div class="hand" id="chs17">KQs</div><div class="hand" id="chs18">ATo</div><div class="hand" id="chs19">A9s</div><div class="hand" id="chs20">KJs</div><div class="hand" id="chs21">A8s</div><div class="hand" id="chs22">55</div><div class="hand" id="chs23">KQo</div><div class="hand" id="chs24">A9o</div><div class="hand" id="chs25">A7s</div><div class="hand" id="chs26">A8o</div><div class="hand" id="chs27">KTs</div><div class="hand" id="chs28">A6s</div><div class="hand" id="chs29">44</div><div class="hand" id="chs30">A5s</div><div class="hand" id="chs31">A7o</div><div class="hand" id="chs32">QJs</div><div class="hand" id="chs33">A4s</div><div class="hand" id="chs34">KJo</div><div class="hand" id="chs35">A3s</div><div class="hand" id="chs36">A2s</div><div class="hand" id="chs37">K9s</div><div class="hand" id="chs38">KTo</div><div class="hand" id="chs39">33</div><div class="hand" id="chs40">QTs</div><div class="hand" id="chs41">A5o</div><div class="hand" id="chs42">A6o</div><div class="hand" id="chs43">QJo</div><div class="hand" id="chs44">K8s</div><div class="hand" id="chs45">JTs</div><div class="hand" id="chs46">A4o</div><div class="hand" id="chs47">K9o</div><div class="hand" id="chs48">A3o</div><div class="hand" id="chs49">Q9s</div><div class="hand" id="chs50">A2o</div><div class="hand" id="chs51">K7s</div><div class="hand" id="chs52">QTo</div><div class="hand" id="chs53">22</div><div class="hand" id="chs54">K6s</div><div class="hand" id="chs55">K8o</div><div class="hand" id="chs56">Q8s</div><div class="hand" id="chs57">K5s</div><div class="hand" id="chs58">J9s</div><div class="hand" id="chs59">K7o</div><div class="hand" id="chs60">JTo</div><div class="hand" id="chs61">Q9o</div><div class="hand" id="chs62">K4s</div><div class="hand" id="chs63">K3s</div><div class="hand" id="chs64">T9s</div><div class="hand" id="chs65">K6o</div><div class="hand" id="chs66">Q7s</div><div class="hand" id="chs67">J8s</div><div class="hand" id="chs68">K2s</div><div class="hand" id="chs69">Q8o</div><div class="hand" id="chs70">Q6s</div><div class="hand" id="chs71">K5o</div><div class="hand" id="chs72">J9o</div><div class="hand" id="chs73">T8s</div><div class="hand" id="chs74">Q5s</div><div class="hand" id="chs75">K4o</div><div class="hand" id="chs76">J7s</div><div class="hand" id="chs77">K3o</div><div class="hand" id="chs78">Q4s</div><div class="hand" id="chs79">T9o</div><div class="hand" id="chs80">98s</div><div class="hand" id="chs81">Q7o</div><div class="hand" id="chs82">Q3s</div><div class="hand" id="chs83">K2o</div><div class="hand" id="chs84">J3s</div><div class="hand" id="chs85">J8o</div><div class="hand" id="chs86">Q6o</div><div class="hand" id="chs87">T7s</div><div class="hand" id="chs88">Q2s</div><div class="hand" id="chs89">J6s</div><div class="hand" id="chs90">Q5o</div><div class="hand" id="chs91">J5s</div><div class="hand" id="chs92">97s</div><div class="hand" id="chs93">87s</div><div class="hand" id="chs94">T8o</div><div class="hand" id="chs95">J7o</div><div class="hand" id="chs96">Q4o</div><div class="hand" id="chs97">T6s</div><div class="hand" id="chs98">J4s</div><div class="hand" id="chs99">Q3o</div><div class="hand" id="chs100">98o</div><div class="hand" id="chs101">96s</div><div class="hand" id="chs102">86s</div><div class="hand" id="chs103">T7o</div><div class="hand" id="chs104">J6o</div><div class="hand" id="chs105">Q2o</div><div class="hand" id="chs106">J2s</div><div class="hand" id="chs107">T5s</div><div class="hand" id="chs108">76s</div><div class="hand" id="chs109">J5o</div><div class="hand" id="chs110">T4s</div><div class="hand" id="chs111">97o</div><div class="hand" id="chs112">J4o</div><div class="hand" id="chs113">95s</div><div class="hand" id="chs114">T3s</div><div class="hand" id="chs115">65s</div><div class="hand" id="chs116">87o</div><div class="hand" id="chs117">85s</div><div class="hand" id="chs118">75s</div><div class="hand" id="chs119">54s</div><div class="hand" id="chs120">T6o</div><div class="hand" id="chs121">J3o</div><div class="hand" id="chs122">T2s</div><div class="hand" id="chs123">94s</div><div class="hand" id="chs124">96o</div><div class="hand" id="chs125">64s</div><div class="hand" id="chs126">84s</div><div class="hand" id="chs127">74s</div><div class="hand" id="chs128">86o</div><div class="hand" id="chs129">76o</div><div class="hand" id="chs130">53s</div><div class="hand" id="chs131">J2o</div><div class="hand" id="chs132">T5o</div><div class="hand" id="chs133">T4o</div><div class="hand" id="chs134">93s</div><div class="hand" id="chs135">95o</div><div class="hand" id="chs136">92s</div><div class="hand" id="chs137">43s</div><div class="hand" id="chs138">63s</div><div class="hand" id="chs139">83s</div><div class="hand" id="chs140">65o</div><div class="hand" id="chs141">73s</div><div class="hand" id="chs142">85o</div><div class="hand" id="chs143">75o</div><div class="hand" id="chs144">82s</div><div class="hand" id="chs145">52s</div><div class="hand" id="chs146">T3o</div><div class="hand" id="chs147">2T</div><div class="hand" id="chs148">94o</div><div class="hand" id="chs149">54o</div><div class="hand" id="chs150">42s</div><div class="hand" id="chs151">62s</div><div class="hand" id="chs152">72s</div><div class="hand" id="chs153">64o</div><div class="hand" id="chs154">32s</div><div class="hand" id="chs155">84o</div><div class="hand" id="chs156">74o</div><div class="hand" id="chs157">53o</div><div class="hand" id="chs158">43o</div><div class="hand" id="chs159">93o</div><div class="hand" id="chs160">92o</div><div class="hand" id="chs161">63o</div><div class="hand" id="chs162">83o</div><div class="hand" id="chs163">82o</div><div class="hand" id="chs164">73o</div><div class="hand" id="chs165">52o</div><div class="hand" id="chs166">42o</div><div class="hand" id="chs167">72o</div><div class="hand" id="chs168">62o</div><div class="hand" id="chs169">32o</div>
-            </div> 
-            <div class="push-hands hidden">
-              <div class="hand" id="phs1">AA</div><div class="hand" id="phs2">AKs</div><div class="hand" id="phs3">AKo</div><div class="hand" id="phs4">KK</div><div class="hand" id="phs5">A4s</div><div class="hand" id="phs6">A5s</div><div class="hand" id="phs7">QQ</div><div class="hand" id="phs8">AQs</div><div class="hand" id="phs9">JJ</div><div class="hand" id="phs10">TT</div><div class="hand" id="phs11">AJs</div><div class="hand" id="phs12">KQs</div><div class="hand" id="phs13">AQo</div><div class="hand" id="phs14">ATs</div><div class="hand" id="phs15">KJs</div><div class="hand" id="phs16">QJs</div><div class="hand" id="phs17">KTs</div><div class="hand" id="phs18">99</div><div class="hand" id="phs19">QTs</div><div class="hand" id="phs20">88</div><div class="hand" id="phs21">AJo</div><div class="hand" id="phs22">JTs</div><div class="hand" id="phs23">66</div><div class="hand" id="phs24">77</div><div class="hand" id="phs25">55</div><div class="hand" id="phs26">A9s</div><div class="hand" id="phs27">KQo</div><div class="hand" id="phs28">K9s</div><div class="hand" id="phs29">44</div><div class="hand" id="phs30">T9s</div><div class="hand" id="phs31">A8s</div><div class="hand" id="phs32">J9s</div><div class="hand" id="phs33">Q9s</div><div class="hand" id="phs34">KJo</div><div class="hand" id="phs35">33</div><div class="hand" id="phs36">ATo</div><div class="hand" id="phs37">A7s</div><div class="hand" id="phs38">K8s</div><div class="hand" id="phs39">A3s</div><div class="hand" id="phs40">T8s</div><div class="hand" id="phs41">98s</div><div class="hand" id="phs42">22</div><div class="hand" id="phs43">A6s</div><div class="hand" id="phs44">Q8s</div><div class="hand" id="phs45">QJo</div><div class="hand" id="phs46">J8s</div><div class="hand" id="phs47">K7s</div><div class="hand" id="phs48">A2s</div><div class="hand" id="phs49">A9o</div><div class="hand" id="phs50">A8o</div><div class="hand" id="phs51">87s</div><div class="hand" id="phs52">A7o</div><div class="hand" id="phs53">QTo</div><div class="hand" id="phs54">JTo</div><div class="hand" id="phs55">KTo</div><div class="hand" id="phs56">A5o</div><div class="hand" id="phs57">K6s</div><div class="hand" id="phs58">T7s</div><div class="hand" id="phs59">97s</div><div class="hand" id="phs60">76s</div><div class="hand" id="phs61">A4o</div><div class="hand" id="phs62">A6o</div><div class="hand" id="phs63">K5s</div><div class="hand" id="phs64">J7s</div><div class="hand" id="phs65">86s</div><div class="hand" id="phs66">A3o</div><div class="hand" id="phs67">A2o</div><div class="hand" id="phs68">65s</div><div class="hand" id="phs69">Q6s</div><div class="hand" id="phs70">T9o</div><div class="hand" id="phs71">96s</div><div class="hand" id="phs72">Q7s</div><div class="hand" id="phs73">K4s</div><div class="hand" id="phs74">K9o</div><div class="hand" id="phs75">J9o</div><div class="hand" id="phs76">75s</div><div class="hand" id="phs77">54s</div><div class="hand" id="phs78">Q9o</div><div class="hand" id="phs79">T6s</div><div class="hand" id="phs80">K3s</div><div class="hand" id="phs81">Q5s</div><div class="hand" id="phs82">98o</div><div class="hand" id="phs83">K2s</div><div class="hand" id="phs84">J6s</div><div class="hand" id="phs85">85s</div><div class="hand" id="phs86">K8o</div><div class="hand" id="phs87">K7o</div><div class="hand" id="phs88">T8o</div><div class="hand" id="phs89">64s</div><div class="hand" id="phs90">K6o</div><div class="hand" id="phs91">Q4s</div><div class="hand" id="phs92">J5s</div><div class="hand" id="phs93">K5o</div><div class="hand" id="phs94">Q3s</div><div class="hand" id="phs95">J4s</div><div class="hand" id="phs96">95s</div><div class="hand" id="phs97">87o</div><div class="hand" id="phs98">Q8o</div><div class="hand" id="phs99">K4o</div><div class="hand" id="phs100">J8o</div><div class="hand" id="phs101">K3o</div><div class="hand" id="phs102">K2o</div><div class="hand" id="phs103">Q2s</div><div class="hand" id="phs104">74s</div><div class="hand" id="phs105">J3s</div><div class="hand" id="phs106">T5s</div><div class="hand" id="phs107">T4s</div><div class="hand" id="phs108">97o</div><div class="hand" id="phs109">Q7o</div><div class="hand" id="phs110">Q6o</div><div class="hand" id="phs111">76o</div><div class="hand" id="phs112">Q5o</div><div class="hand" id="phs113">T7o</div><div class="hand" id="phs114">J7o</div><div class="hand" id="phs115">J2s</div><div class="hand" id="phs116">Q4o</div><div class="hand" id="phs117">84s</div><div class="hand" id="phs118">Q3o</div><div class="hand" id="phs119">T3s</div><div class="hand" id="phs120">86o</div><div class="hand" id="phs121">J6o</div><div class="hand" id="phs169">Q2o</div><div class="hand" id="phs122">J5o</div><div class="hand" id="phs123">T2s</div><div class="hand" id="phs124">94s</div><div class="hand" id="phs125">J4o</div><div class="hand" id="phs126">T6o</div><div class="hand" id="phs127">J3o</div><div class="hand" id="phs128">96o</div><div class="hand" id="phs129">J2o</div><div class="hand" id="phs130">93s</div><div class="hand" id="phs131">T5o</div><div class="hand" id="phs132">T4o</div><div class="hand" id="phs133">95o</div><div class="hand" id="phs134">T3o</div><div class="hand" id="phs135">92s</div><div class="hand" id="phs136">T2o</div><div class="hand" id="phs137">85o</div><div class="hand" id="phs138">83s</div><div class="hand" id="phs139">75o</div><div class="hand" id="phs140">82s</div><div class="hand" id="phs141">94o</div><div class="hand" id="phs142">93o</div><div class="hand" id="phs143">65o</div><div class="hand" id="phs144">73s</div><div class="hand" id="phs145">53s</div><div class="hand" id="phs146">63s</div><div class="hand" id="phs147">84o</div><div class="hand" id="phs148">43s</div><div class="hand" id="phs149">74o</div><div class="hand" id="phs150">54o</div><div class="hand" id="phs151">72s</div><div class="hand" id="phs152">64o</div><div class="hand" id="phs153">52s</div><div class="hand" id="phs154">92o</div><div class="hand" id="phs155">62s</div><div class="hand" id="phs156">83o</div><div class="hand" id="phs157">42s</div><div class="hand" id="phs158">82o</div><div class="hand" id="phs159">73o</div><div class="hand" id="phs160">53o</div><div class="hand" id="phs161">63o</div><div class="hand" id="phs162">32s</div><div class="hand" id="phs163">43o</div><div class="hand" id="phs164">72o</div><div class="hand" id="phs165">52o</div><div class="hand" id="phs166">62o</div><div class="hand" id="phs167">42o</div><div class="hand" id="phs168">32o</div>
-            </div>
-       </div>
+					<div class="game-table" id="game-table-1">
+						<table id="grid-1" class="grid" data-range="35">
+							<tr>
+								<td id="cell_AA" data-bvb="10" class="event01">AA</td>
+								<td id="cell_AK" data-bvb="10" class="event01">AKs</td>
+								<td id="cell_AQ" data-bvb="10" class="event01">AQs</td>
+								<td id="cell_AJ" data-bvb="9" class="event02">AJs</td>
+								<td id="cell_AT" data-bvb="9" class="event02">ATs</td>
+								<td id="cell_A9" data-bvb="9" class="event02">A9s</td>
+								<td id="cell_A8" data-bvb="9" class="event02">A8s</td>
+								<td id="cell_A7" data-bvb="8" class="event03">A7s</td>
+								<td id="cell_A6" data-bvb="8" class="event03">A6s</td>
+								<td id="cell_A5" data-bvb="8" class="event03">A5s</td>
+								<td id="cell_A4" data-bvb="8" class="event03">A4s</td>
+								<td id="cell_A3" data-bvb="8" class="event03">A3s</td>
+								<td id="cell_A2" data-bvb="8" class="event03">A2s</td>
+							</tr>
+							<tr>
+								<td id="cell_KA" data-bvb="10" class="event01">AKo</td>
+								<td id="cell_KK" data-bvb="10" class="event01">KK</td>
+								<td id="cell_KQ" data-bvb="9" class="event02">KQs</td>
+								<td id="cell_KJ" data-bvb="9" class="event02">KJs</td>
+								<td id="cell_KT" data-bvb="9" class="event02">KTs</td>
+								<td id="cell_K9" data-bvb="8" class="event03">K9s</td>
+								<td id="cell_K8" data-bvb="8" class="event03">K8s</td>
+								<td id="cell_K7" data-bvb="8" class="event03">K7s</td>
+								<td id="cell_K6" data-bvb="7" class="event04">K6s</td>
+								<td id="cell_K5" data-bvb="7" class="event04">K5s</td>
+								<td id="cell_K4" data-bvb="6" class="event05">K4s</td>
+								<td id="cell_K3" data-bvb="6" class="event05">K3s</td>
+								<td id="cell_K2" data-bvb="6" class="event05">K2s</td>
+							</tr>
+							<tr>
+								<td id="cell_QA" data-bvb="9" class="event02">AQo</td>
+								<td id="cell_QK" data-bvb="8" class="event03">KQo</td>
+								<td id="cell_QQ" data-bvb="10" class="event01">QQ</td>
+								<td id="cell_QJ" data-bvb="8" class="event03">QJs</td>
+								<td id="cell_QT" data-bvb="8" class="event03">QTs</td>
+								<td id="cell_Q9" data-bvb="7" class="event04">Q9s</td>
+								<td id="cell_Q8" data-bvb="7" class="event04">Q8s</td>
+								<td id="cell_Q7" data-bvb="6" class="event05">Q7s</td>
+								<td id="cell_Q6" data-bvb="6" class="event05">Q6s</td>
+								<td id="cell_Q5" data-bvb="6" class="event05">Q5s</td>
+								<td id="cell_Q4" data-bvb="6" class="event05">Q4s</td>
+								<td id="cell_Q3" data-bvb="6" class="event05">Q3s</td>
+								<td id="cell_Q2" data-bvb="5" class="event06">Q2s</td>
+							</tr>
+							<tr>
+								<td id="cell_JA" data-bvb="9" class="event02">AJo</td>
+								<td id="cell_JK" data-bvb="8" class="event03">KJo</td>
+								<td id="cell_JQ" data-bvb="7" class="event04">QJo</td>
+								<td id="cell_JJ" data-bvb="10" class="event01">JJ</td>
+								<td id="cell_JT" data-bvb="8" class="event03">JTs</td>
+								<td id="cell_J9" data-bvb="7" class="event04">J9s</td>
+								<td id="cell_J8" data-bvb="6" class="event05">J8s</td>
+								<td id="cell_J7" data-bvb="6" class="event05">J7s</td>
+								<td id="cell_J6" data-bvb="6" class="event05">J6s</td>
+								<td id="cell_J5" data-bvb="5" class="event06">J5s</td>
+								<td id="cell_J4" data-bvb="5" class="event06">J4s</td>
+								<td id="cell_J3" data-bvb="5" class="event06">J3s</td>
+								<td id="cell_J2" data-bvb="4" class="event07">J2s</td>
+							</tr>
+							<tr>
+								<td id="cell_TA" data-bvb="9" class="event02">ATo</td>
+								<td id="cell_TK" data-bvb="8" class="event03">KTo</td>
+								<td id="cell_TQ" data-bvb="7" class="event04">QTo</td>
+								<td id="cell_TJ" data-bvb="6" class="event05">JTo</td>
+								<td id="cell_TT" data-bvb="10" class="event01">TT</td>
+								<td id="cell_T9" data-bvb="6" class="event05">T9s</td>
+								<td id="cell_T8" data-bvb="6" class="event05">T8s</td>
+								<td id="cell_T7" data-bvb="5" class="event06">T7s</td>
+								<td id="cell_T6" data-bvb="5" class="event06">T6s</td>
+								<td id="cell_T5" data-bvb="4" class="event07">T5s</td>
+								<td id="cell_T4" data-bvb="4" class="event07">T4s</td>
+								<td id="cell_T3" data-bvb="4" class="event07">T3s</td>
+								<td id="cell_T2" data-bvb="4" class="event07">T2s</td>
+							</tr>
+							<tr>
+								<td id="cell_9A" data-bvb="8" class="event03">A9o</td>
+								<td id="cell_9K" data-bvb="7" class="event04">K9o</td>
+								<td id="cell_9Q" data-bvb="6" class="event05">Q9o</td>
+								<td id="cell_9J" data-bvb="6" class="event05">J9o</td>
+								<td id="cell_9T" data-bvb="6" class="event05">T9o</td>
+								<td id="cell_99" data-bvb="10" class="event01">99</td>
+								<td id="cell_98" data-bvb="6" class="event05">98s</td>
+								<td id="cell_97" data-bvb="5" class="event06">97s</td>
+								<td id="cell_96" data-bvb="4" class="event07">96s</td>
+								<td id="cell_95" data-bvb="4" class="event07">95s</td>
+								<td id="cell_94" data-bvb="4" class="event07">94s</td>
+								<td id="cell_93" data-bvb="3" class="event08">93s</td>
+								<td id="cell_92" data-bvb="3" class="event08">92s</td>
+							</tr>
+							<tr>
+								<td id="cell_8A" data-bvb="8" class="event03">A8o</td>
+								<td id="cell_8K" data-bvb="7" class="event04">K8o</td>
+								<td id="cell_8Q" data-bvb="6" class="event05">Q8o</td>
+								<td id="cell_8J" data-bvb="6" class="event05">J8o</td>
+								<td id="cell_8T" data-bvb="5" class="event06">T8o</td>
+								<td id="cell_89" data-bvb="5" class="event06">98o</td>
+								<td id="cell_88" data-bvb="10" class="event01">88</td>
+								<td id="cell_87" data-bvb="5" class="event06">87s</td>
+								<td id="cell_86" data-bvb="4" class="event07">86s</td>
+								<td id="cell_85" data-bvb="4" class="event07">85s</td>
+								<td id="cell_84" data-bvb="3" class="event08">84s</td>
+								<td id="cell_83" data-bvb="3" class="event08">83s</td>
+								<td id="cell_82" data-bvb="2" class="event09">82s</td>
+							</tr>
+							<tr>
+								<td id="cell_7A" data-bvb="8" class="event03">A7o</td>
+								<td id="cell_7K" data-bvb="6" class="event05">K7o</td>
+								<td id="cell_7Q" data-bvb="5" class="event06">Q7o</td>
+								<td id="cell_7J" data-bvb="5" class="event06">J7o</td>
+								<td id="cell_7T" data-bvb="4" class="event07">T7o</td>
+								<td id="cell_79" data-bvb="4" class="event07">97o</td>
+								<td id="cell_78" data-bvb="4" class="event07">87o</td>
+								<td id="cell_77" data-bvb="10" class="event01">77</td>
+								<td id="cell_76" data-bvb="4" class="event07">76s</td>
+								<td id="cell_75" data-bvb="3" class="event08">75s</td>
+								<td id="cell_74" data-bvb="3" class="event08">74s</td>
+								<td id="cell_73" data-bvb="2" class="event09">73s</td>
+								<td id="cell_72" data-bvb="1" class="event10">72s</td>
+							</tr>
+							<tr>
+								<td id="cell_6A" data-bvb="8" class="event03">A6o</td>
+								<td id="cell_6K" data-bvb="6" class="event05">K6o</td>
+								<td id="cell_6Q" data-bvb="5" class="event06">Q6o</td>
+								<td id="cell_6J" data-bvb="4" class="event07">J6o</td>
+								<td id="cell_6T" data-bvb="4" class="event07">T6o</td>
+								<td id="cell_69" data-bvb="4" class="event07">96o</td>
+								<td id="cell_68" data-bvb="3" class="event08">86o</td>
+								<td id="cell_67" data-bvb="3" class="event08">76o</td>
+								<td id="cell_66" data-bvb="9" class="event02">66</td>
+								<td id="cell_65" data-bvb="3" class="event08">65s</td>
+								<td id="cell_64" data-bvb="3" class="event08">64s</td>
+								<td id="cell_63" data-bvb="2" class="event09">63s</td>
+								<td id="cell_62" data-bvb="1" class="event10">62s</td>
+							</tr>
+							<tr>
+								<td id="cell_5A" data-bvb="8" class="event03">A5o</td>
+								<td id="cell_5K" data-bvb="6" class="event05">K5o</td>
+								<td id="cell_5Q" data-bvb="5" class="event06">Q5o</td>
+								<td id="cell_5J" data-bvb="4" class="event07">J5o</td>
+								<td id="cell_5T" data-bvb="4" class="event07">T5o</td>
+								<td id="cell_59" data-bvb="3" class="event08">95o</td>
+								<td id="cell_58" data-bvb="3" class="event08">85o</td>
+								<td id="cell_57" data-bvb="2" class="event09">75o</td>
+								<td id="cell_56" data-bvb="2" class="event09">65o</td>
+								<td id="cell_55" data-bvb="8" class="event03">55</td>
+								<td id="cell_54" data-bvb="3" class="event08">54s</td>
+								<td id="cell_53" data-bvb="2" class="event09">53s</td>
+								<td id="cell_52" data-bvb="1" class="event10">52s</td>
+							</tr>
+							<tr>
+								<td id="cell_4A" data-bvb="7" class="event04">A4o</td>
+								<td id="cell_4K" data-bvb="6" class="event05">K4o</td>
+								<td id="cell_4Q" data-bvb="5" class="event06">Q4o</td>
+								<td id="cell_4J" data-bvb="4" class="event07">J4o</td>
+								<td id="cell_4T" data-bvb="3" class="event08">T4o</td>
+								<td id="cell_49" data-bvb="3" class="event08">94o</td>
+								<td id="cell_48" data-bvb="2" class="event09">84o</td>
+								<td id="cell_47" data-bvb="1" class="event10">74o</td>
+								<td id="cell_46" data-bvb="1" class="event10">64o</td>
+								<td id="cell_45" data-bvb="1" class="event10">54o</td>
+								<td id="cell_44" data-bvb="7" class="event04">44</td>
+								<td id="cell_43" data-bvb="2" class="event09">43s</td>
+								<td id="cell_42" data-bvb="1" class="event10">42s</td>
+							</tr>
+							<tr>
+								<td id="cell_3A" data-bvb="7" class="event04">A3o</td>
+								<td id="cell_3K" data-bvb="6" class="event05">K3o</td>
+								<td id="cell_3Q" data-bvb="5" class="event06">Q3o</td>
+								<td id="cell_3J" data-bvb="4" class="event07">J3o</td>
+								<td id="cell_3T" data-bvb="3" class="event08">T3o</td>
+								<td id="cell_39" data-bvb="2" class="event09">93o</td>
+								<td id="cell_38" data-bvb="1" class="event10">83o</td>
+								<td id="cell_37" data-bvb="1" class="event10">73o</td>
+								<td id="cell_36" data-bvb="1" class="event10">63o</td>
+								<td id="cell_35" data-bvb="1" class="event10">53o</td>
+								<td id="cell_34" data-bvb="1" class="event10">43o</td>
+								<td id="cell_33" data-bvb="6" class="event05">33</td>
+								<td id="cell_32" data-bvb="1" class="event10">32s</td>
+							</tr>
+							<tr>
+								<td id="cell_2A" data-bvb="6" class="event05">A2o</td>
+								<td id="cell_2K" data-bvb="6" class="event05">K2o</td>
+								<td id="cell_2Q" data-bvb="4" class="event07">Q2o</td>
+								<td id="cell_2J" data-bvb="4" class="event07">J2o</td>
+								<td id="cell_2T" data-bvb="3" class="event08">T2o</td>
+								<td id="cell_29" data-bvb="1" class="event10">92o</td>
+								<td id="cell_28" data-bvb="1" class="event10">82o</td>
+								<td id="cell_27" data-bvb="1" class="event10">72o</td>
+								<td id="cell_26" data-bvb="1" class="event10">62o</td>
+								<td id="cell_25" data-bvb="1" class="event10">52o</td>
+								<td id="cell_24" data-bvb="1" class="event10">42o</td>
+								<td id="cell_23" data-bvb="1" class="event10">32o</td>
+								<td id="cell_22" data-bvb="6" class="event05">22</td>
+							</tr>
+						</table>
+						<div class="switch-btn">
+							<div class="btn-text">Call</div>
+							<label class="switch">
+								<input type="checkbox" id="mySwitch" checked />
+								<span class="slider round"></span>
+							</label>
+							<div class="btn-text">Push</div>
+						</div>
+					</div>
+				</div>
+				<div id="equity-list">
+					<div class="call-hands hidden">
+						<div class="hand selected" id="chs1">AA</div>
+						<div class="hand" id="chs2">KK</div>
+						<div class="hand" id="chs3">AK</div>
+						<div class="hand" id="chs4">QQ</div>
+						<div class="hand" id="chs5">AKo</div>
+						<div class="hand" id="chs6">JJ</div>
+						<div class="hand" id="chs7">TT</div>
+						<div class="hand" id="chs8">AQs</div>
+						<div class="hand" id="chs9">99</div>
+						<div class="hand" id="chs10">AQo</div>
+						<div class="hand" id="chs11">88</div>
+						<div class="hand" id="chs12">AJs</div>
+						<div class="hand" id="chs13">77</div>
+						<div class="hand" id="chs14">ATs</div>
+						<div class="hand" id="chs15">AJo</div>
+						<div class="hand" id="chs16">66</div>
+						<div class="hand" id="chs17">KQs</div>
+						<div class="hand" id="chs18">ATo</div>
+						<div class="hand" id="chs19">A9s</div>
+						<div class="hand" id="chs20">KJs</div>
+						<div class="hand" id="chs21">A8s</div>
+						<div class="hand" id="chs22">55</div>
+						<div class="hand" id="chs23">KQo</div>
+						<div class="hand" id="chs24">A9o</div>
+						<div class="hand" id="chs25">A7s</div>
+						<div class="hand" id="chs26">A8o</div>
+						<div class="hand" id="chs27">KTs</div>
+						<div class="hand" id="chs28">A6s</div>
+						<div class="hand" id="chs29">44</div>
+						<div class="hand" id="chs30">A5s</div>
+						<div class="hand" id="chs31">A7o</div>
+						<div class="hand" id="chs32">QJs</div>
+						<div class="hand" id="chs33">A4s</div>
+						<div class="hand" id="chs34">KJo</div>
+						<div class="hand" id="chs35">A3s</div>
+						<div class="hand" id="chs36">A2s</div>
+						<div class="hand" id="chs37">K9s</div>
+						<div class="hand" id="chs38">KTo</div>
+						<div class="hand" id="chs39">33</div>
+						<div class="hand" id="chs40">QTs</div>
+						<div class="hand" id="chs41">A5o</div>
+						<div class="hand" id="chs42">A6o</div>
+						<div class="hand" id="chs43">QJo</div>
+						<div class="hand" id="chs44">K8s</div>
+						<div class="hand" id="chs45">JTs</div>
+						<div class="hand" id="chs46">A4o</div>
+						<div class="hand" id="chs47">K9o</div>
+						<div class="hand" id="chs48">A3o</div>
+						<div class="hand" id="chs49">Q9s</div>
+						<div class="hand" id="chs50">A2o</div>
+						<div class="hand" id="chs51">K7s</div>
+						<div class="hand" id="chs52">QTo</div>
+						<div class="hand" id="chs53">22</div>
+						<div class="hand" id="chs54">K6s</div>
+						<div class="hand" id="chs55">K8o</div>
+						<div class="hand" id="chs56">Q8s</div>
+						<div class="hand" id="chs57">K5s</div>
+						<div class="hand" id="chs58">J9s</div>
+						<div class="hand" id="chs59">K7o</div>
+						<div class="hand" id="chs60">JTo</div>
+						<div class="hand" id="chs61">Q9o</div>
+						<div class="hand" id="chs62">K4s</div>
+						<div class="hand" id="chs63">K3s</div>
+						<div class="hand" id="chs64">T9s</div>
+						<div class="hand" id="chs65">K6o</div>
+						<div class="hand" id="chs66">Q7s</div>
+						<div class="hand" id="chs67">J8s</div>
+						<div class="hand" id="chs68">K2s</div>
+						<div class="hand" id="chs69">Q8o</div>
+						<div class="hand" id="chs70">Q6s</div>
+						<div class="hand" id="chs71">K5o</div>
+						<div class="hand" id="chs72">J9o</div>
+						<div class="hand" id="chs73">T8s</div>
+						<div class="hand" id="chs74">Q5s</div>
+						<div class="hand" id="chs75">K4o</div>
+						<div class="hand" id="chs76">J7s</div>
+						<div class="hand" id="chs77">K3o</div>
+						<div class="hand" id="chs78">Q4s</div>
+						<div class="hand" id="chs79">T9o</div>
+						<div class="hand" id="chs80">98s</div>
+						<div class="hand" id="chs81">Q7o</div>
+						<div class="hand" id="chs82">Q3s</div>
+						<div class="hand" id="chs83">K2o</div>
+						<div class="hand" id="chs84">J3s</div>
+						<div class="hand" id="chs85">J8o</div>
+						<div class="hand" id="chs86">Q6o</div>
+						<div class="hand" id="chs87">T7s</div>
+						<div class="hand" id="chs88">Q2s</div>
+						<div class="hand" id="chs89">J6s</div>
+						<div class="hand" id="chs90">Q5o</div>
+						<div class="hand" id="chs91">J5s</div>
+						<div class="hand" id="chs92">97s</div>
+						<div class="hand" id="chs93">87s</div>
+						<div class="hand" id="chs94">T8o</div>
+						<div class="hand" id="chs95">J7o</div>
+						<div class="hand" id="chs96">Q4o</div>
+						<div class="hand" id="chs97">T6s</div>
+						<div class="hand" id="chs98">J4s</div>
+						<div class="hand" id="chs99">Q3o</div>
+						<div class="hand" id="chs100">98o</div>
+						<div class="hand" id="chs101">96s</div>
+						<div class="hand" id="chs102">86s</div>
+						<div class="hand" id="chs103">T7o</div>
+						<div class="hand" id="chs104">J6o</div>
+						<div class="hand" id="chs105">Q2o</div>
+						<div class="hand" id="chs106">J2s</div>
+						<div class="hand" id="chs107">T5s</div>
+						<div class="hand" id="chs108">76s</div>
+						<div class="hand" id="chs109">J5o</div>
+						<div class="hand" id="chs110">T4s</div>
+						<div class="hand" id="chs111">97o</div>
+						<div class="hand" id="chs112">J4o</div>
+						<div class="hand" id="chs113">95s</div>
+						<div class="hand" id="chs114">T3s</div>
+						<div class="hand" id="chs115">65s</div>
+						<div class="hand" id="chs116">87o</div>
+						<div class="hand" id="chs117">85s</div>
+						<div class="hand" id="chs118">75s</div>
+						<div class="hand" id="chs119">54s</div>
+						<div class="hand" id="chs120">T6o</div>
+						<div class="hand" id="chs121">J3o</div>
+						<div class="hand" id="chs122">T2s</div>
+						<div class="hand" id="chs123">94s</div>
+						<div class="hand" id="chs124">96o</div>
+						<div class="hand" id="chs125">64s</div>
+						<div class="hand" id="chs126">84s</div>
+						<div class="hand" id="chs127">74s</div>
+						<div class="hand" id="chs128">86o</div>
+						<div class="hand" id="chs129">76o</div>
+						<div class="hand" id="chs130">53s</div>
+						<div class="hand" id="chs131">J2o</div>
+						<div class="hand" id="chs132">T5o</div>
+						<div class="hand" id="chs133">T4o</div>
+						<div class="hand" id="chs134">93s</div>
+						<div class="hand" id="chs135">95o</div>
+						<div class="hand" id="chs136">92s</div>
+						<div class="hand" id="chs137">43s</div>
+						<div class="hand" id="chs138">63s</div>
+						<div class="hand" id="chs139">83s</div>
+						<div class="hand" id="chs140">65o</div>
+						<div class="hand" id="chs141">73s</div>
+						<div class="hand" id="chs142">85o</div>
+						<div class="hand" id="chs143">75o</div>
+						<div class="hand" id="chs144">82s</div>
+						<div class="hand" id="chs145">52s</div>
+						<div class="hand" id="chs146">T3o</div>
+						<div class="hand" id="chs147">T2o</div>
+						<div class="hand" id="chs148">94o</div>
+						<div class="hand" id="chs149">54o</div>
+						<div class="hand" id="chs150">42s</div>
+						<div class="hand" id="chs151">62s</div>
+						<div class="hand" id="chs152">72s</div>
+						<div class="hand" id="chs153">64o</div>
+						<div class="hand" id="chs154">32s</div>
+						<div class="hand" id="chs155">84o</div>
+						<div class="hand" id="chs156">74o</div>
+						<div class="hand" id="chs157">53o</div>
+						<div class="hand" id="chs158">43o</div>
+						<div class="hand" id="chs159">93o</div>
+						<div class="hand" id="chs160">92o</div>
+						<div class="hand" id="chs161">63o</div>
+						<div class="hand" id="chs162">83o</div>
+						<div class="hand" id="chs163">82o</div>
+						<div class="hand" id="chs164">73o</div>
+						<div class="hand" id="chs165">52o</div>
+						<div class="hand" id="chs166">42o</div>
+						<div class="hand" id="chs167">72o</div>
+						<div class="hand" id="chs168">62o</div>
+						<div class="hand" id="chs169">32o</div>
+					</div>
+					<div class="push-hands">
+						<div class="hand" id="phs1">AA</div>
+						<div class="hand" id="phs2">AKs</div>
+						<div class="hand" id="phs3">AKo</div>
+						<div class="hand" id="phs4">KK</div>
+						<div class="hand" id="phs5">A4s</div>
+						<div class="hand" id="phs6">A5s</div>
+						<div class="hand" id="phs7">QQ</div>
+						<div class="hand" id="phs8">AQs</div>
+						<div class="hand" id="phs9">JJ</div>
+						<div class="hand" id="phs10">TT</div>
+						<div class="hand" id="phs11">AJs</div>
+						<div class="hand" id="phs12">KQs</div>
+						<div class="hand" id="phs13">AQo</div>
+						<div class="hand" id="phs14">ATs</div>
+						<div class="hand" id="phs15">KJs</div>
+						<div class="hand" id="phs16">QJs</div>
+						<div class="hand" id="phs17">KTs</div>
+						<div class="hand" id="phs18">99</div>
+						<div class="hand" id="phs19">QTs</div>
+						<div class="hand" id="phs20">88</div>
+						<div class="hand" id="phs21">AJo</div>
+						<div class="hand" id="phs22">JTs</div>
+						<div class="hand" id="phs23">66</div>
+						<div class="hand" id="phs24">77</div>
+						<div class="hand" id="phs25">55</div>
+						<div class="hand" id="phs26">A9s</div>
+						<div class="hand" id="phs27">KQo</div>
+						<div class="hand" id="phs28">K9s</div>
+						<div class="hand" id="phs29">44</div>
+						<div class="hand" id="phs30">T9s</div>
+						<div class="hand" id="phs31">A8s</div>
+						<div class="hand" id="phs32">J9s</div>
+						<div class="hand" id="phs33">Q9s</div>
+						<div class="hand" id="phs34">KJo</div>
+						<div class="hand" id="phs35">33</div>
+						<div class="hand" id="phs36">ATo</div>
+						<div class="hand" id="phs37">A7s</div>
+						<div class="hand" id="phs38">K8s</div>
+						<div class="hand" id="phs39">A3s</div>
+						<div class="hand" id="phs40">T8s</div>
+						<div class="hand" id="phs41">98s</div>
+						<div class="hand" id="phs42">22</div>
+						<div class="hand" id="phs43">A6s</div>
+						<div class="hand" id="phs44">Q8s</div>
+						<div class="hand" id="phs45">QJo</div>
+						<div class="hand" id="phs46">J8s</div>
+						<div class="hand" id="phs47">K7s</div>
+						<div class="hand" id="phs48">A2s</div>
+						<div class="hand" id="phs49">A9o</div>
+						<div class="hand" id="phs50">A8o</div>
+						<div class="hand" id="phs51">87s</div>
+						<div class="hand" id="phs52">A7o</div>
+						<div class="hand" id="phs53">QTo</div>
+						<div class="hand" id="phs54">JTo</div>
+						<div class="hand" id="phs55">KTo</div>
+						<div class="hand" id="phs56">A5o</div>
+						<div class="hand" id="phs57">K6s</div>
+						<div class="hand" id="phs58">T7s</div>
+						<div class="hand" id="phs59">97s</div>
+						<div class="hand" id="phs60">76s</div>
+						<div class="hand" id="phs61">A4o</div>
+						<div class="hand" id="phs62">A6o</div>
+						<div class="hand" id="phs63">K5s</div>
+						<div class="hand" id="phs64">J7s</div>
+						<div class="hand" id="phs65">86s</div>
+						<div class="hand" id="phs66">A3o</div>
+						<div class="hand" id="phs67">A2o</div>
+						<div class="hand" id="phs68">65s</div>
+						<div class="hand" id="phs69">Q6s</div>
+						<div class="hand" id="phs70">T9o</div>
+						<div class="hand" id="phs71">96s</div>
+						<div class="hand" id="phs72">Q7s</div>
+						<div class="hand" id="phs73">K4s</div>
+						<div class="hand" id="phs74">K9o</div>
+						<div class="hand" id="phs75">J9o</div>
+						<div class="hand" id="phs76">75s</div>
+						<div class="hand" id="phs77">54s</div>
+						<div class="hand" id="phs78">Q9o</div>
+						<div class="hand" id="phs79">T6s</div>
+						<div class="hand" id="phs80">K3s</div>
+						<div class="hand" id="phs81">Q5s</div>
+						<div class="hand" id="phs82">98o</div>
+						<div class="hand" id="phs83">K2s</div>
+						<div class="hand" id="phs84">J6s</div>
+						<div class="hand" id="phs85">85s</div>
+						<div class="hand" id="phs86">K8o</div>
+						<div class="hand" id="phs87">K7o</div>
+						<div class="hand" id="phs88">T8o</div>
+						<div class="hand" id="phs89">64s</div>
+						<div class="hand" id="phs90">K6o</div>
+						<div class="hand" id="phs91">Q4s</div>
+						<div class="hand" id="phs92">J5s</div>
+						<div class="hand" id="phs93">K5o</div>
+						<div class="hand" id="phs94">Q3s</div>
+						<div class="hand" id="phs95">J4s</div>
+						<div class="hand" id="phs96">95s</div>
+						<div class="hand" id="phs97">87o</div>
+						<div class="hand" id="phs98">Q8o</div>
+						<div class="hand" id="phs99">K4o</div>
+						<div class="hand" id="phs100">J8o</div>
+						<div class="hand" id="phs101">K3o</div>
+						<div class="hand" id="phs102">K2o</div>
+						<div class="hand" id="phs103">Q2s</div>
+						<div class="hand" id="phs104">74s</div>
+						<div class="hand" id="phs105">J3s</div>
+						<div class="hand" id="phs106">T5s</div>
+						<div class="hand" id="phs107">T4s</div>
+						<div class="hand" id="phs108">97o</div>
+						<div class="hand" id="phs109">Q7o</div>
+						<div class="hand" id="phs110">Q6o</div>
+						<div class="hand" id="phs111">76o</div>
+						<div class="hand" id="phs112">Q5o</div>
+						<div class="hand" id="phs113">T7o</div>
+						<div class="hand" id="phs114">J7o</div>
+						<div class="hand" id="phs115">J2s</div>
+						<div class="hand" id="phs116">Q4o</div>
+						<div class="hand" id="phs117">84s</div>
+						<div class="hand" id="phs118">Q3o</div>
+						<div class="hand" id="phs119">T3s</div>
+						<div class="hand" id="phs120">86o</div>
+						<div class="hand" id="phs121">J6o</div>
+						<div class="hand" id="phs169">Q2o</div>
+						<div class="hand" id="phs122">J5o</div>
+						<div class="hand" id="phs123">T2s</div>
+						<div class="hand" id="phs124">94s</div>
+						<div class="hand" id="phs125">J4o</div>
+						<div class="hand" id="phs126">T6o</div>
+						<div class="hand" id="phs127">J3o</div>
+						<div class="hand" id="phs128">96o</div>
+						<div class="hand" id="phs129">J2o</div>
+						<div class="hand" id="phs130">93s</div>
+						<div class="hand" id="phs131">T5o</div>
+						<div class="hand" id="phs132">T4o</div>
+						<div class="hand" id="phs133">95o</div>
+						<div class="hand" id="phs134">T3o</div>
+						<div class="hand" id="phs135">92s</div>
+						<div class="hand" id="phs136">T2o</div>
+						<div class="hand" id="phs137">85o</div>
+						<div class="hand" id="phs138">83s</div>
+						<div class="hand" id="phs139">75o</div>
+						<div class="hand" id="phs140">82s</div>
+						<div class="hand" id="phs141">94o</div>
+						<div class="hand" id="phs142">93o</div>
+						<div class="hand" id="phs143">65o</div>
+						<div class="hand" id="phs144">73s</div>
+						<div class="hand" id="phs145">53s</div>
+						<div class="hand" id="phs146">63s</div>
+						<div class="hand" id="phs147">84o</div>
+						<div class="hand" id="phs148">43s</div>
+						<div class="hand" id="phs149">74o</div>
+						<div class="hand" id="phs150">54o</div>
+						<div class="hand" id="phs151">72s</div>
+						<div class="hand" id="phs152">64o</div>
+						<div class="hand" id="phs153">52s</div>
+						<div class="hand" id="phs154">92o</div>
+						<div class="hand" id="phs155">62s</div>
+						<div class="hand" id="phs156">83o</div>
+						<div class="hand" id="phs157">42s</div>
+						<div class="hand" id="phs158">82o</div>
+						<div class="hand" id="phs159">73o</div>
+						<div class="hand" id="phs160">53o</div>
+						<div class="hand" id="phs161">63o</div>
+						<div class="hand" id="phs162">32s</div>
+						<div class="hand" id="phs163">43o</div>
+						<div class="hand" id="phs164">72o</div>
+						<div class="hand" id="phs165">52o</div>
+						<div class="hand" id="phs166">62o</div>
+						<div class="hand" id="phs167">42o</div>
+						<div class="hand" id="phs168">32o</div>
+					</div>
+				</div>
 			</main>
 		</div>
-    <script type="module" src="./scripts/index.js"></script
+		<script type="module" src="./scripts/index.js"></script>
 	</body>
 </html>

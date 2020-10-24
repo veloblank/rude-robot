@@ -44,7 +44,6 @@ function addWheelListener(target) {
 
 function addClickListener(e) {
   let button = document.querySelector("#mySwitch")
-  console.log(button)
   button.addEventListener("input", () => {
     if (checkToggle()) {
       document.querySelector(".push-hands").classList.remove("hidden")
@@ -80,18 +79,19 @@ function fetchCallingRange(hand) {
   let handCheck = (el) => el === hand.getAttribute("id")
   let index = BLOCH_CALL.findIndex(handCheck)
   let range = BLOCH_CALL.slice(0, index + 1)
-  colorizeFromClick(range);
+  colorizeFromClick(range, hand);
 }
 
 function fetchJammingRange(hand) {
   let handCheck = (el) => el === hand.getAttribute("id")
   let index = BLOCH_PUSH.findIndex(handCheck)
   let range = BLOCH_PUSH.slice(0, index + 1)
-  colorizeFromClick(range);
+  colorizeFromClick(range, hand);
 }
 
-function colorizeFromClick(range) {
+function colorizeFromClick(range, hand) {
   let tds = document.querySelectorAll(`#grid-1 td`);
+  toggleSelectedHand(hand);
   for (let td of tds) {
     if (range.includes(`${td.getAttribute("id")}`)) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
@@ -102,7 +102,14 @@ function colorizeFromClick(range) {
     }
   }
   updatePoints();
+}
 
+function toggleSelectedHand(hand) {
+  let hands = document.querySelectorAll("hand")
+  for (let hand of hands) {
+    hand.classList.remove("selected")
+  }
+  hand.classList("selected")
 }
 
 
