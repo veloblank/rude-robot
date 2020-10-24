@@ -59,28 +59,33 @@ function fetchRangeFromClick(clickedHand) {
   bool ? fetchJammingRange(clickedHand) : fetchCallingRange(clickedHand);
 }
 
-function converClickToArr(hand, arr) {
-  let clickedHand = hand.innerText;
-  let handCheck = (el) => el === clickedHand
-  let index = arr.findIndex(handCheck)
-  let range = arr.slice((index - 5), (index + 6))
-  return range
+
+function fetchJammingRange(hand) {
+  fetch("../formatted_jamming.json")
+    .then(resp => resp.json())
+    .then(json => {
+      let shortJsonRange = convertClickToArr(hand, json);
+    })
+  let handCheck = (el) => el === hand.getAttribute("id")
+  let index = BLOCH_PUSH.findIndex(handCheck)
+  let range = BLOCH_PUSH.slice(0, index + 1)
+  colorizeFromClick(range, hand, shortJsonRange);
 }
 
 function fetchCallingRange(hand) {
-  let arrRange = converClickToArr(hand, nashCall);
+  let arrRange = convertClickToArr(hand, nashCall);
   let handCheck = (el) => el === hand.getAttribute("id")
   let index = BLOCH_CALL.findIndex(handCheck)
   let range = BLOCH_CALL.slice(0, index + 1)
   colorizeFromClick(range, hand, arrRange);
 }
 
-function fetchJammingRange(hand) {
-  let arrRange = converClickToArr(hand, nashJam);
-  let handCheck = (el) => el === hand.getAttribute("id")
-  let index = BLOCH_PUSH.findIndex(handCheck)
-  let range = BLOCH_PUSH.slice(0, index + 1)
-  colorizeFromClick(range, hand, arrRange);
+function convertClickToArr(hand, arr) {
+  let clickedHand = hand.getAttribute("id");
+  let handCheck = (el) => el === clickedHand
+  let index = arr.findIndex(handCheck)
+  let range = arr.slice((index - 5), (index + 6))
+  return range
 }
 
 function colorizeFromClick(range, hand, arrRange) {
