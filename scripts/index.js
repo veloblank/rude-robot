@@ -1,3 +1,6 @@
+import { BLOCH_CALL } from "./blochCallArray.js";
+import { BLOCH_PUSH } from "./blochPushArray.js";
+
 window.onload = addListeners();
 
 let rangeVar = 0;
@@ -43,22 +46,51 @@ function addClickListener(e) {
   for (let td of tds) {
     td.addEventListener("click", (e) => {
       for (let td of tds) {
-        td.classList.remove("lowlight")
+        td.classList.remove("click-highlight")
       }
-      td.classList.add("lowlight")
+      td.classList.add("click-highlight")
       let points = td.getAttribute("data-bvb")
       //document.querySelector("#hand-value").innerText = points
       handVar = parseFloat(points)
       updatePoints();
+      fetchRangeFromClick(e.target)
     })
   }
 }
 
 function fetchRangeFromClick(clickedHand) {
-  let range =
-    console.log(object)
+  let bool = checkToggle();
+  bool ? fetchJammingRange(clickedHand) : fetchCallingRange(clickedHand);
+}
+
+function fetchCallingRange(hand) {
+  let handCheck = (el) => el === hand.getAttribute("id")
+  let index = BLOCH_CALL.findIndex(handCheck)
+  let range = BLOCH_CALL.slice(0, index + 1)
+  colorizeFromClick(range);
+}
+
+function fetchJammingRange(hand) {
+  let handCheck = (el) => el === hand.getAttribute("id")
+  let index = BLOCH_PUSH.findIndex(handCheck)
+  let range = BLOCH_PUSH.slice(0, index + 1)
+  colorizeFromClick(range);
+}
+
+function colorizeFromClick(range) {
+  let tds = document.querySelectorAll(`#grid-1 td`);
+  for (let td of tds) {
+    if (range.includes(`${td.getAttribute("id")}`)) {
+      document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+    } else {
+      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+    }
+  }
+  updatePoints();
 
 }
+
+
 
 function incrementRange(target, range) {
   let targetId = target.getAttribute("id");

@@ -136,11 +136,18 @@ td {
 	padding: 3px;
 }
 
+.click-highlight {
+	background-color: rgb(0, 255, 42);
+	color: black;
+	border: 1px solid rgb(1, 39, 255);
+}
+
 .highlight {
 	background-color: yellow;
 	color: black;
 	border: 1px solid rgb(1, 39, 255);
 }
+
 .lowlight {
 	background-color: black;
 	color: white;

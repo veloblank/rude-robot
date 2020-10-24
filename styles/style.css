@@ -154,6 +154,12 @@ td {
   padding: 3px;
 }
 
+.click-highlight {
+  background-color: #00ff2a;
+  color: black;
+  border: 1px solid #0127ff;
+}
+
 .highlight {
   background-color: yellow;
   color: black;
