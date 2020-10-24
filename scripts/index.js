@@ -1,6 +1,7 @@
 import { BLOCH_CALL } from "./blochCallArray.js";
 import { BLOCH_PUSH } from "./blochPushArray.js";
 
+
 window.onload = addListeners();
 
 let rangeVar = 0;
@@ -194,10 +195,22 @@ function updateSliderRange(range) {
 function checkToggle() {
   let toggle = document.getElementById("mySwitch");
   if (toggle.checked === true) {
+    listPushingEquities();
     return true
   } else {
+    listCallingEquities();
     return false
   }
+}
+
+
+function listCallingEquities() {
+
+  let range = forma
+}
+
+function listPushingEquities() {
+
 }
 
 function colorizeRange(target, filteredStringArr, filteredObjArr) {
