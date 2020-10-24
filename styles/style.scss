@@ -39,6 +39,7 @@ header {
 }
 
 .grid-container {
+	width: 75%;
 	display: inline-block;
 	text-align: center;
 	margin: auto;
@@ -47,6 +48,7 @@ header {
 
 #range-slider {
 	display: flex;
+	vertical-align: middle;
 	font-size: 2.5em;
 	font-family: 'Russo One', sans-serif;
 	color: black;
@@ -233,5 +235,25 @@ input:checked + .slider:before {
 
 .selected {
 	background-color: greenyellow;
-	font: 16px;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.disp-hand {
+	margin: 5px 5px;
+	padding: 0px 3px;
+	font-size: 25px;
+}
+
+#equity-list {
+	width: 50%;
+}
+
+.push-hands {
+	justify-content: space-around;
+}
+
+.call-hands {
+	margin: auto;
 }

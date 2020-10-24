@@ -44,7 +44,8 @@ header {
   font-size: 75px;
 }
 
-.games-container {
+.grid-container {
+  width: 75%;
   display: inline-block;
   text-align: center;
   margin: auto;
@@ -55,36 +56,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  vertical-align: middle;
   font-size: 2.5em;
   font-family: 'Russo One', sans-serif;
   color: black;
   margin: 10px auto;
   padding: 0px 10px 0px 10px;
   height: 65px;
-  width: 78%;
+  width: 65%;
   background-color: #cacaca;
   border: 6px solid black;
-}
-
-#range-slider div {
-  width: 25%;
-}
-
-#equity-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
-}
-
-.hand {
-  margin: 3px 5px;
-}
-
-.games-row {
-  display: inline-block;
-  margin: 5px;
-  width: 100%;
 }
 
 .game-table {
@@ -94,7 +75,12 @@ header {
   margin: 5px;
   background-color: black;
   height: 100%;
-  width: 100%px;
+  width: 100%;
+}
+
+.hand {
+  display: inline-block;
+  margin: 3px 5px;
 }
 
 .event01 {
@@ -141,7 +127,6 @@ header {
 
 .grid {
   margin: auto;
-  padding: auto;
   height: 100%;
   width: 100%;
 }
@@ -267,5 +252,31 @@ input:checked + .slider:before {
 
 .hidden {
   display: none;
+}
+
+.selected {
+  background-color: greenyellow;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.disp-hand {
+  margin: 5px 5px;
+  padding: 0px 3px;
+  font-size: 25px;
+}
+
+#equity-list {
+  width: 50%;
+}
+
+.push-hands {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.call-hands {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 import { BLOCH_CALL } from "./blochCallArray.js";
 import { BLOCH_PUSH } from "./blochPushArray.js";
+import nashCall from "./callStringArr.js";
+import nashJam from "./jamStringArr.js";
 
 
 window.onload = addListeners();
@@ -47,9 +49,6 @@ function addClickListener(e) {
         td.classList.remove("click-highlight")
       }
       td.classList.add("click-highlight")
-      let points = td.getAttribute("data-bvb")
-      //document.querySelector("#hand-value").innerText = points
-      handVar = parseFloat(points)
       fetchRangeFromClick(e.target)
     })
   }
@@ -60,23 +59,33 @@ function fetchRangeFromClick(clickedHand) {
   bool ? fetchJammingRange(clickedHand) : fetchCallingRange(clickedHand);
 }
 
+function converClickToArr(hand, arr) {
+  let clickedHand = hand.innerText;
+  let handCheck = (el) => el === clickedHand
+  let index = arr.findIndex(handCheck)
+  let range = arr.slice((index - 5), (index + 6))
+  return range
+}
+
 function fetchCallingRange(hand) {
+  let arrRange = converClickToArr(hand, nashCall);
   let handCheck = (el) => el === hand.getAttribute("id")
   let index = BLOCH_CALL.findIndex(handCheck)
   let range = BLOCH_CALL.slice(0, index + 1)
-  colorizeFromClick(range, hand);
+  colorizeFromClick(range, hand, arrRange);
 }
 
 function fetchJammingRange(hand) {
+  let arrRange = converClickToArr(hand, nashJam);
   let handCheck = (el) => el === hand.getAttribute("id")
   let index = BLOCH_PUSH.findIndex(handCheck)
   let range = BLOCH_PUSH.slice(0, index + 1)
-  colorizeFromClick(range, hand);
+  colorizeFromClick(range, hand, arrRange);
 }
 
-function colorizeFromClick(range, hand) {
+function colorizeFromClick(range, hand, arrRange) {
   let tds = document.querySelectorAll("td");
-  toggleSelectedHand(hand);
+  let fullRange = "";
   for (let td of tds) {
     if (range.includes(`${td.getAttribute("id")}`)) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
@@ -86,25 +95,23 @@ function colorizeFromClick(range, hand) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
   }
-}
-
-function toggleSelectedHand(hand) {
-  let hands = document.querySelectorAll(".hand")
-  for (let hand of hands) {
-    hand.classList.remove("selected")
+  let i = 0;
+  for (let r of arrRange) {
+    if (i == 5) {
+      fullRange += `<span class="disp-hand selected">${r}</span>`
+    } else {
+      fullRange += `<span class="disp-hand">${r}</span>`
+    }
+    i++
   }
-  hand.classList.add("selected")
+  document.getElementById("range").innerHTML = fullRange;
 }
-
-
 
 function incrementRange(target, range) {
   let targetId = target.getAttribute("id");
   if (range < 100) {
     range += 0.2
     document.querySelector(`#${targetId}`).setAttribute("data-range", range);
-    //document.querySelector("#call-range").innerText = convertRangeToPoints(range);
-    convertRangeToPoints(range);
     updateSliderRange(range);
     if (checkToggle()) {
       fetchJammingJSON(target, range)
@@ -119,8 +126,6 @@ function decrementRange(target, range) {
   if (range > 0) {
     range -= 0.2
     document.querySelector(`#${targetId}`).setAttribute("data-range", range)
-    //document.querySelector("#call-range").innerText = convertRangeToPoints(range);
-    convertRangeToPoints(range);
     updateSliderRange(range)
     if (checkToggle()) {
       fetchJammingJSON(target, range)
@@ -130,68 +135,7 @@ function decrementRange(target, range) {
   }
 }
 
-function convertRangeToPoints(range) {
-  let fixedRange = parseFloat(range.toFixed(1))
-  let points;
-  if (fixedRange < 7) {
-    points = "13"
-    rangeVar = 13;
-  } else if (fixedRange < 9) {
-    points = "12"
-    rangeVar = 12;
-  } else if (fixedRange < 12) {
-    points = "11"
-    rangeVar = 11;
-  } else if (fixedRange < 14) {
-    points = "10"
-    rangeVar = 10;
-  } else if (fixedRange < 17) {
-    points = "9"
-    rangeVar = 9;
-  } else if (fixedRange < 20) {
-    points = "8"
-    rangeVar = 8;
-  } else if (fixedRange < 22) {
-    points = "7"
-    rangeVar = 7;
-  } else if (fixedRange < 25) {
-    points = "6"
-    rangeVar = 6;
-  } else if (fixedRange < 27) {
-    points = "5"
-    rangeVar = 5;
-  } else if (fixedRange < 30) {
-    points = "4"
-    rangeVar = 4;
-  } else if (fixedRange < 35) {
-    points = "3"
-    rangeVar = 3;
-  } else if (fixedRange < 40) {
-    points = "2"
-    rangeVar = 2;
-  } else if (fixedRange < 50) {
-    points = "1"
-    rangeVar = 1;
-    rangeVar = 0;
-    rangeVar = -1;
-    rangeVar = -2;
-  } else if (fixedRange < 60) {
-    points = "0"
-  } else if (fixedRange < 70) {
-    points = "-1"
-  } else if (fixedRange < 80) {
-    points = "-2"
-  } else {
-    points = "-3"
-    rangeVar = -3;
-  }
-  return points
-
-}
-
-
 function updateSliderRange(range) {
-  //necessary because of large trailing decimal
   document.querySelector("#range-value").innerText = range.toFixed(1);
 }
 
@@ -210,7 +154,6 @@ function colorizeRange(target, filteredStringArr, filteredObjArr) {
   let tds = document.querySelectorAll(`#${tableId} td`);
   let bottomRange = filteredStringArr.slice(-4);
   let callingRange = filteredStringArr;
-  //let callingRange = filteredStringArr.filter(x => bottomRange.includes(x));
   for (let td of tds) {
     if (callingRange.includes(`${td.getAttribute("id")}`)) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.add("highlight")
@@ -260,8 +203,5 @@ function convertToPercent(combos) {
   return (combos / 1326) * 100
 }
 
-function convertClickToJSON() {
-
-}
 
 
