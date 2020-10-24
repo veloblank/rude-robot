@@ -206,7 +206,6 @@ function checkToggle() {
 
 function listCallingEquities() {
 
-  let range = forma
 }
 
 function listPushingEquities() {
