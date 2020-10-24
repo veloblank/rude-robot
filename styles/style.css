@@ -45,14 +45,14 @@ header {
 }
 
 .grid-container {
-  width: 75%;
+  width: 800px;
   display: inline-block;
   text-align: center;
-  margin: auto;
   background-color: white;
 }
 
 #range-slider {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,12 +60,14 @@ header {
   font-size: 2.5em;
   font-family: 'Russo One', sans-serif;
   color: black;
-  margin: 10px auto;
-  padding: 0px 10px 0px 10px;
-  height: 65px;
-  width: 65%;
+  margin: 10px 5px 5px 5px;
+  padding: 5px 10px;
   background-color: #cacaca;
   border: 6px solid black;
+}
+
+#range-value {
+  width: 125px;
 }
 
 .game-table {
@@ -262,13 +264,14 @@ input:checked + .slider:before {
 }
 
 .disp-hand {
+  width: 9%;
   margin: 5px 5px;
   padding: 0px 3px;
   font-size: 25px;
 }
 
 #equity-list {
-  width: 50%;
+  width: 100%;
 }
 
 .push-hands {
