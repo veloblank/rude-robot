@@ -4,11 +4,6 @@ import { BLOCH_PUSH } from "./blochPushArray.js";
 
 window.onload = addListeners();
 
-let rangeVar = 0;
-let eqVar = 0;
-let stackVar = 0;
-let handVar = 0;
-
 function addListeners() {
   addTableListener();
   addClickListener()
@@ -19,21 +14,12 @@ function addTableListener() {
   grid.addEventListener("mouseenter", e => {
     addWheelListener(e.target);
   })
-  // grid.addEventListener("mouseleave", (e) => {
-  //   let table = document.getElementById(e.target.getAttribute("id"));
-  //   let tableId = table.getAttribute("id");
-  //   let tds = document.querySelectorAll(`#${tableId} td`);
-  //   for (let td of tds) {
-  //     document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-  //   }
-  // })
 }
 
 function addWheelListener(target) {
   target.onwheel = e => {
     e.preventDefault();
     let range = parseFloat(target.getAttribute("data-range"));
-    //let targetRange = parseFloat(range.toFixed(1))
     if (e.deltaY < 0) {
       incrementRange(target, range)
     } else if (e.deltaY > 0) {
@@ -64,7 +50,6 @@ function addClickListener(e) {
       let points = td.getAttribute("data-bvb")
       //document.querySelector("#hand-value").innerText = points
       handVar = parseFloat(points)
-      updatePoints();
       fetchRangeFromClick(e.target)
     })
   }
@@ -101,7 +86,6 @@ function colorizeFromClick(range, hand) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
   }
-  updatePoints();
 }
 
 function toggleSelectedHand(hand) {
@@ -234,11 +218,6 @@ function colorizeRange(target, filteredStringArr, filteredObjArr) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
   }
-  updatePoints();
-}
-
-function updatePoints() {
-  document.querySelector("#var-totals").innerText = `${rangeVar + handVar + eqVar + stackVar}`
 }
 
 function fetchJammingJSON(target, range) {
@@ -279,6 +258,10 @@ function calcRange(rangeData, target, range) {
 
 function convertToPercent(combos) {
   return (combos / 1326) * 100
+}
+
+function convertClickToJSON() {
+
 }
 
 
