@@ -47,9 +47,12 @@ function addClickListener(e) {
   console.log(button)
   button.addEventListener("input", () => {
     if (checkToggle()) {
-      listPushingEquities();
+      document.querySelector(".push-hands").classList.remove("hidden")
+      document.querySelector(".call-hands").classList.add("hidden")
     } else {
-      listCallingEquities();
+      document.querySelector(".push-hands").classList.add("hidden")
+      document.querySelector(".call-hands").classList.remove("hidden")
+
     }
   })
   let tds = document.querySelectorAll("td")
@@ -208,37 +211,6 @@ function checkToggle() {
   } else {
     return false
   }
-}
-
-
-function listCallingEquities() {
-  document.getElementById("equity-list").innerHTML = "";
-  fetch("../formatted_calling.json")
-    .then(resp => resp.json())
-    .then(json => {
-      let blochCalling = json.bloch_call;
-      for (let el of blochCalling) {
-        let newElement = document.createElement("div")
-        newElement.innerHTML = `<div class="hand" id=${el.name}>${el.string_f}</div>`;
-        document.getElementById("equity-list").appendChild(newElement)
-      }
-    })
-
-}
-
-function listPushingEquities() {
-  document.getElementById("equity-list").innerHTML = "";
-  fetch("../formatted_jamming.json")
-    .then(resp => resp.json())
-    .then(json => {
-      let blochPushing = json.bloch_jam;
-      for (let el of blochPushing) {
-        let newElement = document.createElement("div")
-        newElement.innerHTML = `<div class="hand" id=${el.name}>${el.string_f}</div>`;
-        document.getElementById("equity-list").appendChild(newElement)
-      }
-    })
-
 }
 
 function colorizeRange(target, filteredStringArr, filteredObjArr) {
