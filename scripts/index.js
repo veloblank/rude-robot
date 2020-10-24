@@ -82,8 +82,10 @@ function colorizeFromClick(range) {
   for (let td of tds) {
     if (range.includes(`${td.getAttribute("id")}`)) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     } else {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
   }
   updatePoints();
