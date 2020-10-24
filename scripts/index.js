@@ -56,43 +56,57 @@ function addClickListener(e) {
 
 function fetchRangeFromClick(clickedHand) {
   let bool = checkToggle();
-  bool ? fetchJammingRange(clickedHand) : fetchCallingRange(clickedHand);
+  renderFetchResults(bool, clickedHand)
 }
 
-
-function fetchJammingRange(hand) {
-  fetch("../formatted_jamming.json")
-    .then(resp => resp.json())
-    .then(json => {
-      let shortJsonRange = convertClickToArr(hand, json);
-    })
-  let handCheck = (el) => el === hand.getAttribute("id")
-  let index = BLOCH_PUSH.findIndex(handCheck)
-  let range = BLOCH_PUSH.slice(0, index + 1)
-  colorizeFromClick(range, hand, shortJsonRange);
+function constructShortJsonRange(results, hand) {
+  let handId = hand.getAttribute("id");
+  let fullRange = Object.values(results);
+  let index = findIndexOfHand(fullRange, handId);
+  let shortRange = fullRange.slice((index - 5), (index + 6))
+  let range = fullRange.slice(0, index + 1);
+  colorizeFromClick(range, hand, shortRange)
 }
 
-function fetchCallingRange(hand) {
-  let arrRange = convertClickToArr(hand, nashCall);
-  let handCheck = (el) => el === hand.getAttribute("id")
-  let index = BLOCH_CALL.findIndex(handCheck)
-  let range = BLOCH_CALL.slice(0, index + 1)
-  colorizeFromClick(range, hand, arrRange);
+function findIndexOfHand(arr, hand) {
+  let handCheck = (el) => el.code === hand;
+  return (arr.findIndex(handCheck))
 }
 
-function convertClickToArr(hand, arr) {
-  let clickedHand = hand.getAttribute("id");
-  let handCheck = (el) => el === clickedHand
-  let index = arr.findIndex(handCheck)
-  let range = arr.slice((index - 5), (index + 6))
-  return range
+async function fetchRange(bool) {
+  let jsonFile;
+  bool ? jsonFile = "../formatted_jamming.json" : jsonFile = "../formatted_calling.json"
+  try {
+    const response = await fetch(jsonFile, {
+      method: "GET",
+      credentials: "same-origin"
+    });
+    let obj = await response.json();
+    return obj;
+  } catch (error) {
+    console.log(error)
+  }
 }
 
-function colorizeFromClick(range, hand, arrRange) {
+async function renderFetchResults(bool, hand) {
+  let results = await fetchRange(bool);
+  if (bool) {
+    results = results.bloch_jam
+  } else {
+    results = results.bloch_call
+  }
+  constructShortJsonRange(results, hand)
+}
+
+function colorizeFromClick(results, hand, shortRange) {
+  let resultsArr = [];
+  results.filter((el) => {
+    resultsArr.push(el.code)
+  })
   let tds = document.querySelectorAll("td");
   let fullRange = "";
   for (let td of tds) {
-    if (range.includes(`${td.getAttribute("id")}`)) {
+    if (resultsArr.includes(`${td.getAttribute("id")}`)) {
       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     } else {
@@ -101,11 +115,11 @@ function colorizeFromClick(range, hand, arrRange) {
     }
   }
   let i = 0;
-  for (let r of arrRange) {
+  for (let r of shortRange) {
     if (i == 5) {
-      fullRange += `<span class="disp-hand selected">${r}</span>`
+      fullRange += `<span class="disp-hand selected">${r.string_f}</span >`
     } else {
-      fullRange += `<span class="disp-hand">${r}</span>`
+      fullRange += `<span class="disp-hand">${r.string_f}</span >`
     }
     i++
   }
@@ -116,7 +130,7 @@ function incrementRange(target, range) {
   let targetId = target.getAttribute("id");
   if (range < 100) {
     range += 0.2
-    document.querySelector(`#${targetId}`).setAttribute("data-range", range);
+    document.querySelector(`#${targetId} `).setAttribute("data-range", range);
     updateSliderRange(range);
     if (checkToggle()) {
       fetchJammingJSON(target, range)
@@ -130,7 +144,7 @@ function decrementRange(target, range) {
   let targetId = target.getAttribute("id")
   if (range > 0) {
     range -= 0.2
-    document.querySelector(`#${targetId}`).setAttribute("data-range", range)
+    document.querySelector(`#${targetId} `).setAttribute("data-range", range)
     updateSliderRange(range)
     if (checkToggle()) {
       fetchJammingJSON(target, range)
