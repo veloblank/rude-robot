@@ -90,7 +90,7 @@ function fetchJammingRange(hand) {
 }
 
 function colorizeFromClick(range, hand) {
-  let tds = document.querySelectorAll(`#grid-1 td`);
+  let tds = document.querySelectorAll("td");
   toggleSelectedHand(hand);
   for (let td of tds) {
     if (range.includes(`${td.getAttribute("id")}`)) {
@@ -105,11 +105,11 @@ function colorizeFromClick(range, hand) {
 }
 
 function toggleSelectedHand(hand) {
-  let hands = document.querySelectorAll("hand")
+  let hands = document.querySelectorAll(".hand")
   for (let hand of hands) {
     hand.classList.remove("selected")
   }
-  hand.classList("selected")
+  hand.classList.add("selected")
 }
 
 
