@@ -54,6 +54,12 @@ function addClickListener(e) {
   }
 }
 
+function fetchRangeFromClick(clickedHand) {
+  let range =
+    console.log(object)
+
+}
+
 function incrementRange(target, range) {
   let targetId = target.getAttribute("id");
   if (range < 100) {
@@ -62,7 +68,11 @@ function incrementRange(target, range) {
     //document.querySelector("#call-range").innerText = convertRangeToPoints(range);
     convertRangeToPoints(range);
     updateSliderRange(range);
-    checkToggle(target, range);
+    if (checkToggle()) {
+      fetchJammingJSON(target, range)
+    } else {
+      fetchCallingJSON(target, range)
+    }
   }
 }
 
@@ -74,7 +84,11 @@ function decrementRange(target, range) {
     //document.querySelector("#call-range").innerText = convertRangeToPoints(range);
     convertRangeToPoints(range);
     updateSliderRange(range)
-    checkToggle(target, range)
+    if (checkToggle()) {
+      fetchJammingJSON(target, range)
+    } else {
+      fetchCallingJSON(target, range)
+    }
   }
 }
 
@@ -143,12 +157,12 @@ function updateSliderRange(range) {
   document.querySelector("#range-value").innerText = range.toFixed(1);
 }
 
-function checkToggle(target, range) {
+function checkToggle() {
   let toggle = document.getElementById("mySwitch");
   if (toggle.checked === true) {
-    fetchJammingJSON(target, range)
+    return true
   } else {
-    fetchCallingJSON(target, range)
+    return false
   }
 }
 
