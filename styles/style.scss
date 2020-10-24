@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+	display: flex;
 	color: white;
 	height: 100%;
 	width: 80%;
@@ -59,6 +60,15 @@ header {
 
 #range-slider div {
 	width: 25%;
+}
+
+#equity-list {
+	display: flex;
+	width: 100%;
+}
+
+.hand {
+	margin: 3px 5px;
 }
 
 .games-row {

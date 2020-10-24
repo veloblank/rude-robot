@@ -70,6 +70,17 @@ header {
   width: 25%;
 }
 
+#equity-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.hand {
+  margin: 3px 5px;
+}
+
 .games-row {
   display: inline-block;
   margin: 5px;

@@ -43,6 +43,15 @@ function addWheelListener(target) {
 }
 
 function addClickListener(e) {
+  let button = document.querySelector("#mySwitch")
+  console.log(button)
+  button.addEventListener("input", () => {
+    if (checkToggle()) {
+      listPushingEquities();
+    } else {
+      listCallingEquities();
+    }
+  })
   let tds = document.querySelectorAll("td")
   for (let td of tds) {
     td.addEventListener("click", (e) => {
@@ -195,20 +204,40 @@ function updateSliderRange(range) {
 function checkToggle() {
   let toggle = document.getElementById("mySwitch");
   if (toggle.checked === true) {
-    listPushingEquities();
     return true
   } else {
-    listCallingEquities();
     return false
   }
 }
 
 
 function listCallingEquities() {
+  document.getElementById("equity-list").innerHTML = "";
+  fetch("../formatted_calling.json")
+    .then(resp => resp.json())
+    .then(json => {
+      let blochCalling = json.bloch_call;
+      for (let el of blochCalling) {
+        let newElement = document.createElement("div")
+        newElement.innerHTML = `<div class="hand" id=${el.name}>${el.string_f}</div>`;
+        document.getElementById("equity-list").appendChild(newElement)
+      }
+    })
 
 }
 
 function listPushingEquities() {
+  document.getElementById("equity-list").innerHTML = "";
+  fetch("../formatted_jamming.json")
+    .then(resp => resp.json())
+    .then(json => {
+      let blochPushing = json.bloch_jam;
+      for (let el of blochPushing) {
+        let newElement = document.createElement("div")
+        newElement.innerHTML = `<div class="hand" id=${el.name}>${el.string_f}</div>`;
+        document.getElementById("equity-list").appendChild(newElement)
+      }
+    })
 
 }
 
