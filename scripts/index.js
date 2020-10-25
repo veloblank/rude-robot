@@ -23,9 +23,9 @@ function addWheelListener(target) {
     e.preventDefault();
     let range = parseFloat(target.getAttribute("data-range"));
     if (e.deltaY < 0) {
-      incrementRange(target, range)
+      incrementRange(range, target)
     } else if (e.deltaY > 0) {
-      decrementRange(target, range)
+      decrementRange(range, target)
     }
   }
 }
@@ -61,16 +61,26 @@ function fetchRangeFromClick(clickedHand) {
 
 function constructShortJsonRange(results, hand) {
   let handId;
-  if (hand.getAttribute("data-var")) {
-    handId = hand.getAttribute("data-var")
-  } else {
-    handId = hand.getAttribute("id");
+  try {
+    hand.getAttribute("data-var")
+  } catch (e) {
+    if (e instanceof TypeError) {
+      handId = hand;
+    } else if (hand.getAttribute("data-var") !== "") {
+      handId = hand.getAttribute("data-var")
+    } else {
+      handId = hand.getAttribute("id")
+    }
   }
   let fullRange = Object.values(results);
   let index = findIndexOfHand(fullRange, handId);
-  let shortRange = fullRange.slice((index - 5), (index + 6))
+  let shortRange = getShortRange(fullRange, index);
   let range = fullRange.slice(0, index + 1);
   colorizeFromClick(range, hand, shortRange)
+}
+
+function getShortRange(fullRange, index) {
+  return fullRange.slice((index - 5), (index + 6))
 }
 
 function findIndexOfHand(arr, hand) {
@@ -137,30 +147,30 @@ function colorizeFromClick(results, hand, shortRange) {
   }
 }
 
-function incrementRange(target, range) {
+function incrementRange(range, target) {
   let targetId = target.getAttribute("id");
   if (range < 100) {
     range += 0.2
     document.querySelector(`#${targetId} `).setAttribute("data-range", range);
     updateSliderRange(range);
     if (checkToggle()) {
-      fetchJammingJSON(target, range)
+      fetchJammingJSON(range, target)
     } else {
-      fetchCallingJSON(target, range)
+      fetchCallingJSON(range, target)
     }
   }
 }
 
-function decrementRange(target, range) {
+function decrementRange(range, target) {
   let targetId = target.getAttribute("id")
   if (range > 0) {
     range -= 0.2
     document.querySelector(`#${targetId} `).setAttribute("data-range", range)
     updateSliderRange(range)
     if (checkToggle()) {
-      fetchJammingJSON(target, range)
+      fetchJammingJSON(range, target)
     } else {
-      fetchCallingJSON(target, range)
+      fetchCallingJSON(range, target)
     }
   }
 }
@@ -178,22 +188,23 @@ function checkToggle() {
   }
 }
 
-function colorizeRange(target, filteredStringArr, filteredObjArr) {
+function colorizeRange(target, filteredArr, filteredObjArr, lastHand, shortRange) {
   let table = document.getElementById(target.getAttribute("id"));
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
-  let bottomRange = filteredStringArr.slice(-4);
-  let callingRange = filteredStringArr;
+  let fullRange = filteredArr;
   for (let td of tds) {
-    if (callingRange.includes(`${td.getAttribute("id")}`)) {
-      document.querySelector(`#${td.getAttribute("id")}`).classList.add("highlight")
+    if (fullRange.includes(`${td.getAttribute("id")}`)) {
+      document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
     } else {
       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
     }
   }
+  let bottomRange = lastHand.code;
+  fetchRangeFromClick(bottomRange)
 }
 
-function fetchJammingJSON(target, range) {
+function fetchJammingJSON(range, target) {
   fetch("../formatted_jamming.json")
     .then(response => response.json())
     .then(json => {
@@ -202,7 +213,7 @@ function fetchJammingJSON(target, range) {
     })
 }
 
-function fetchCallingJSON(target, range) {
+function fetchCallingJSON(range, target) {
   fetch("../formatted_calling.json")
     .then(response => response.json())
     .then(json => {
@@ -226,7 +237,9 @@ function calcRange(rangeData, target, range) {
     handStringValues.push(a.code)
   });
   filteredHandObjects = json.splice(0, index)
-  colorizeRange(target, handStringValues, filteredHandObjects)
+  let lastHand = (filteredHandObjects[filteredHandObjects.length - 1])
+  let shortRange = getShortRange(json, index)
+  colorizeRange(target, handStringValues, filteredHandObjects, lastHand, shortRange)
 }
 
 function convertToPercent(combos) {
