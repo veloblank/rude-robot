@@ -60,7 +60,12 @@ function fetchRangeFromClick(clickedHand) {
 }
 
 function constructShortJsonRange(results, hand) {
-  let handId = hand.getAttribute("id");
+  let handId;
+  if (hand.getAttribute("data-var")) {
+    handId = hand.getAttribute("data-var")
+  } else {
+    handId = hand.getAttribute("id");
+  }
   let fullRange = Object.values(results);
   let index = findIndexOfHand(fullRange, handId);
   let shortRange = fullRange.slice((index - 5), (index + 6))
@@ -117,13 +122,19 @@ function colorizeFromClick(results, hand, shortRange) {
   let i = 0;
   for (let r of shortRange) {
     if (i == 5) {
-      fullRange += `<span class="disp-hand selected">${r.string_f}</span >`
+      fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
     } else {
-      fullRange += `<span class="disp-hand">${r.string_f}</span >`
+      fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
     }
     i++
   }
   document.getElementById("range").innerHTML = fullRange;
+  let smallRange = document.querySelectorAll(".disp-hand");
+  for (let range of smallRange) {
+    range.addEventListener("click", (e) => {
+      fetchRangeFromClick(e.target)
+    })
+  }
 }
 
 function incrementRange(target, range) {
