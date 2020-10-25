@@ -50,6 +50,7 @@ function addClickListener(e) {
       }
       td.classList.add("click-highlight")
       fetchRangeFromClick(e.target)
+      let gridRange = e.toElement.offsetParent.getAttribute("data-range")
     })
   }
 }
@@ -138,6 +139,7 @@ function colorizeFromClick(results, hand, shortRange) {
     }
     i++
   }
+
   document.getElementById("range").innerHTML = fullRange;
   let smallRange = document.querySelectorAll(".disp-hand");
   for (let range of smallRange) {
@@ -165,7 +167,7 @@ function decrementRange(range, target) {
   let targetId = target.getAttribute("id")
   if (range > 0) {
     range -= 0.2
-    document.querySelector(`#${targetId} `).setAttribute("data-range", range)
+    setRange(targetId, range)
     updateSliderRange(range)
     if (checkToggle()) {
       fetchJammingJSON(range, target)
@@ -173,6 +175,10 @@ function decrementRange(range, target) {
       fetchCallingJSON(range, target)
     }
   }
+}
+
+function setRange(targetId, range) {
+  document.querySelector(`#${targetId} `).setAttribute("data-range", range)
 }
 
 function updateSliderRange(range) {
