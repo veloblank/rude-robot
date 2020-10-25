@@ -1,8 +1,10 @@
 window.onload = addListeners();
+let results;
 
 function addListeners() {
   addTableListener();
   addClickListeners();
+  renderFetchResults();
 }
 
 function addTableListener() {
@@ -18,11 +20,12 @@ function addWheelListener(target) {
     let delta;
     if (e.deltaY < 0) {
       delta = 1
-      calcRange(target, delta)
+      incrementAndWriteRange(delta)
     } else if (e.deltaY > 0) {
       delta = -1
-      calcRange(target, delta)
+      decrementAndWriteRange(delta)
     }
+    constructRangePeripherals(results)
   }
 }
 
@@ -37,6 +40,7 @@ function addClickListeners() {
       document.querySelector(".push-hands").classList.add("hidden")
       document.querySelector(".call-hands").classList.remove("hidden")
     }
+    renderFetchResults();
   })
 }
 
@@ -45,18 +49,17 @@ function checkToggle() {
   return mySwitch.checked == true ? true : false;
 }
 
-async function renderFetchResults(bool) {
-  let results = await fetchRange(bool);
+async function renderFetchResults() {
+  let bool = checkToggle();
+  results = await fetchRange(bool);
   if (bool) {
     results = results.bloch_jam
   } else {
     results = results.bloch_call
   }
-  constructShortJsonRange(results)
 }
 
 async function fetchRange(bool) {
-  console.log(bool)
   let jsonFile;
   if (bool) {
     jsonFile = "../formatted_jamming.json"
@@ -75,70 +78,61 @@ async function fetchRange(bool) {
   }
 }
 
-function constructShortJsonRange(results) {
-  let fullRange = Object.values(results);
+function constructRangePeripherals(results) {
+  let range;
+  let fullRange = results;
   let currentIndex = currentStep();
-  let worstHand = bottomOfRange(currentIndex);
-  let indexOfWorstHand = findIndexOfHand(fullRange, worstHand);
-  let range = fullRange.slice(0, indexOfWorstHand + 1);
-  let shortRange = getShortRange(fullRange, indexOfWorstHand);
-  // console.log(fullRange)
-  // colorizeFromClick(range, hand, shortRange)
-}
-
-function bottomOfRange(arrFilteredObj) {
-  return arrFilteredObj[arrFilteredObj.length - 1]
-}
-
-function findIndexOfHand(arr, hand) {
-  let handCheck = (el) => el.code === hand;
-  return (arr.findIndex(handCheck))
-}
-
-function getShortRange(fullRange, index) {
-  return fullRange.slice((index - 5), (index + 6))
-}
-
-function calcRange(target, delta) {
-  let gridTarget = target;
-  let bool = checkToggle();
-  if (delta > 0) {
-    incrementAndWriteRange(gridTarget, delta)
+  if (currentIndex === 0) {
+    range = fullRange
   } else {
-    decrementAndWriteRange(gridTarget, delta)
+    range = fullRange.slice(0, currentIndex);
   }
-  let index = currentStep();
-  let fullRange = renderFetchResults(bool)
-  //   let handStringValues = [];
-  //   let filteredHandObjects = json.splice(0, index)
-  //   json.some(function (a, i) {
-  //     index = i;
-  //     callingCombos += a.combos;
-  //     handStringValues.push(a.code)
-  //   });
-  //   let lastHand = bottomOfRange(filteredHandObjects);
-  //   let shortRange = getShortRange(json, index)
-  //   colorizeRange(target, handStringValues, filteredHandObjects, lastHand, shortRange)
+  let worstHand = range[range.length - 1];
+  let shortRange = getShortRange(range, currentIndex);
+  calcRange(currentIndex, range, worstHand, shortRange)
 }
 
-function incrementAndWriteRange(target, delta) {
+function getShortRange(range, idx) {
+  let lower = idx - 5;
+  let upper = idx + 10;
+  if (idx <= 4) {
+    return range.slice(0, upper)
+  } else if (idx > 164) {
+    return range.slice(lower, 169)
+  } else if (idx > 4) {
+    return range.slice(lower, upper)
+  }
+}
+
+function calcRange(idx, rangeArr, handObj, shortArr) {
+  let handStringValues = [];
+  let range = rangeArr;
+  let hand = handObj;
+  let shortRange = shortArr;
+  for (let hand of range) {
+    handStringValues.push(hand.code)
+  }
+  colorizeRange(handStringValues, range, hand, shortRange)
+}
+
+function incrementAndWriteRange(delta) {
   let step = currentStep();
-  if (step < 100) {
+  if (step < 170) {
     step += delta
-    target.setAttribute("data-step_index", step)
+    document.getElementById("grid-1").setAttribute("data-step_index", step)
     return step
   } else {
     return step
   }
 }
 
-function decrementAndWriteRange(target, delta) {
+function decrementAndWriteRange(delta) {
   let step = currentStep();
-  if (step > 0) {
-    step -= 1
-    target.setAttribute("data-step_index", step)
+  if (step <= 0) {
     return step
   } else {
+    step -= 1
+    document.getElementById("grid-1").setAttribute("data-step_index", step)
     return step
   }
 }
@@ -147,60 +141,54 @@ function currentStep() {
   return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
 }
 
+// function colorizeFromClick(results, hand, shortRange) {
+//   let resultsArr = [];
+//   results.filter((el) => {
+//     resultsArr.push(el.code)
+//   })
+//   let tds = document.querySelectorAll("td");
+//   let fullRange = "";
+//   for (let td of tds) {
+//     if (resultsArr.includes(`${td.getAttribute("id")}`)) {
+//       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+//       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+//     } else {
+//       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+//       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+//     }
+//   }
+//   let i = 0;
+//   for (let r of shortRange) {
+//     if (i == 5) {
+//       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
+//     } else {
+//       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
+//     }
+//     i++
+//   }
 
+//   document.getElementById("range").innerHTML = fullRange;
+//   let smallRange = document.querySelectorAll(".disp-hand");
+//   for (let range of smallRange) {
+//     range.addEventListener("click", (e) => {
+//       fetchRangeFromClick(e.target)
+//     })
+//   }
+// }
 
-
-
-
-
-
-  // function colorizeFromClick(results, hand, shortRange) {
-  //   let resultsArr = [];
-  //   results.filter((el) => {
-  //     resultsArr.push(el.code)
-  //   })
-  //   let tds = document.querySelectorAll("td");
-  //   let fullRange = "";
-  //   for (let td of tds) {
-  //     if (resultsArr.includes(`${td.getAttribute("id")}`)) {
-  //       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
-  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-  //     } else {
-  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
-  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-  //     }
-  //   }
-  //   let i = 0;
-  //   for (let r of shortRange) {
-  //     if (i == 5) {
-  //       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
-  //     } else {
-  //       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
-  //     }
-  //     i++
-  //   }
-
-  //   document.getElementById("range").innerHTML = fullRange;
-  //   let smallRange = document.querySelectorAll(".disp-hand");
-  //   for (let range of smallRange) {
-  //     range.addEventListener("click", (e) => {
-  //       fetchRangeFromClick(e.target)
-  //     })
-  //   }
-  // }
-
-  // function colorizeRange(target, filteredArr, filteredObjArr, lastHand, shortRange) {
-  //   let table = document.getElementById(target.getAttribute("id"));
-  //   let tableId = table.getAttribute("id");
-  //   let tds = document.querySelectorAll(`#${tableId} td`);
-  //   let fullRange = filteredArr;
-  //   for (let td of tds) {
-  //     if (fullRange.includes(`${td.getAttribute("id")}`)) {
-  //       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
-  //     } else {
-  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-  //     }
-  //   }
-  //   let bottomRange = lastHand.code;
-  //   fetchRangeFromClick(bottomRange)
-  // }
+function colorizeRange(handStringValues, handRange, hand, shortRange) {
+  let table = document.getElementById("grid-1");
+  let tableId = table.getAttribute("id");
+  let tds = document.querySelectorAll(`#${tableId} td`);
+  let range = handRange;
+  let bottomOfRange = hand;
+  let bannerRange = shortRange;
+  if (handStringValues.length)
+    for (let td of tds) {
+      if (handStringValues.includes(`${td.getAttribute("id")}`)) {
+        document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+      } else {
+        document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+      }
+    }
+}
