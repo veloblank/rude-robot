@@ -3,7 +3,6 @@ window.onload = addListeners();
 function addListeners() {
   addTableListener();
   addClickListeners();
-  renderFetchResults();
 }
 
 function addTableListener() {
@@ -38,16 +37,15 @@ function addClickListeners() {
       document.querySelector(".push-hands").classList.add("hidden")
       document.querySelector(".call-hands").classList.remove("hidden")
     }
-    renderFetchResults()
   })
 }
 
 function checkToggle() {
-  document.getElementById("mySwitch").getAttribute("switched") ? true : false;
+  let mySwitch = document.getElementById("mySwitch")
+  return mySwitch.checked == true ? true : false;
 }
 
-async function renderFetchResults() {
-  let bool = checkToggle();
+async function renderFetchResults(bool) {
   let results = await fetchRange(bool);
   if (bool) {
     results = results.bloch_jam
@@ -58,6 +56,7 @@ async function renderFetchResults() {
 }
 
 async function fetchRange(bool) {
+  console.log(bool)
   let jsonFile;
   if (bool) {
     jsonFile = "../formatted_jamming.json"
@@ -78,15 +77,15 @@ async function fetchRange(bool) {
 
 function constructShortJsonRange(results) {
   let fullRange = Object.values(results);
-  console.log(fullRange)
-  // let worstHand = bottomOfRange(range);
-  // let indexOfWorstHand = findIndexOfHand(fullRange, worstHand);
-  // let range = fullRange.slice(0, indexOfWorstHand + 1);
-  // console.log(worstHand, fullRange, indexOfHand, shortRange, range)
+  let currentIndex = currentStep();
+  let worstHand = bottomOfRange(currentIndex);
+  let indexOfWorstHand = findIndexOfHand(fullRange, worstHand);
+  let range = fullRange.slice(0, indexOfWorstHand + 1);
+  let shortRange = getShortRange(fullRange, indexOfWorstHand);
+  // console.log(fullRange)
   // colorizeFromClick(range, hand, shortRange)
 }
 
-// let shortRange = getShortRange(fullRange, indexOfWorstHand);
 function bottomOfRange(arrFilteredObj) {
   return arrFilteredObj[arrFilteredObj.length - 1]
 }
@@ -100,46 +99,55 @@ function getShortRange(fullRange, index) {
   return fullRange.slice((index - 5), (index + 6))
 }
 
-// function calcRange(target, bool, delta) {
-//   let json = fetchRange(bool)
-//   let handStringValues = [];
-//   let index = currentStep();
-//   let filteredHandObjects = json.splice(0, index)
-//   json.some(function (a, i) {
-//     index = i;
-//     callingCombos += a.combos;
-//     handStringValues.push(a.code)
-//   });
-//   let lastHand = bottomOfRange(filteredHandObjects);
-//   let shortRange = getShortRange(json, index)
-//   colorizeRange(target, handStringValues, filteredHandObjects, lastHand, shortRange)
-// }
+function calcRange(target, delta) {
+  let gridTarget = target;
+  let bool = checkToggle();
+  if (delta > 0) {
+    incrementAndWriteRange(gridTarget, delta)
+  } else {
+    decrementAndWriteRange(gridTarget, delta)
+  }
+  let index = currentStep();
+  let fullRange = renderFetchResults(bool)
+  //   let handStringValues = [];
+  //   let filteredHandObjects = json.splice(0, index)
+  //   json.some(function (a, i) {
+  //     index = i;
+  //     callingCombos += a.combos;
+  //     handStringValues.push(a.code)
+  //   });
+  //   let lastHand = bottomOfRange(filteredHandObjects);
+  //   let shortRange = getShortRange(json, index)
+  //   colorizeRange(target, handStringValues, filteredHandObjects, lastHand, shortRange)
+}
+
+function incrementAndWriteRange(target, delta) {
+  let step = currentStep();
+  if (step < 100) {
+    step += delta
+    target.setAttribute("data-step_index", step)
+    return step
+  } else {
+    return step
+  }
+}
+
+function decrementAndWriteRange(target, delta) {
+  let step = currentStep();
+  if (step > 0) {
+    step -= 1
+    target.setAttribute("data-step_index", step)
+    return step
+  } else {
+    return step
+  }
+}
+
+function currentStep() {
+  return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
+}
 
 
-// function currentStep() {
-//   return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
-// }
-
-// function incrementAndWriteRange() {
-//   let step = currentStep();
-//   if (step < 100) {
-//     step += 1
-//     document.getElementById("grid-1").setAttribute("data-step_index") = step;
-//     return step
-//   } else {
-//     return step
-//   }
-// }
-
-// function decrementAndWriteRange() {
-//   let step = currentStep();
-//   if (step > 0) {
-//     step -= 1
-//     document.getElementById("grid-1").setAttribute("data-step_index") = step;
-//     return step
-//   } else {
-//     return step
-//   }
 
 
 
