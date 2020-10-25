@@ -55,6 +55,15 @@ function addClickListener(e) {
   }
 }
 
+function checkToggle() {
+  let toggle = document.getElementById("mySwitch");
+  if (toggle.checked === true) {
+    return true
+  } else {
+    return false
+  }
+}
+
 function fetchRangeFromClick(clickedHand) {
   let bool = checkToggle();
   renderFetchResults(bool, clickedHand)
@@ -185,14 +194,6 @@ function updateSliderRange(range) {
   document.querySelector("#range-value").innerText = range.toFixed(1);
 }
 
-function checkToggle() {
-  let toggle = document.getElementById("mySwitch");
-  if (toggle.checked === true) {
-    return true
-  } else {
-    return false
-  }
-}
 
 function colorizeRange(target, filteredArr, filteredObjArr, lastHand, shortRange) {
   let table = document.getElementById(target.getAttribute("id"));
