@@ -89,7 +89,7 @@ function constructRangePeripherals(results) {
   }
   let worstHand = range[range.length - 1];
   let shortRange = getShortRange(range, currentIndex);
-  calcRange(currentIndex, range, worstHand, shortRange)
+  calcRange(range, worstHand, shortRange)
 }
 
 function getShortRange(range, idx) {
@@ -104,16 +104,6 @@ function getShortRange(range, idx) {
   }
 }
 
-function calcRange(idx, rangeArr, handObj, shortArr) {
-  let handStringValues = [];
-  let range = rangeArr;
-  let hand = handObj;
-  let shortRange = shortArr;
-  for (let hand of range) {
-    handStringValues.push(hand.code)
-  }
-  colorizeRange(handStringValues, range, hand, shortRange)
-}
 
 function incrementAndWriteRange(delta) {
   let step = currentStep();
@@ -141,42 +131,19 @@ function currentStep() {
   return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
 }
 
-// function colorizeFromClick(results, hand, shortRange) {
-//   let resultsArr = [];
-//   results.filter((el) => {
-//     resultsArr.push(el.code)
-//   })
-//   let tds = document.querySelectorAll("td");
-//   let fullRange = "";
-//   for (let td of tds) {
-//     if (resultsArr.includes(`${td.getAttribute("id")}`)) {
-//       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
-//       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-//     } else {
-//       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
-//       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-//     }
-//   }
-//   let i = 0;
-//   for (let r of shortRange) {
-//     if (i == 5) {
-//       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
-//     } else {
-//       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
-//     }
-//     i++
-//   }
-
-//   document.getElementById("range").innerHTML = fullRange;
-//   let smallRange = document.querySelectorAll(".disp-hand");
-//   for (let range of smallRange) {
-//     range.addEventListener("click", (e) => {
-//       fetchRangeFromClick(e.target)
-//     })
-//   }
-// }
+function calcRange(rangeArr, worstHandObj, shortArr) {
+  let handStringValues = [];
+  let range = rangeArr;
+  let hand = worstHandObj;
+  let shortRange = shortArr;
+  for (let hand of range) {
+    handStringValues.push(hand.code)
+  }
+  colorizeRange(handStringValues, range, hand, shortRange)
+}
 
 function colorizeRange(handStringValues, handRange, hand, shortRange) {
+  let fullRange = "";
   let table = document.getElementById("grid-1");
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
@@ -191,4 +158,36 @@ function colorizeRange(handStringValues, handRange, hand, shortRange) {
         document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
       }
     }
+  let i = 0;
+  for (let r of bannerRange) {
+    if (i == 10) {
+      fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
+    } else {
+      fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
+    }
+    i++
+  }
+  document.getElementById("range").innerHTML = fullRange;
+  let smallRange = document.querySelectorAll(".disp-hand");
+  for (let range of smallRange) {
+    range.addEventListener("click", (e) => {
+      fetchRangeFromBannerClick(e.target)
+    })
+  }
 }
+
+function fetchRangeFromBannerClick(hand) {
+  let target = hand.getAttribute("data-var");
+  matchHandStringwithHandObject(target)
+}
+
+function matchHandStringwithHandObject(targetString) {
+  let result;
+  let checkHand = (a, i) => {
+    if (a.code == targetString) {
+      result = results[i];
+    }
+  }
+  results.some(checkHand)
+  return result
+};
