@@ -1,14 +1,9 @@
-import { BLOCH_CALL } from "./blochCallArray.js";
-import { BLOCH_PUSH } from "./blochPushArray.js";
-import nashCall from "./callStringArr.js";
-import nashJam from "./jamStringArr.js";
-
-
 window.onload = addListeners();
 
 function addListeners() {
   addTableListener();
-  addClickListener()
+  addClickListeners();
+  renderFetchResults();
 }
 
 function addTableListener() {
@@ -21,81 +16,54 @@ function addTableListener() {
 function addWheelListener(target) {
   target.onwheel = e => {
     e.preventDefault();
-    let range = parseFloat(target.getAttribute("data-range"));
+    let delta;
     if (e.deltaY < 0) {
-      incrementRange(range, target)
+      delta = 1
+      calcRange(target, delta)
     } else if (e.deltaY > 0) {
-      decrementRange(range, target)
+      delta = -1
+      calcRange(target, delta)
     }
   }
 }
 
-function addClickListener(e) {
-  let button = document.querySelector("#mySwitch")
+function addClickListeners() {
+  let button = document.querySelector("#mySwitch");
   button.addEventListener("input", () => {
-    if (checkToggle()) {
+    let bool = checkToggle();
+    if (bool) {
       document.querySelector(".push-hands").classList.remove("hidden")
       document.querySelector(".call-hands").classList.add("hidden")
     } else {
       document.querySelector(".push-hands").classList.add("hidden")
       document.querySelector(".call-hands").classList.remove("hidden")
-
     }
+    renderFetchResults()
   })
-  let tds = document.querySelectorAll("td")
-  for (let td of tds) {
-    td.addEventListener("click", (e) => {
-      for (let td of tds) {
-        td.classList.remove("click-highlight")
-      }
-      td.classList.add("click-highlight")
-      fetchRangeFromClick(e.target)
-      let gridRange = e.toElement.offsetParent.getAttribute("data-range")
-    })
-  }
 }
 
 function checkToggle() {
   document.getElementById("mySwitch").getAttribute("switched") ? true : false;
 }
 
-function fetchRangeFromClick(clickedHand) {
+async function renderFetchResults() {
   let bool = checkToggle();
-  renderFetchResults(bool, clickedHand)
-}
-
-function constructShortJsonRange(results, hand) {
-  let handId;
-  try {
-    hand.getAttribute("data-var")
-  } catch (e) {
-    if (e instanceof TypeError) {
-      handId = hand;
-    } else if (hand.getAttribute("data-var") !== "") {
-      handId = hand.getAttribute("data-var")
-    } else {
-      handId = hand.getAttribute("id")
-    }
+  let results = await fetchRange(bool);
+  if (bool) {
+    results = results.bloch_jam
+  } else {
+    results = results.bloch_call
   }
-  let fullRange = Object.values(results);
-  let index = findIndexOfHand(fullRange, handId);
-  let shortRange = getShortRange(fullRange, index);
-  let range = fullRange.slice(0, index + 1);
-  colorizeFromClick(range, hand, shortRange)
-}
-
-function getShortRange(fullRange, index) {
-  return fullRange.slice((index - 5), (index + 6))
-}
-
-function findIndexOfHand(arr, hand) {
-  let handCheck = (el) => el.code === hand;
-  return (arr.findIndex(handCheck))
+  constructShortJsonRange(results)
 }
 
 async function fetchRange(bool) {
   let jsonFile;
-  bool ? jsonFile = "../formatted_jamming.json" : jsonFile = "../formatted_calling.json"
+  if (bool) {
+    jsonFile = "../formatted_jamming.json"
+  } else {
+    jsonFile = "../formatted_calling.json"
+  }
   try {
     const response = await fetch(jsonFile, {
       method: "GET",
@@ -108,145 +76,123 @@ async function fetchRange(bool) {
   }
 }
 
-async function renderFetchResults(bool, hand) {
-  let results = await fetchRange(bool);
-  if (bool) {
-    results = results.bloch_jam
-  } else {
-    results = results.bloch_call
-  }
-  constructShortJsonRange(results, hand)
+function constructShortJsonRange(results) {
+  let fullRange = Object.values(results);
+  console.log(fullRange)
+  // let worstHand = bottomOfRange(range);
+  // let indexOfWorstHand = findIndexOfHand(fullRange, worstHand);
+  // let range = fullRange.slice(0, indexOfWorstHand + 1);
+  // console.log(worstHand, fullRange, indexOfHand, shortRange, range)
+  // colorizeFromClick(range, hand, shortRange)
 }
 
-function colorizeFromClick(results, hand, shortRange) {
-  let resultsArr = [];
-  results.filter((el) => {
-    resultsArr.push(el.code)
-  })
-  let tds = document.querySelectorAll("td");
-  let fullRange = "";
-  for (let td of tds) {
-    if (resultsArr.includes(`${td.getAttribute("id")}`)) {
-      document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
-      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-    } else {
-      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
-      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-    }
-  }
-  let i = 0;
-  for (let r of shortRange) {
-    if (i == 5) {
-      fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
-    } else {
-      fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
-    }
-    i++
-  }
-
-  document.getElementById("range").innerHTML = fullRange;
-  let smallRange = document.querySelectorAll(".disp-hand");
-  for (let range of smallRange) {
-    range.addEventListener("click", (e) => {
-      fetchRangeFromClick(e.target)
-    })
-  }
+// let shortRange = getShortRange(fullRange, indexOfWorstHand);
+function bottomOfRange(arrFilteredObj) {
+  return arrFilteredObj[arrFilteredObj.length - 1]
 }
 
-function incrementRange(range, target) {
-  let targetId = target.getAttribute("id");
-  if (range < 100) {
-    range += 0.2
-    document.querySelector(`#${targetId} `).setAttribute("data-range", range);
-    updateSliderRange(range);
-    if (checkToggle()) {
-      fetchJammingJSON(range, target)
-    } else {
-      fetchCallingJSON(range, target)
-    }
-  }
+function findIndexOfHand(arr, hand) {
+  let handCheck = (el) => el.code === hand;
+  return (arr.findIndex(handCheck))
 }
 
-function decrementRange(range, target) {
-  let targetId = target.getAttribute("id")
-  if (range > 0) {
-    range -= 0.2
-    setRange(targetId, range)
-    updateSliderRange(range)
-    if (checkToggle()) {
-      fetchJammingJSON(range, target)
-    } else {
-      fetchCallingJSON(range, target)
-    }
-  }
+function getShortRange(fullRange, index) {
+  return fullRange.slice((index - 5), (index + 6))
 }
 
-function setRange(targetId, range) {
-  document.querySelector(`#${targetId} `).setAttribute("data-range", range)
-}
+// function calcRange(target, bool, delta) {
+//   let json = fetchRange(bool)
+//   let handStringValues = [];
+//   let index = currentStep();
+//   let filteredHandObjects = json.splice(0, index)
+//   json.some(function (a, i) {
+//     index = i;
+//     callingCombos += a.combos;
+//     handStringValues.push(a.code)
+//   });
+//   let lastHand = bottomOfRange(filteredHandObjects);
+//   let shortRange = getShortRange(json, index)
+//   colorizeRange(target, handStringValues, filteredHandObjects, lastHand, shortRange)
+// }
 
-function updateSliderRange(range) {
-  document.querySelector("#range-value").innerText = range.toFixed(1);
-}
 
+// function currentStep() {
+//   return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
+// }
 
-function colorizeRange(target, filteredArr, filteredObjArr, lastHand, shortRange) {
-  let table = document.getElementById(target.getAttribute("id"));
-  let tableId = table.getAttribute("id");
-  let tds = document.querySelectorAll(`#${tableId} td`);
-  let fullRange = filteredArr;
-  for (let td of tds) {
-    if (fullRange.includes(`${td.getAttribute("id")}`)) {
-      document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
-    } else {
-      document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
-    }
-  }
-  let bottomRange = lastHand.code;
-  fetchRangeFromClick(bottomRange)
-}
+// function incrementAndWriteRange() {
+//   let step = currentStep();
+//   if (step < 100) {
+//     step += 1
+//     document.getElementById("grid-1").setAttribute("data-step_index") = step;
+//     return step
+//   } else {
+//     return step
+//   }
+// }
 
-function fetchJammingJSON(range, target) {
-  fetch("../formatted_jamming.json")
-    .then(response => response.json())
-    .then(json => {
-      let blochJamming = json.bloch_jam;
-      calcRange(blochJamming, target, range)
-    })
-}
-
-function fetchCallingJSON(range, target) {
-  fetch("../formatted_calling.json")
-    .then(response => response.json())
-    .then(json => {
-      let blochCalling = json.bloch_call;
-      calcRange(blochCalling, target, range)
-    })
-}
-
-function calcRange(rangeData, target, range) {
-  let json = rangeData;
-  let callingCombos = 0;
-  let index;
-  let handStringValues = [];
-  let filteredHandObjects;
-  json.some(function (a, i) {
-    index = i;
-    if (convertToPercent((callingCombos + a.combos)) > range) {
-      return true
-    }
-    callingCombos += a.combos;
-    handStringValues.push(a.code)
-  });
-  filteredHandObjects = json.splice(0, index)
-  let lastHand = (filteredHandObjects[filteredHandObjects.length - 1])
-  let shortRange = getShortRange(json, index)
-  colorizeRange(target, handStringValues, filteredHandObjects, lastHand, shortRange)
-}
-
-function convertToPercent(combos) {
-  return (combos / 1326) * 100
-}
+// function decrementAndWriteRange() {
+//   let step = currentStep();
+//   if (step > 0) {
+//     step -= 1
+//     document.getElementById("grid-1").setAttribute("data-step_index") = step;
+//     return step
+//   } else {
+//     return step
+//   }
 
 
 
+
+
+
+  // function colorizeFromClick(results, hand, shortRange) {
+  //   let resultsArr = [];
+  //   results.filter((el) => {
+  //     resultsArr.push(el.code)
+  //   })
+  //   let tds = document.querySelectorAll("td");
+  //   let fullRange = "";
+  //   for (let td of tds) {
+  //     if (resultsArr.includes(`${td.getAttribute("id")}`)) {
+  //       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+  //     } else {
+  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+  //     }
+  //   }
+  //   let i = 0;
+  //   for (let r of shortRange) {
+  //     if (i == 5) {
+  //       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
+  //     } else {
+  //       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
+  //     }
+  //     i++
+  //   }
+
+  //   document.getElementById("range").innerHTML = fullRange;
+  //   let smallRange = document.querySelectorAll(".disp-hand");
+  //   for (let range of smallRange) {
+  //     range.addEventListener("click", (e) => {
+  //       fetchRangeFromClick(e.target)
+  //     })
+  //   }
+  // }
+
+  // function colorizeRange(target, filteredArr, filteredObjArr, lastHand, shortRange) {
+  //   let table = document.getElementById(target.getAttribute("id"));
+  //   let tableId = table.getAttribute("id");
+  //   let tds = document.querySelectorAll(`#${tableId} td`);
+  //   let fullRange = filteredArr;
+  //   for (let td of tds) {
+  //     if (fullRange.includes(`${td.getAttribute("id")}`)) {
+  //       document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+  //     } else {
+  //       document.querySelector(`#${td.getAttribute("id")}`).classList.remove("highlight")
+  //     }
+  //   }
+  //   let bottomRange = lastHand.code;
+  //   fetchRangeFromClick(bottomRange)
+  // }
