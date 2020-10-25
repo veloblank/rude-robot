@@ -81,7 +81,7 @@ async function fetchRange(bool) {
 function constructRangePeripherals(results) {
   let range;
   let fullRange = results;
-  let currentIndex = currentStep();
+  let currentIndex = getCurrentStep();
   if (currentIndex === 0) {
     range = fullRange
   } else {
@@ -92,21 +92,20 @@ function constructRangePeripherals(results) {
   calcRange(range, worstHand, shortRange)
 }
 
-function getShortRange(range, idx) {
-  let lower = idx - 5;
-  let upper = idx + 10;
-  if (idx <= 4) {
+function getShortRange(range, worstHandIdx) {
+  let lower = worstHandIdx - 5;
+  let upper = worstHandIdx + 10;
+  if (worstHandIdx <= 4) {
     return range.slice(0, upper)
-  } else if (idx > 164) {
+  } else if (worstHandIdx > 164) {
     return range.slice(lower, 169)
-  } else if (idx > 4) {
+  } else if (worstHandIdx > 4) {
     return range.slice(lower, upper)
   }
 }
 
-
 function incrementAndWriteRange(delta) {
-  let step = currentStep();
+  let step = getCurrentStep();
   if (step < 170) {
     step += delta
     document.getElementById("grid-1").setAttribute("data-step_index", step)
@@ -117,38 +116,50 @@ function incrementAndWriteRange(delta) {
 }
 
 function decrementAndWriteRange(delta) {
-  let step = currentStep();
+  let step = getCurrentStep();
   if (step <= 0) {
     return step
   } else {
-    step -= 1
-    document.getElementById("grid-1").setAttribute("data-step_index", step)
-    return step
+    step += delta
+    return setCurrentStep(step)
   }
 }
 
-function currentStep() {
+function getCurrentStep() {
   return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
 }
 
-function calcRange(rangeArr, worstHandObj, shortArr) {
-  let handStringValues = [];
-  let range = rangeArr;
-  let hand = worstHandObj;
-  let shortRange = shortArr;
-  for (let hand of range) {
-    handStringValues.push(hand.code)
-  }
-  colorizeRange(handStringValues, range, hand, shortRange)
+function setCurrentStep(step) {
+  return document.getElementById("grid-1").setAttribute("data-step_index", step);
 }
 
-function colorizeRange(handStringValues, handRange, hand, shortRange) {
+function calcRange(rangeArr, worstHandObj, shortArr, idx) {
+  let hand = worstHandObj;
+  let shortRange = shortArr;
+  let handStringValues = getHandStringValues(rangeArr)
+  colorizeRange(handStringValues, shortRange, rangeArr, hand)
+}
+
+function getRangeUsingCurrentStep() {
+  let idx = getCurrentStep();
+  let range = results.slice(0, idx + 1);
+  return range
+}
+
+function getHandStringValues(filteredRangeArr) {
+  let handStringValues = [];
+  let range = filteredRangeArr;
+  for (let r of range) {
+    handStringValues.push(r.code)
+  }
+  return handStringValues
+}
+
+function colorizeRange(handStringValues, shortRange) {
   let fullRange = "";
   let table = document.getElementById("grid-1");
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
-  let range = handRange;
-  let bottomOfRange = hand;
   let bannerRange = shortRange;
   if (handStringValues.length)
     for (let td of tds) {
@@ -179,15 +190,24 @@ function colorizeRange(handStringValues, handRange, hand, shortRange) {
 function fetchRangeFromBannerClick(hand) {
   let target = hand.getAttribute("data-var");
   matchHandStringwithHandObject(target)
+  let range = getRangeUsingCurrentStep();
+  let idx = getCurrentStep();
+  let shortRange = getShortRange(range, idx)
+  let values = getHandStringValues(range);
+  colorizeRange(values, shortRange)
+
 }
 
 function matchHandStringwithHandObject(targetString) {
-  let result;
+  let handObj;
+  let index;
   let checkHand = (a, i) => {
     if (a.code == targetString) {
-      result = results[i];
+      handObj = results[i];
+      index = i;
     }
   }
   results.some(checkHand)
-  return result
+  setCurrentStep(index);
+  return handObj;
 };
