@@ -56,12 +56,7 @@ function addClickListener(e) {
 }
 
 function checkToggle() {
-  let toggle = document.getElementById("mySwitch");
-  if (toggle.checked === true) {
-    return true
-  } else {
-    return false
-  }
+  document.getElementById("mySwitch").getAttribute("switched") ? true : false;
 }
 
 function fetchRangeFromClick(clickedHand) {
