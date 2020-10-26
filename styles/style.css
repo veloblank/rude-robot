@@ -251,12 +251,20 @@ input:checked + .slider:before {
   display: none;
 }
 
+.suited {
+  background-color: orange;
+  color: black;
+}
+
+.pair {
+  background-color: #4444f8;
+}
+
 .selected {
   background-color: greenyellow;
   font-family: 'Russo One', sans-serif;
   color: black;
   font-size: 24px;
-  font-weight: bold;
 }
 
 .disp-hand {

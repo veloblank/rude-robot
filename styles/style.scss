@@ -232,11 +232,13 @@ input:checked + .slider:before {
 	display: none;
 }
 
-.warning {
-  background-color: rgb(238, 197, 13);
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
+.suited {
+	background-color: orange;
+	color: black;
+}
+
+.pair {
+	background-color: #4444f8;
 }
 
 .selected {
@@ -244,8 +246,7 @@ input:checked + .slider:before {
 	font-family: 'Russo One', sans-serif;
 	color: black;
 	font-size: 24px;
-  fo
-  
+}
 
 .disp-hand {
 	width: 9%;
