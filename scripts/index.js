@@ -134,11 +134,11 @@ function setCurrentStep(step) {
   return document.getElementById("grid-1").setAttribute("data-step_index", step);
 }
 
-function calcRange(rangeArr, worstHandObj, shortArr, idx) {
+function calcRange(rangeArr, worstHandObj, shortArr) {
   let hand = worstHandObj;
   let shortRange = shortArr;
   let handStringValues = getHandStringValues(rangeArr)
-  colorizeRange(handStringValues, shortRange, rangeArr, hand)
+  colorizeRange(handStringValues, shortRange, hand)
 }
 
 function getRangeUsingCurrentStep() {
@@ -156,8 +156,9 @@ function getHandStringValues(filteredRangeArr) {
   return handStringValues
 }
 
-function colorizeRange(handStringValues, shortRange) {
+function colorizeRange(handStringValues, shortRange, worstHandObj) {
   let fullRange = "";
+  let worstHand = worstHandObj;
   let table = document.getElementById("grid-1");
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
@@ -172,13 +173,14 @@ function colorizeRange(handStringValues, shortRange) {
     }
   let i = 0;
   for (let r of bannerRange) {
-    if (i == 5) {
+    if (i == 0) {
       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
     } else {
       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
     }
     i++
   }
+  highlightListRangefromObjHand(worstHandObj)
   document.getElementById("range").innerHTML = fullRange;
   let smallRange = document.querySelectorAll(".disp-hand");
   for (let range of smallRange) {
@@ -188,6 +190,19 @@ function colorizeRange(handStringValues, shortRange) {
   }
 }
 
+function highlightListRangefromObjHand(worstHandObj) {
+  let htmlListedHands = document.querySelectorAll(".hand")
+  for (let hand of htmlListedHands) {
+    hand.classList.remove("selected")
+    let handId = hand.getAttribute("id")
+    if (handId === worstHandObj.name) {
+      hand.classList.add("selected")
+    }
+  }
+}
+
+
+
 function fetchRangeFromBannerClick(hand) {
   let target = hand.getAttribute("data-var");
   matchHandStringwithHandObject(target)
@@ -195,7 +210,6 @@ function fetchRangeFromBannerClick(hand) {
   let shortRange = getShortRange(range)
   let values = getHandStringValues(range);
   colorizeRange(values, shortRange)
-
 }
 
 function matchHandStringwithHandObject(targetString) {

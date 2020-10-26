@@ -232,12 +232,20 @@ input:checked + .slider:before {
 	display: none;
 }
 
+.warning {
+  background-color: rgb(238, 197, 13);
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .selected {
 	background-color: greenyellow;
+	font-family: 'Russo One', sans-serif;
 	color: black;
-	font-size: 22px;
-	font-weight: bold;
-}
+	font-size: 24px;
+  fo
+  
 
 .disp-hand {
 	width: 9%;
@@ -252,6 +260,7 @@ input:checked + .slider:before {
 
 #equity-list {
 	width: 100%;
+	font-size: 20px;
 }
 
 .push-hands {

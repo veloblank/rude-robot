@@ -253,8 +253,9 @@ input:checked + .slider:before {
 
 .selected {
   background-color: greenyellow;
+  font-family: 'Russo One', sans-serif;
   color: black;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -271,6 +272,7 @@ input:checked + .slider:before {
 
 #equity-list {
   width: 100%;
+  font-size: 20px;
 }
 
 .push-hands {
