@@ -88,25 +88,26 @@ function constructRangePeripherals(results) {
     range = fullRange.slice(0, currentIndex);
   }
   let worstHand = range[range.length - 1];
-  let shortRange = getShortRange(range, currentIndex);
+  let shortRange = getShortRange(range);
   calcRange(range, worstHand, shortRange)
 }
 
-function getShortRange(range, worstHandIdx) {
-  let lower = worstHandIdx - 5;
-  let upper = worstHandIdx + 10;
-  if (worstHandIdx <= 4) {
-    return range.slice(0, upper)
-  } else if (worstHandIdx > 164) {
+function getShortRange(range) {
+  let idx = getCurrentStep();
+  let lower = idx - 11;
+  let upper = idx + 10;
+  if (idx > 164) {
     return range.slice(lower, 169)
-  } else if (worstHandIdx > 4) {
+  } else if (idx < 6) {
+    return range.slice(0, 11)
+  } else if (idx > 4) {
     return range.slice(lower, upper)
   }
 }
 
 function incrementAndWriteRange(delta) {
   let step = getCurrentStep();
-  if (step < 170) {
+  if (step < 169) {
     step += delta
     document.getElementById("grid-1").setAttribute("data-step_index", step)
     return step
@@ -171,7 +172,7 @@ function colorizeRange(handStringValues, shortRange) {
     }
   let i = 0;
   for (let r of bannerRange) {
-    if (i == 10) {
+    if (i == 5) {
       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
     } else {
       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
@@ -191,8 +192,7 @@ function fetchRangeFromBannerClick(hand) {
   let target = hand.getAttribute("data-var");
   matchHandStringwithHandObject(target)
   let range = getRangeUsingCurrentStep();
-  let idx = getCurrentStep();
-  let shortRange = getShortRange(range, idx)
+  let shortRange = getShortRange(range)
   let values = getHandStringValues(range);
   colorizeRange(values, shortRange)
 

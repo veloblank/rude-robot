@@ -7,6 +7,7 @@
 
 body {
   background-color: red;
+  padding: 20px;
 }
 
 .container {
@@ -45,7 +46,7 @@ header {
 }
 
 .grid-container {
-  width: 800px;
+  width: 100%;
   display: inline-block;
   text-align: center;
   background-color: white;
@@ -53,9 +54,7 @@ header {
 
 #range-slider {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 75px;
   vertical-align: middle;
   font-size: 2.5em;
   font-family: 'Russo One', sans-serif;
@@ -64,10 +63,6 @@ header {
   padding: 5px 10px;
   background-color: #cacaca;
   border: 6px solid black;
-}
-
-#range-value {
-  width: 125px;
 }
 
 .game-table {
@@ -235,6 +230,7 @@ input:checked + .slider:before {
 }
 
 .switch-btn {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +239,6 @@ input:checked + .slider:before {
           justify-content: space-evenly;
   vertical-align: middle;
   text-align: center;
-  margin: auto;
 }
 
 .btn-text {
