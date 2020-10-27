@@ -176,14 +176,14 @@ function colorizeRange(handStringValues, shortRange, worstHandObj) {
     }
   let i = 0;
   for (let r of bannerRange) {
-    if (i == 0) {
+    if (i == 10) {
       fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
     } else {
       fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
     }
     i++
   }
-  highlightListRangefromObjHand(worstHandObj)
+  highlightListRangefromObjHand(worstHand)
   document.getElementById("range").innerHTML = fullRange;
   let smallRange = document.querySelectorAll(".disp-hand");
   for (let range of smallRange) {
