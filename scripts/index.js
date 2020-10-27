@@ -135,6 +135,9 @@ function setCurrentStep(step) {
 }
 
 function calcRange(rangeArr, worstHandObj, shortArr) {
+  let combos = Object.values(rangeArr).reduce((t, { combos }) => t + combos, 0)
+  let percent = convertToPercent(combos)
+  document.querySelector("#range-value").innerHTML = percent;
   let hand = worstHandObj;
   let shortRange = shortArr;
   let handStringValues = getHandStringValues(rangeArr)
@@ -201,8 +204,6 @@ function highlightListRangefromObjHand(worstHandObj) {
   }
 }
 
-
-
 function fetchRangeFromBannerClick(hand) {
   let target = hand.getAttribute("data-var");
   matchHandStringwithHandObject(target)
@@ -225,3 +226,7 @@ function matchHandStringwithHandObject(targetString) {
   setCurrentStep(index);
   return handObj;
 };
+
+function convertToPercent(combos) {
+  return ((combos / 1326) * 100).toFixed(2) + "%"
+}
