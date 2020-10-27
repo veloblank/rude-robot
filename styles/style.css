@@ -134,7 +134,7 @@ table:hover {
 
 td {
   background-color: black;
-  border: 1px solid #b8b8b8;
+  border: 3px solid #b85757;
   border-radius: 30%;
   text-align: center;
   vertical-align: middle;
@@ -143,20 +143,36 @@ td {
   font-size: 12px;
   display: inline-block;
   height: 100%;
-  width: 30px;
+  width: 35px;
   padding: 3px;
+  margin-right: 2px;
 }
 
 .click-highlight {
   background-color: #00ff2a;
   color: black;
-  border: 1px solid #0127ff;
+  border: 3px solid #0127ff;
 }
 
 .highlight {
   background-color: yellow;
   color: black;
-  border: 1px solid #0127ff;
+  border: 3px solid #0127ff;
+}
+
+.highlight,
+.sc {
+  border: 3px solid yellow;
+}
+
+.highlight,
+.s1g {
+  border: 3px solid orange;
+}
+
+.highlight,
+.s2g {
+  border: 3px solid red;
 }
 
 .lowlight {
