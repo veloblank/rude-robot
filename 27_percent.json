@@ -1,0 +1,680 @@
+{
+  "27_percent": [
+ {
+   "Hand": "AA",
+   "Equity": 84.53
+ },
+ {
+   "Hand": "KK",
+   "Equity": 76.24
+ },
+ {
+   "Hand": "QQ",
+   "Equity": 71.91
+ },
+ {
+   "Hand": "JJ",
+   "Equity": 67.68
+ },
+ {
+   "Hand": "AKs",
+   "Equity": 63.84
+ },
+ {
+   "Hand": "TT",
+   "Equity": 63.48
+ },
+ {
+   "Hand": "AKo",
+   "Equity": 62.02
+ },
+ {
+   "Hand": "AQs",
+   "Equity": 61.28
+ },
+ {
+   "Hand": "AQo",
+   "Equity": 59.27
+ },
+ {
+   "Hand": "99",
+   "Equity": 59.16
+ },
+ {
+   "Hand": "AJs",
+   "Equity": 58.8
+ },
+ {
+   "Hand": "AJo",
+   "Equity": 56.62
+ },
+ {
+   "Hand": "ATs",
+   "Equity": 56.4
+ },
+ {
+   "Hand": "88",
+   "Equity": 56.04
+ },
+ {
+   "Hand": "ATo",
+   "Equity": 54.05
+ },
+ {
+   "Hand": "77",
+   "Equity": 53.27
+ },
+ {
+   "Hand": "A9s",
+   "Equity": 52.12
+ },
+ {
+   "Hand": "KQs",
+   "Equity": 51.46
+ },
+ {
+   "Hand": "66",
+   "Equity": 51.43
+ },
+ {
+   "Hand": "A8s",
+   "Equity": 50.08
+ },
+ {
+   "Hand": "A9o",
+   "Equity": 49.48
+ },
+ {
+   "Hand": "55",
+   "Equity": 49.47
+ },
+ {
+   "Hand": "KJs",
+   "Equity": 49.23
+ },
+ {
+   "Hand": "KQo",
+   "Equity": 48.85
+ },
+ {
+   "Hand": "A7s",
+   "Equity": 47.94
+ },
+ {
+   "Hand": "44",
+   "Equity": 47.55
+ },
+ {
+   "Hand": "A8o",
+   "Equity": 47.3
+ },
+ {
+   "Hand": "KTs",
+   "Equity": 47.15
+ },
+ {
+   "Hand": "A5s",
+   "Equity": 46.66
+ },
+ {
+   "Hand": "A6s",
+   "Equity": 46.56
+ },
+ {
+   "Hand": "KJo",
+   "Equity": 46.47
+ },
+ {
+   "Hand": "QJs",
+   "Equity": 46.19
+ },
+ {
+   "Hand": "A4s",
+   "Equity": 45.96
+ },
+ {
+   "Hand": "33",
+   "Equity": 45.71
+ },
+ {
+   "Hand": "A3s",
+   "Equity": 45.42
+ },
+ {
+   "Hand": "A7o",
+   "Equity": 44.98
+ },
+ {
+   "Hand": "A2s",
+   "Equity": 44.88
+ },
+ {
+   "Hand": "KTo",
+   "Equity": 44.24
+ },
+ {
+   "Hand": "QTs",
+   "Equity": 44.13
+ },
+ {
+   "Hand": "K9s",
+   "Equity": 44.05
+ },
+ {
+   "Hand": "22",
+   "Equity": 43.88
+ },
+ {
+   "Hand": "A5o",
+   "Equity": 43.6
+ },
+ {
+   "Hand": "A6o",
+   "Equity": 43.46
+ },
+ {
+   "Hand": "QJo",
+   "Equity": 43.28
+ },
+ {
+   "Hand": "A4o",
+   "Equity": 42.82
+ },
+ {
+   "Hand": "JTs",
+   "Equity": 42.39
+ },
+ {
+   "Hand": "K8s",
+   "Equity": 42.29
+ },
+ {
+   "Hand": "A3o",
+   "Equity": 42.23
+ },
+ {
+   "Hand": "A2o",
+   "Equity": 41.65
+ },
+ {
+   "Hand": "Q9s",
+   "Equity": 41.61
+ },
+ {
+   "Hand": "K7s",
+   "Equity": 41.51
+ },
+ {
+   "Hand": "K6s",
+   "Equity": 41.35
+ },
+ {
+   "Hand": "QTo",
+   "Equity": 41.07
+ },
+ {
+   "Hand": "K9o",
+   "Equity": 40.89
+ },
+ {
+   "Hand": "K5s",
+   "Equity": 40.52
+ },
+ {
+   "Hand": "J9s",
+   "Equity": 40.38
+ },
+ {
+   "Hand": "K4s",
+   "Equity": 40.24
+ },
+ {
+   "Hand": "T9s",
+   "Equity": 40.17
+ },
+ {
+   "Hand": "Q8s",
+   "Equity": 39.88
+ },
+ {
+   "Hand": "K3s",
+   "Equity": 39.7
+ },
+ {
+   "Hand": "JTo",
+   "Equity": 39.27
+ },
+ {
+   "Hand": "K2s",
+   "Equity": 39.15
+ },
+ {
+   "Hand": "K8o",
+   "Equity": 39.02
+ },
+ {
+   "Hand": "98s",
+   "Equity": 39
+ },
+ {
+   "Hand": "J8s",
+   "Equity": 38.66
+ },
+ {
+   "Hand": "Q6s",
+   "Equity": 38.56
+ },
+ {
+   "Hand": "T8s",
+   "Equity": 38.45
+ },
+ {
+   "Hand": "Q9o",
+   "Equity": 38.32
+ },
+ {
+   "Hand": "Q7s",
+   "Equity": 38.24
+ },
+ {
+   "Hand": "87s",
+   "Equity": 38.19
+ },
+ {
+   "Hand": "K7o",
+   "Equity": 38.15
+ },
+ {
+   "Hand": "76s",
+   "Equity": 38.02
+ },
+ {
+   "Hand": "K6o",
+   "Equity": 37.99
+ },
+ {
+   "Hand": "97s",
+   "Equity": 37.83
+ },
+ {
+   "Hand": "Q5s",
+   "Equity": 37.73
+ },
+ {
+   "Hand": "Q4s",
+   "Equity": 37.47
+ },
+ {
+   "Hand": "65s",
+   "Equity": 37.43
+ },
+ {
+   "Hand": "86s",
+   "Equity": 37.36
+ },
+ {
+   "Hand": "J7s",
+   "Equity": 37.17
+ },
+ {
+   "Hand": "K5o",
+   "Equity": 37.11
+ },
+ {
+   "Hand": "T7s",
+   "Equity": 37.08
+ },
+ {
+   "Hand": "J9o",
+   "Equity": 37.05
+ },
+ {
+   "Hand": "96s",
+   "Equity": 37
+ },
+ {
+   "Hand": "Q3s",
+   "Equity": 36.9
+ },
+ {
+   "Hand": "T9o",
+   "Equity": 36.85
+ },
+ {
+   "Hand": "54s",
+   "Equity": 36.83
+ },
+ {
+   "Hand": "K4o",
+   "Equity": 36.81
+ },
+ {
+   "Hand": "Q8o",
+   "Equity": 36.49
+ },
+ {
+   "Hand": "J6s",
+   "Equity": 36.38
+ },
+ {
+   "Hand": "75s",
+   "Equity": 36.34
+ },
+ {
+   "Hand": "Q2s",
+   "Equity": 36.32
+ },
+ {
+   "Hand": "T6s",
+   "Equity": 36.25
+ },
+ {
+   "Hand": "64s",
+   "Equity": 36.23
+ },
+ {
+   "Hand": "K3o",
+   "Equity": 36.22
+ },
+ {
+   "Hand": "J5s",
+   "Equity": 35.78
+ },
+ {
+   "Hand": "K2o",
+   "Equity": 35.63
+ },
+ {
+   "Hand": "85s",
+   "Equity": 35.6
+ },
+ {
+   "Hand": "98o",
+   "Equity": 35.6
+ },
+ {
+   "Hand": "J4s",
+   "Equity": 35.54
+ },
+ {
+   "Hand": "53s",
+   "Equity": 35.28
+ },
+ {
+   "Hand": "J8o",
+   "Equity": 35.22
+ },
+ {
+   "Hand": "95s",
+   "Equity": 35.21
+ },
+ {
+   "Hand": "74s",
+   "Equity": 35.08
+ },
+ {
+   "Hand": "Q6o",
+   "Equity": 35.08
+ },
+ {
+   "Hand": "T8o",
+   "Equity": 35.03
+ },
+ {
+   "Hand": "J3s",
+   "Equity": 34.95
+ },
+ {
+   "Hand": "43s",
+   "Equity": 34.89
+ },
+ {
+   "Hand": "87o",
+   "Equity": 34.77
+ },
+ {
+   "Hand": "Q7o",
+   "Equity": 34.75
+ },
+ {
+   "Hand": "76o",
+   "Equity": 34.66
+ },
+ {
+   "Hand": "63s",
+   "Equity": 34.66
+ },
+ {
+   "Hand": "T4s",
+   "Equity": 34.45
+ },
+ {
+   "Hand": "T5s",
+   "Equity": 34.44
+ },
+ {
+   "Hand": "97o",
+   "Equity": 34.41
+ },
+ {
+   "Hand": "J2s",
+   "Equity": 34.36
+ },
+ {
+   "Hand": "84s",
+   "Equity": 34.33
+ },
+ {
+   "Hand": "Q5o",
+   "Equity": 34.21
+ },
+ {
+   "Hand": "65o",
+   "Equity": 34.07
+ },
+ {
+   "Hand": "94s",
+   "Equity": 33.95
+ },
+ {
+   "Hand": "86o",
+   "Equity": 33.93
+ },
+ {
+   "Hand": "Q4o",
+   "Equity": 33.92
+ },
+ {
+   "Hand": "T3s",
+   "Equity": 33.86
+ },
+ {
+   "Hand": "52s",
+   "Equity": 33.68
+ },
+ {
+   "Hand": "J7o",
+   "Equity": 33.65
+ },
+ {
+   "Hand": "93s",
+   "Equity": 33.64
+ },
+ {
+   "Hand": "T7o",
+   "Equity": 33.61
+ },
+ {
+   "Hand": "96o",
+   "Equity": 33.52
+ },
+ {
+   "Hand": "73s",
+   "Equity": 33.49
+ },
+ {
+   "Hand": "54o",
+   "Equity": 33.43
+ },
+ {
+   "Hand": "42s",
+   "Equity": 33.33
+ },
+ {
+   "Hand": "Q3o",
+   "Equity": 33.3
+ },
+ {
+   "Hand": "T2s",
+   "Equity": 33.26
+ },
+ {
+   "Hand": "62s",
+   "Equity": 33.07
+ },
+ {
+   "Hand": "92s",
+   "Equity": 33.06
+ },
+ {
+   "Hand": "75o",
+   "Equity": 32.9
+ },
+ {
+   "Hand": "J6o",
+   "Equity": 32.8
+ },
+ {
+   "Hand": "64o",
+   "Equity": 32.78
+ },
+ {
+   "Hand": "83s",
+   "Equity": 32.76
+ },
+ {
+   "Hand": "T6o",
+   "Equity": 32.71
+ },
+ {
+   "Hand": "32s",
+   "Equity": 32.68
+ },
+ {
+   "Hand": "Q2o",
+   "Equity": 32.68
+ },
+ {
+   "Hand": "82s",
+   "Equity": 32.45
+ },
+ {
+   "Hand": "J5o",
+   "Equity": 32.18
+ },
+ {
+   "Hand": "85o",
+   "Equity": 32.06
+ },
+ {
+   "Hand": "J4o",
+   "Equity": 31.92
+ },
+ {
+   "Hand": "72s",
+   "Equity": 31.9
+ },
+ {
+   "Hand": "53o",
+   "Equity": 31.77
+ },
+ {
+   "Hand": "95o",
+   "Equity": 31.63
+ },
+ {
+   "Hand": "74o",
+   "Equity": 31.54
+ },
+ {
+   "Hand": "43o",
+   "Equity": 31.35
+ },
+ {
+   "Hand": "J3o",
+   "Equity": 31.28
+ },
+ {
+   "Hand": "63o",
+   "Equity": 31.1
+ },
+ {
+   "Hand": "T5o",
+   "Equity": 30.8
+ },
+ {
+   "Hand": "T4o",
+   "Equity": 30.8
+ },
+ {
+   "Hand": "84o",
+   "Equity": 30.7
+ },
+ {
+   "Hand": "J2o",
+   "Equity": 30.64
+ },
+ {
+   "Hand": "94o",
+   "Equity": 30.27
+ },
+ {
+   "Hand": "T3o",
+   "Equity": 30.16
+ },
+ {
+   "Hand": "52o",
+   "Equity": 30.07
+ },
+ {
+   "Hand": "93o",
+   "Equity": 29.94
+ },
+ {
+   "Hand": "73o",
+   "Equity": 29.84
+ },
+ {
+   "Hand": "42o",
+   "Equity": 29.7
+ },
+ {
+   "Hand": "T2o",
+   "Equity": 29.51
+ },
+ {
+   "Hand": "62o",
+   "Equity": 29.4
+ },
+ {
+   "Hand": "92o",
+   "Equity": 29.31
+ },
+ {
+   "Hand": "83o",
+   "Equity": 29.01
+ },
+ {
+   "Hand": "32o",
+   "Equity": 29.01
+ },
+ {
+   "Hand": "82o",
+   "Equity": 28.67
+ },
+ {
+   "Hand": "72o",
+   "Equity": 28.13
+ }
+]
+}
