@@ -13,7 +13,7 @@ body {
 .container {
   color: white;
   height: 100%;
-  width: 80%;
+  width: 645px;
   margin: auto;
   background-color: black;
 }
@@ -306,5 +306,11 @@ input:checked + .slider:before {
 
 .call-hands {
   margin: auto;
+}
+
+.hand {
+  width: 50px;
+  text-align: center;
+  border: 2px solid white;
 }
 /*# sourceMappingURL=style.css.map */
