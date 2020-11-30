@@ -8,8 +8,8 @@ function addListeners() {
 }
 
 function addTableListener() {
-  let grid = document.querySelector(".grid")
-  grid.addEventListener("mouseenter", e => {
+  let main = document.querySelector("main")
+  main.addEventListener("mouseenter", e => {
     addWheelListener(e.target);
   })
 }
