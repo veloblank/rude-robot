@@ -12,7 +12,7 @@ body {
 .container {
 	color: white;
 	height: 100%;
-	width: 645px;
+	width: 580px;
 	margin: auto;
 	background-color: black;
 }
@@ -281,7 +281,7 @@ input:checked + .slider:before {
 }
 
 .push-hands {
-	justify-content: space-around;
+	margin: auto;
 }
 
 .call-hands {
