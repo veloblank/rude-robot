@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: black;
+}
+
 main {
 	margin: auto;
 	text-align: center;
-}
-
-body {
-	background-color: red;
 }
 
 .container {
@@ -92,24 +92,20 @@ header {
 	background-color: #e0bbe4;
 	color: #0000ff;
 }
-.event04 {
-	background-color: #741fc9;
-}
+.event04,
 .event05 {
 	background-color: #f4f0cb;
 	color: black;
 }
-.event06 {
-	background-color: #5b0a64;
-}
+.event06,
 .event07 {
-	background-color: #aac5e2;
-}
-.event08 {
 	background-color: #312d2e;
 }
+.event08 {
+	background-color: #fec8d8;
+}
 .event09 {
-	background-color: #e75f88;
+	background-color: #fec8d8;
 }
 .event10 {
 	background-color: #fec8d8;
@@ -125,8 +121,8 @@ table:hover {
 
 td {
 	background-color: black;
-	border: 3px solid rgb(184, 87, 87);
-	border-radius: 30%;
+	border: 2px solid rgb(85, 58, 58);
+	border-radius: 20%;
 	text-align: center;
 	vertical-align: middle;
 	font-family: 'Arial', sans-serif;
@@ -136,34 +132,19 @@ td {
 	height: 100%;
 	width: 35px;
 	padding: 3px;
-	margin-right: 2px;
+	margin-right: 1px;
 }
 
 .click-highlight {
 	background-color: rgb(0, 255, 42);
 	color: black;
-	border: 3px solid rgb(1, 39, 255);
+	border: 2px solid rgb(1, 39, 255);
 }
 
 .highlight {
 	background-color: yellow;
 	color: black;
-	border: 3px solid rgb(1, 39, 255);
-}
-
-.highlight,
-.sc {
-	border: 3px solid yellow;
-}
-
-.highlight,
-.s1g {
-	border: 3px solid orange;
-}
-
-.highlight,
-.s2g {
-	border: 3px solid red;
+	border: 2px solid rgb(1, 39, 255);
 }
 
 .lowlight {
@@ -264,10 +245,9 @@ input:checked + .slider:before {
 }
 
 .selected {
-	background-color: greenyellow;
-	font-family: 'Russo One', sans-serif;
+	background-color: rgb(255, 47, 47);
+	// font-family: 'Russo One', sans-serif;
 	color: black;
-	font-size: 20px;
 }
 
 .disp-hand {
