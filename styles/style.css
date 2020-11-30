@@ -280,4 +280,8 @@ input:checked + .slider:before {
 #equity-list {
   width: 100%;
 }
+
+.sc {
+  background-color: #249724;
+}
 /*# sourceMappingURL=style.css.map */
