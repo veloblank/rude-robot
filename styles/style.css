@@ -124,6 +124,10 @@ header {
   background-color: #fec8d8;
 }
 
+.sc {
+  background-color: #249724;
+}
+
 .grid {
   margin: auto;
 }
@@ -279,9 +283,5 @@ input:checked + .slider:before {
 
 #equity-list {
   width: 100%;
-}
-
-.sc {
-  background-color: #249724;
 }
 /*# sourceMappingURL=style.css.map */
