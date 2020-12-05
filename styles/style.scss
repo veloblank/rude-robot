@@ -82,6 +82,10 @@ header {
 	display: inline-block;
 }
 
+.hand:hover {
+	cursor: default;
+}
+
 .event01 {
 	background-color: rgb(240, 54, 54);
 }
@@ -266,4 +270,8 @@ input:checked + .slider:before {
 
 #equity-list {
 	width: 100%;
+}
+
+#equity-list:hover {
+	cursor: default;
 }
