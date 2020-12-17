@@ -54,8 +54,10 @@ async function renderFetchResults() {
   results = await fetchRange(bool);
   if (bool) {
     results = results.bloch_jam
+    buildJamHtml(results)
   } else {
     results = results.bloch_call
+    buildCallHtml(results)
   }
 }
 
@@ -75,6 +77,32 @@ async function fetchRange(bool) {
     return obj;
   } catch (error) {
     console.log(error)
+  }
+}
+
+// PROGRAMMATICALLY CREATE AND ADD HTML DIVS
+
+function buildCallHtml(arr) {
+  let parentDiv = document.querySelector(".call-hands")
+  parentDiv.innerHTML = ""
+  for (let hand of arr) {
+    let childDiv = document.createElement("div")
+    childDiv.classList.add("hand", `${hand.type}`)
+    childDiv.setAttribute("id", `${hand.name}`)
+    childDiv.innerText = `${hand.string_f}`
+    parentDiv.appendChild(childDiv);
+  }
+}
+
+function buildJamHtml(arr) {
+  let parentDiv = document.querySelector(".push-hands")
+  parentDiv.innerHTML = ""
+  for (let hand of arr) {
+    let childDiv = document.createElement("div")
+    childDiv.classList.add("hand", `${hand.type}`)
+    childDiv.setAttribute("id", `${hand.name}`)
+    childDiv.innerText = `${hand.string_f}`
+    parentDiv.appendChild(childDiv);
   }
 }
 
