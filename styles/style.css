@@ -298,4 +298,12 @@ input:checked + .slider:before {
 #equity-list:hover {
   cursor: default;
 }
+
+#call-range-value {
+  color: #0000ff;
+}
+
+#push-range-value {
+  color: greenyellow;
+}
 /*# sourceMappingURL=style.css.map */

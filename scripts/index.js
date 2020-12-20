@@ -172,8 +172,12 @@ function setCurrentStep(step) {
 
 function calcRange(rangeArr) {
   let combos = Object.values(rangeArr).reduce((t, { combos }) => t + combos, 0)
-  let percent = convertToPercent(combos)
-  document.querySelector("#range-value").innerHTML = percent;
+  let percent = convertToPercent(combos);
+  if (checkToggle()) {
+    document.querySelector("#push-range-value").innerHTML = percent;
+  } else {
+    document.querySelector("#call-range-value").innerHTML = percent;
+  }
   let handStringValues = getHandStringValues(rangeArr)
   colorizeRange(handStringValues)
 }
