@@ -281,6 +281,13 @@
       "combos": 4
     },
     {
+      "name": "phs49",
+      "code": "cell_9A",
+      "string_f": "A9o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
       "name": "phs45",
       "code": "cell_JQ",
       "string_f": "QJo",
@@ -295,6 +302,13 @@
       "combos": 4
     },
     {
+      "name": "phs41",
+      "code": "cell_98",
+      "string_f": "98s",
+      "type": "suited",
+      "combos": 4
+    },
+    {
       "name": "phs38",
       "code": "cell_K8",
       "string_f": "K8s",
@@ -305,13 +319,6 @@
       "name": "phs40",
       "code": "cell_T8",
       "string_f": "T8s",
-      "type": "suited",
-      "combos": 4
-    },
-    {
-      "name": "phs41",
-      "code": "cell_98",
-      "string_f": "98s",
       "type": "suited",
       "combos": 4
     },
@@ -335,13 +342,6 @@
       "string_f": "K7s",
       "type": "suited",
       "combos": 4
-    },
-    {
-      "name": "phs49",
-      "code": "cell_9A",
-      "string_f": "A9o",
-      "type": "unsuited",
-      "combos": 12
     },
     {
       "name": "phs50",
