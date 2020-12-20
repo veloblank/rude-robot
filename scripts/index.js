@@ -42,6 +42,7 @@ function addClickListeners() {
   let button = document.querySelector("#mySwitch");
   button.addEventListener("input", () => {
     let bool = checkToggle();
+    setCurrentStep(0)
     if (bool) {
       document.querySelector(".push-hands").classList.remove("hidden")
       document.querySelector(".call-hands").classList.add("hidden")
@@ -199,10 +200,19 @@ function colorizeRange(handStringValues) {
   let tds = document.querySelectorAll(`#${tableId} td`);
   if (handStringValues.length) {
     for (let td of tds) {
-      if (handStringValues.includes(`${td.getAttribute("id")}`)) {
-        document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+      if (checkToggle()) {
+        if (handStringValues.includes(`${td.getAttribute("id")}`)) {
+          document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+        } else {
+          document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+        }
       } else {
         document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+        if (handStringValues.includes(`${td.getAttribute("id")}`)) {
+          document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-push-highlight")
+        } else {
+          document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-push-highlight")
+        }
       }
     }
   }
