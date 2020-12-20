@@ -193,6 +193,7 @@ function getHandStringValues(filteredRangeArr) {
 }
 
 function colorizeRange(handStringValues) {
+  let lastHand = handStringValues.slice(-1)[0]
   let table = document.getElementById("grid-1");
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
@@ -205,14 +206,15 @@ function colorizeRange(handStringValues) {
       }
     }
   }
+  highlightListRangefromHand(lastHand)
 }
 
-function highlightListRangefromObjHand(worstHandObj) {
+function highlightListRangefromHand(lastHand) {
   let htmlListedHands = document.querySelectorAll(".hand")
   for (let hand of htmlListedHands) {
     hand.classList.remove("selected")
     let handId = hand.getAttribute("id")
-    if (handId === worstHandObj.name) {
+    if (handId === lastHand) {
       hand.classList.add("selected")
     }
   }
