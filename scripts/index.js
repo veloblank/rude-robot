@@ -8,11 +8,13 @@ function addListeners() {
 }
 
 function addTableListener() {
-  let main = document.querySelector("main")
+  let main = document.querySelector("main");
   main.addEventListener("mouseenter", e => {
     addWheelListener(e.target);
   })
 }
+
+
 
 function addWheelListener(target) {
   target.onwheel = e => {
@@ -30,6 +32,13 @@ function addWheelListener(target) {
 }
 
 function addClickListeners() {
+  let tds = document.querySelectorAll("td")
+  for (let td of tds) {
+    td.addEventListener("click", (e) => {
+      let targetTd = e.target;
+      getHandIdFromTd(targetTd);
+    })
+  }
   let button = document.querySelector("#mySwitch");
   button.addEventListener("input", () => {
     let bool = checkToggle();
@@ -88,7 +97,7 @@ function buildCallHtml(arr) {
   for (let hand of arr) {
     let childDiv = document.createElement("div")
     childDiv.classList.add("hand", `${hand.type}`)
-    childDiv.setAttribute("id", `${hand.name}`)
+    childDiv.setAttribute("id", `${hand.code}`)
     childDiv.innerText = `${hand.string_f}`
     parentDiv.appendChild(childDiv);
   }
@@ -100,7 +109,7 @@ function buildJamHtml(arr) {
   for (let hand of arr) {
     let childDiv = document.createElement("div")
     childDiv.classList.add("hand", `${hand.type}`)
-    childDiv.setAttribute("id", `${hand.name}`)
+    childDiv.setAttribute("id", `${hand.code}`)
     childDiv.innerText = `${hand.string_f}`
     parentDiv.appendChild(childDiv);
   }
@@ -115,9 +124,7 @@ function constructRangePeripherals(results) {
   } else {
     range = fullRange.slice(0, currentIndex);
   }
-  let worstHand = range[range.length - 1];
-  let shortRange = getShortRange(range);
-  calcRange(range, worstHand, shortRange)
+  calcRange(range)
 }
 
 function getShortRange(range) {
@@ -162,14 +169,12 @@ function setCurrentStep(step) {
   return document.getElementById("grid-1").setAttribute("data-step_index", step);
 }
 
-function calcRange(rangeArr, worstHandObj, shortArr) {
+function calcRange(rangeArr) {
   let combos = Object.values(rangeArr).reduce((t, { combos }) => t + combos, 0)
   let percent = convertToPercent(combos)
   document.querySelector("#range-value").innerHTML = percent;
-  let hand = worstHandObj;
-  let shortRange = shortArr;
   let handStringValues = getHandStringValues(rangeArr)
-  colorizeRange(handStringValues, shortRange, hand)
+  colorizeRange(handStringValues)
 }
 
 function getRangeUsingCurrentStep() {
@@ -187,14 +192,11 @@ function getHandStringValues(filteredRangeArr) {
   return handStringValues
 }
 
-function colorizeRange(handStringValues, shortRange, worstHandObj) {
-  let fullRange = "";
-  let worstHand = worstHandObj;
+function colorizeRange(handStringValues) {
   let table = document.getElementById("grid-1");
   let tableId = table.getAttribute("id");
   let tds = document.querySelectorAll(`#${tableId} td`);
-  let bannerRange = shortRange;
-  if (handStringValues.length)
+  if (handStringValues.length) {
     for (let td of tds) {
       if (handStringValues.includes(`${td.getAttribute("id")}`)) {
         document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
@@ -202,22 +204,6 @@ function colorizeRange(handStringValues, shortRange, worstHandObj) {
         document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
       }
     }
-  let i = 0;
-  for (let r of bannerRange) {
-    if (i == 10) {
-      fullRange += `<span class="disp-hand selected" data-var="${r.code}">${r.string_f}</span >`
-    } else {
-      fullRange += `<span class="disp-hand" data-var="${r.code}">${r.string_f}</span >`
-    }
-    i++
-  }
-  highlightListRangefromObjHand(worstHand)
-  document.getElementById("range").innerHTML = fullRange;
-  let smallRange = document.querySelectorAll(".disp-hand");
-  for (let range of smallRange) {
-    range.addEventListener("click", (e) => {
-      fetchRangeFromBannerClick(e.target)
-    })
   }
 }
 
@@ -233,12 +219,47 @@ function highlightListRangefromObjHand(worstHandObj) {
 }
 
 function fetchRangeFromBannerClick(hand) {
-  let target = hand.getAttribute("data-var");
+  let target = getHandStringFromHand(hand);
   matchHandStringwithHandObject(target)
   let range = getRangeUsingCurrentStep();
-  let shortRange = getShortRange(range)
   let values = getHandStringValues(range);
-  colorizeRange(values, shortRange)
+  colorizeRange(values)
+}
+
+function getHandStringFromHand(hand) {
+  return hand.getAttribute("data-var");
+}
+
+function getHandIdFromTd(td) {
+  let handString = td.getAttribute("id");
+  setStepAndColorizeUsingString(handString)
+}
+
+function setStepAndColorizeUsingString(targetString) {
+  let handObj;
+  let index;
+  let checkHand = (a, i) => {
+    if (a.code == targetString) {
+      handObj = results[i];
+      index = i;
+    }
+  }
+  results.some(checkHand)
+  setCurrentStep(index + 1);
+  constructRangePeripherals(results)
+  highlightClickedDiv(targetString)
+}
+
+function highlightClickedDiv(handString) {
+  let htmlListedHands = document.querySelectorAll(".hand")
+  for (let hand of htmlListedHands) {
+    hand.classList.remove("selected")
+    let handId = hand.getAttribute("id")
+    if (handId === handString) {
+      hand.classList.add("selected")
+    }
+  }
+
 }
 
 function matchHandStringwithHandObject(targetString) {
