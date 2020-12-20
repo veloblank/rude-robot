@@ -171,12 +171,19 @@ function setCurrentStep(step) {
 }
 
 function calcRange(rangeArr) {
+  let pushRange = document.querySelector(".push-range-value");
+  let callRange = document.querySelector(".call-range-value");
   let combos = Object.values(rangeArr).reduce((t, { combos }) => t + combos, 0)
   let percent = convertToPercent(combos);
   if (checkToggle()) {
-    document.querySelector("#push-range-value").innerHTML = percent;
+    pushRange.innerHTML = percent;
   } else {
-    document.querySelector("#call-range-value").innerHTML = percent;
+    callRange.innerHTML = percent;
+  }
+  if (parseInt(pushRange.innerHTML) > parseInt(callRange.innerHTML)) {
+    pushRange.classList.add("red-warning")
+  } else {
+    pushRange.classList.remove("red-warning")
   }
   let handStringValues = getHandStringValues(rangeArr)
   colorizeRange(handStringValues)

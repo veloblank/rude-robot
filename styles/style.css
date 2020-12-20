@@ -299,11 +299,15 @@ input:checked + .slider:before {
   cursor: default;
 }
 
-#call-range-value {
+.call-range-value {
   color: #0000ff;
 }
 
-#push-range-value {
+.push-range-value {
   color: greenyellow;
+}
+
+.red-warning {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
