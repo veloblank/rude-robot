@@ -981,27 +981,6 @@
       "combos": 12
     },
     {
-      "name": "phs140",
-      "code": "cell_82",
-      "string_f": "82s",
-      "type": "suited",
-      "combos": 4
-    },
-    {
-      "name": "phs141",
-      "code": "cell_49",
-      "string_f": "94o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs142",
-      "code": "cell_39",
-      "string_f": "93o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
       "name": "phs143",
       "code": "cell_56",
       "string_f": "65o",
@@ -1030,13 +1009,6 @@
       "combos": 4
     },
     {
-      "name": "phs147",
-      "code": "cell_48",
-      "string_f": "84o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
       "name": "phs148",
       "code": "cell_43",
       "string_f": "43s",
@@ -1044,30 +1016,16 @@
       "combos": 4
     },
     {
-      "name": "phs149",
-      "code": "cell_47",
-      "string_f": "74o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs150",
-      "code": "cell_45",
-      "string_f": "54o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs151",
-      "code": "cell_72",
-      "string_f": "72s",
+      "name": "phs140",
+      "code": "cell_82",
+      "string_f": "82s",
       "type": "suited",
       "combos": 4
     },
     {
-      "name": "phs152",
-      "code": "cell_46",
-      "string_f": "64o",
+      "name": "phs141",
+      "code": "cell_49",
+      "string_f": "94o",
       "type": "unsuited",
       "combos": 12
     },
@@ -1079,9 +1037,30 @@
       "combos": 4
     },
     {
-      "name": "phs154",
-      "code": "cell_29",
-      "string_f": "92o",
+      "name": "phs150",
+      "code": "cell_45",
+      "string_f": "54o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs142",
+      "code": "cell_39",
+      "string_f": "93o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs147",
+      "code": "cell_48",
+      "string_f": "84o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs152",
+      "code": "cell_46",
+      "string_f": "64o",
       "type": "unsuited",
       "combos": 12
     },
@@ -1093,11 +1072,18 @@
       "combos": 4
     },
     {
-      "name": "phs156",
-      "code": "cell_38",
-      "string_f": "83o",
+      "name": "phs149",
+      "code": "cell_47",
+      "string_f": "74o",
       "type": "unsuited",
       "combos": 12
+    },
+    {
+      "name": "phs151",
+      "code": "cell_72",
+      "string_f": "72s",
+      "type": "suited",
+      "combos": 4
     },
     {
       "name": "phs157",
@@ -1107,30 +1093,9 @@
       "combos": 4
     },
     {
-      "name": "phs158",
-      "code": "cell_28",
-      "string_f": "82o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs159",
-      "code": "cell_37",
-      "string_f": "73o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs160",
-      "code": "cell_35",
-      "string_f": "53o",
-      "type": "unsuited",
-      "combos": 12
-    },
-    {
-      "name": "phs161",
-      "code": "cell_36",
-      "string_f": "63o",
+      "name": "phs154",
+      "code": "cell_29",
+      "string_f": "92o",
       "type": "unsuited",
       "combos": 12
     },
@@ -1142,6 +1107,34 @@
       "combos": 4
     },
     {
+      "name": "phs160",
+      "code": "cell_35",
+      "string_f": "53o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs156",
+      "code": "cell_38",
+      "string_f": "83o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs161",
+      "code": "cell_36",
+      "string_f": "63o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs159",
+      "code": "cell_37",
+      "string_f": "73o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
       "name": "phs163",
       "code": "cell_34",
       "string_f": "43o",
@@ -1149,9 +1142,9 @@
       "combos": 12
     },
     {
-      "name": "phs164",
-      "code": "cell_27",
-      "string_f": "72o",
+      "name": "phs158",
+      "code": "cell_28",
+      "string_f": "82o",
       "type": "unsuited",
       "combos": 12
     },
@@ -1166,6 +1159,13 @@
       "name": "phs166",
       "code": "cell_26",
       "string_f": "62o",
+      "type": "unsuited",
+      "combos": 12
+    },
+    {
+      "name": "phs164",
+      "code": "cell_27",
+      "string_f": "72o",
       "type": "unsuited",
       "combos": 12
     },
