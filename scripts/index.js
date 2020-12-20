@@ -42,8 +42,8 @@ function addClickListeners() {
   let button = document.querySelector("#mySwitch");
   button.addEventListener("input", () => {
     let bool = checkToggle();
-    setCurrentStep(0)
     if (bool) {
+      setCurrentStep(0)
       document.querySelector(".push-hands").classList.remove("hidden")
       document.querySelector(".call-hands").classList.add("hidden")
     } else {
