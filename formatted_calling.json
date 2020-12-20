@@ -582,13 +582,6 @@
       "combos": 12
     },
     {
-      "name": "chs84",
-      "code": "cell_J3",
-      "string_f": "J3s",
-      "type": "suited",
-      "combos": 4
-    },
-    {
       "name": "chs85",
       "code": "cell_8J",
       "string_f": "J8o",
@@ -699,6 +692,13 @@
       "string_f": "98o",
       "type": "unsuited",
       "combos": 12
+    },
+    {
+      "name": "chs84",
+      "code": "cell_J3",
+      "string_f": "J3s",
+      "type": "suited",
+      "combos": 4
     },
     {
       "name": "chs101",
