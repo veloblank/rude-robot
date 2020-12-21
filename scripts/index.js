@@ -30,7 +30,7 @@ function addWheelListener(target) {
 }
 
 function displayResultsOfRange() {
-  constructRangePeripherals(results)
+  constructRange(results)
 }
 
 function addClickListeners() {
@@ -118,15 +118,8 @@ function buildJamHtml(arr) {
   }
 }
 
-function constructRangePeripherals(results) {
-  let range;
-  let fullRange = results;
-  let currentIndex = getCurrentStep();
-  if (currentIndex === 0) {
-    range = fullRange
-  } else {
-    range = fullRange.slice(0, currentIndex);
-  }
+function constructRange(results) {
+  let range = results.slice(0, getCurrentStep());
   calcRange(range)
 }
 
@@ -283,7 +276,7 @@ function setStepAndColorizeUsingString(targetString) {
   }
   results.some(checkHand)
   setCurrentStep(index + 1);
-  constructRangePeripherals(results)
+  constructRange(results)
   highlightClickedDiv(targetString)
 }
 
