@@ -1,313 +1,313 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+	background-color: black;
 }
 
 main {
-  margin: auto;
-  text-align: center;
+	margin: auto;
+	text-align: center;
 }
 
 .container {
-  color: white;
-  height: 100%;
-  width: 585px;
-  margin: auto;
-  background-color: black;
+	color: white;
+	height: 100%;
+	width: 585px;
+	margin: auto;
+	background-color: black;
 }
 
 header {
-  width: 80%;
-  margin: auto;
-  font-family: 'Russo One', sans-serif;
+	width: 80%;
+	margin: auto;
+	font-family: 'Russo One', sans-serif;
 }
 
 .logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 }
 
 .logo {
-  height: 100px;
-  border-radius: 50%;
+	height: 100px;
+	border-radius: 50%;
 }
 
 #title-text {
-  text-align: center;
-  font-size: 75px;
+	text-align: center;
+	font-size: 75px;
 }
 
 .grid-container {
-  padding: auto;
-  margin: auto;
-  width: 95%;
-  text-align: center;
-  background-color: white;
+	padding: auto;
+	margin: auto;
+	width: 95%;
+	text-align: center;
+	background-color: white;
 }
 
 #range-slider {
-  width: 95%;
-  height: 75px;
-  vertical-align: middle;
-  font-size: 1.5em;
-  font-family: 'Russo One', sans-serif;
-  color: black;
-  padding: 5px 10px;
-  margin: 5px auto;
-  background-color: #cacaca;
+	width: 95%;
+	height: 75px;
+	vertical-align: middle;
+	font-size: 1.5em;
+	font-family: 'Russo One', sans-serif;
+	color: black;
+	padding: 5px 10px;
+	margin: 5px auto;
+	background-color: #cacaca;
 }
 
 .game-table {
-  text-align: center;
-  vertical-align: middle;
-  background-color: black;
-  height: 100%;
-  margin: auto;
-  width: 95%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: black;
+	height: 100%;
+	margin: auto;
+	width: 95%;
 }
 
 .hand {
-  font-size: 16.5px;
-  font-weight: bold;
-  width: 50px;
-  text-align: center;
-  border: 2px solid white;
-  margin: 1px;
-  display: inline-block;
+	font-size: 16.5px;
+	font-weight: bold;
+	width: 50px;
+	text-align: center;
+	border: 2px solid white;
+	margin: 1px;
+	display: inline-block;
 }
 
 .hand:hover {
-  cursor: default;
+	cursor: default;
 }
 
 .event01 {
-  background-color: #f03636;
+	background-color: #f03636;
 }
 
 .event02 {
-  background-color: #a5009d;
+	background-color: #a5009d;
 }
 
 .event03 {
-  background-color: #e0bbe4;
-  color: #0000ff;
+	background-color: #e0bbe4;
+	color: #0000ff;
 }
 
 .event04,
 .event05 {
-  background-color: #f4f0cb;
-  color: black;
+	background-color: #f4f0cb;
+	color: black;
 }
 
 .event06,
 .event07 {
-  background-color: #312d2e;
+	background-color: #312d2e;
 }
 
 .event08 {
-  background-color: #fec8d8;
+	background-color: #fec8d8;
 }
 
 .event09 {
-  background-color: #fec8d8;
+	background-color: #fec8d8;
 }
 
 .event10 {
-  background-color: #fec8d8;
+	background-color: #fec8d8;
 }
 
 .sc {
-  background-color: #249724;
+	background-color: #249724;
 }
 
 .grid {
-  margin: auto;
+	margin: auto;
 }
 
 table:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 td {
-  background-color: black;
-  border: 2px solid #553a3a;
-  border-radius: 20%;
-  text-align: center;
-  vertical-align: middle;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  display: inline-block;
-  height: 100%;
-  width: 35px;
-  padding: 3px;
-  margin-right: 1px;
+	background-color: black;
+	border: 2px solid #553a3a;
+	border-radius: 20%;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	display: inline-block;
+	height: 100%;
+	width: 35px;
+	padding: 3px;
+	margin-right: 1px;
 }
 
-.click-push-highlight {
-  background-color: #001aff;
-  color: white;
-  border: 2px solid #01ff0e;
+.call {
+	background-color: #001aff;
+	color: white;
+	border: 2px solid #01ff0e;
 }
 
-.click-highlight {
-  background-color: #00ff2a;
-  color: black;
-  border: 2px solid #0127ff;
+.push {
+	background-color: #00ff2a;
+	color: black;
+	border: 2px solid #0127ff;
 }
 
 .highlight {
-  background-color: yellow;
-  color: black;
-  border: 2px solid #0127ff;
+	background-color: yellow;
+	color: black;
+	border: 2px solid #0127ff;
 }
 
 .lowlight {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 }
 
 #call-range,
 #hand-value {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: '';
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: red;
+	background-color: red;
 }
 
 input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2196f3;
-          box-shadow: 0 0 1px #2196f3;
+	-webkit-box-shadow: 0 0 1px #2196f3;
+	box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  transform: translateX(26px);
+	-webkit-transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+	border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 .switch-btn {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  vertical-align: middle;
-  text-align: center;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .btn-text {
-  font-size: 28px;
-  color: red;
-  font-family: 'Russo One', sans-serif;
+	font-size: 28px;
+	color: red;
+	font-family: 'Russo One', sans-serif;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 .suited {
-  background-color: orange;
-  color: black;
+	background-color: orange;
+	color: black;
 }
 
 .pair {
-  background-color: #4444f8;
+	background-color: #4444f8;
 }
 
 .selected {
-  background-color: #ff2f2f;
-  color: black;
+	background-color: #ff2f2f;
+	color: black;
 }
 
 .disp-hand {
-  width: 9%;
-  margin: 5px 5px;
-  padding: 0px 3px;
-  font-size: 16px;
+	width: 9%;
+	margin: 5px 5px;
+	padding: 0px 3px;
+	font-size: 16px;
 }
 
 .disp-hand:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 #equity-list {
-  width: 100%;
+	width: 100%;
 }
 
 #equity-list:hover {
-  cursor: default;
+	cursor: default;
 }
 
 .call-range-value {
-  color: #0000ff;
+	color: #0000ff;
 }
 
 .push-range-value {
-  color: greenyellow;
+	color: greenyellow;
 }
 
 .red-warning {
-  color: red;
+	color: red;
 }
 /*# sourceMappingURL=style.css.map */

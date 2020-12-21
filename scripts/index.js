@@ -53,7 +53,7 @@ function addClickListeners() {
 }
 
 function checkToggle() {
-  let mySwitch = document.getElementById("mySwitch")
+  let mySwitch = document.getElementById("mySwitch");
   return mySwitch.checked == true ? true : false;
 }
 
@@ -216,16 +216,16 @@ function colorizeRange(handStringValues) {
     for (let td of tds) {
       if (checkToggle()) {
         if (handStringValues.includes(`${td.getAttribute("id")}`)) {
-          document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-highlight")
+          document.querySelector(`#${td.getAttribute("id")}`).classList.add("push")
         } else {
-          document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+          document.querySelector(`#${td.getAttribute("id")}`).classList.remove("push")
         }
       } else {
-        document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-highlight")
+        document.querySelector(`#${td.getAttribute("id")}`).classList.remove("push")
         if (handStringValues.includes(`${td.getAttribute("id")}`)) {
-          document.querySelector(`#${td.getAttribute("id")}`).classList.add("click-push-highlight")
+          document.querySelector(`#${td.getAttribute("id")}`).classList.add("call")
         } else {
-          document.querySelector(`#${td.getAttribute("id")}`).classList.remove("click-push-highlight")
+          document.querySelector(`#${td.getAttribute("id")}`).classList.remove("call")
         }
       }
     }
