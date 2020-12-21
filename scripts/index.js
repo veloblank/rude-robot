@@ -44,10 +44,10 @@ function addClickListeners() {
       document.querySelector(".push-hands").classList.remove("hidden")
       document.querySelector(".call-hands").classList.add("hidden")
     } else {
-      document.querySelector(".push-hands").classList.add("hidden")
       document.querySelector(".call-hands").classList.remove("hidden")
+      document.querySelector(".push-hands").classList.add("hidden")
     }
-    displayResultsOfRange();
+    constructRange(results)
     renderFetchResults();
   })
 }
@@ -103,7 +103,7 @@ function buildCallHtml(arr) {
 }
 
 function buildJamHtml(arr) {
-  let parentDiv = document.querySelector(".push-hands")
+  let parentDiv = document.querySelector(".push-hands");
   parentDiv.innerHTML = ""
   for (let hand of arr) {
     let childDiv = document.createElement("div")

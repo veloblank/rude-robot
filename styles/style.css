@@ -168,17 +168,6 @@ td {
 	border: 2px solid #0127ff;
 }
 
-.highlight {
-	background-color: yellow;
-	color: black;
-	border: 2px solid #0127ff;
-}
-
-.lowlight {
-	background-color: black;
-	color: white;
-}
-
 #call-range,
 #hand-value {
 	font-size: 16px;
