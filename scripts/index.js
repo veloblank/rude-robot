@@ -25,12 +25,8 @@ function addWheelListener(target) {
       delta = -1
       decrementAndWriteRange(delta)
     }
-    displayResultsOfRange();
+    constructRange(results)
   }
-}
-
-function displayResultsOfRange() {
-  constructRange(results)
 }
 
 function addClickListeners() {
