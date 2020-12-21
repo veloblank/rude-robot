@@ -14,8 +14,6 @@ function addTableListener() {
   })
 }
 
-
-
 function addWheelListener(target) {
   target.onwheel = e => {
     e.preventDefault();
@@ -27,8 +25,12 @@ function addWheelListener(target) {
       delta = -1
       decrementAndWriteRange(delta)
     }
-    constructRangePeripherals(results)
+    displayResultsOfRange();
   }
+}
+
+function displayResultsOfRange() {
+  constructRangePeripherals(results)
 }
 
 function addClickListeners() {
@@ -43,13 +45,13 @@ function addClickListeners() {
   button.addEventListener("input", () => {
     let bool = checkToggle();
     if (bool) {
-      setCurrentStep(0)
       document.querySelector(".push-hands").classList.remove("hidden")
       document.querySelector(".call-hands").classList.add("hidden")
     } else {
       document.querySelector(".push-hands").classList.add("hidden")
       document.querySelector(".call-hands").classList.remove("hidden")
     }
+    displayResultsOfRange();
     renderFetchResults();
   })
 }
@@ -145,7 +147,11 @@ function incrementAndWriteRange(delta) {
   let step = getCurrentStep();
   if (step < 169) {
     step += delta
-    document.getElementById("grid-1").setAttribute("data-step_index", step)
+    if (checkToggle()) {
+      document.getElementById("grid-1").setAttribute("data-push_step_index", step)
+    } else {
+      document.getElementById("grid-1").setAttribute("data-call_step_index", step)
+    }
     return step
   } else {
     return step
@@ -163,11 +169,19 @@ function decrementAndWriteRange(delta) {
 }
 
 function getCurrentStep() {
-  return parseInt(document.getElementById("grid-1").getAttribute("data-step_index"))
+  if (checkToggle()) {
+    return parseInt(document.getElementById("grid-1").getAttribute("data-push_step_index"))
+  } else {
+    return parseInt(document.getElementById("grid-1").getAttribute("data-call_step_index"))
+  }
 }
 
 function setCurrentStep(step) {
-  return document.getElementById("grid-1").setAttribute("data-step_index", step);
+  if (checkToggle()) {
+    return document.getElementById("grid-1").setAttribute("data-push_step_index", step);
+  } else {
+    return document.getElementById("grid-1").setAttribute("data-call_step_index", step);
+  }
 }
 
 function calcRange(rangeArr) {
