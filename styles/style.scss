@@ -259,7 +259,9 @@ input:checked + .slider:before {
 
 .selected {
 	background-color: rgb(255, 47, 47);
-	// font-family: 'Russo One', sans-serif;
+	font-size: 20px;
+	font-family: 'Russo One', sans-serif;
+	margin: 6px 5px;
 	color: black;
 }
 
