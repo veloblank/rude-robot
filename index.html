@@ -87,7 +87,9 @@
 								<td id="cell_Q7" data-bvb="6" class="event05">Q7s</td>
 								<td id="cell_Q6" data-bvb="6" class="event05">Q6s</td>
 								<td id="cell_Q5" data-bvb="6" class="event05">Q5s</td>
-								<td id="cell_Q4" data-bvb="6" class="event05">Q4s</td>
+								<td id="cell_Q4" data-bvb="6" class="event05 alert-border">
+									Q4s
+								</td>
 								<td id="cell_Q3" data-bvb="6" class="event05">Q3s</td>
 								<td id="cell_Q2" data-bvb="5" class="event06">Q2s</td>
 							</tr>
@@ -124,7 +126,9 @@
 							<tr>
 								<td id="cell_9A" data-bvb="8" class="event03">A9o</td>
 								<td id="cell_9K" data-bvb="7" class="event04">K9o</td>
-								<td id="cell_9Q" data-bvb="6" class="event05">Q9o</td>
+								<td id="cell_9Q" data-bvb="6" class="event05 alert-border">
+									Q9o
+								</td>
 								<td id="cell_9J" data-bvb="6" class="event05">J9o</td>
 								<td id="cell_9T" data-bvb="6" class="event05">T9o</td>
 								<td id="cell_99" data-bvb="10" class="event01">99</td>
@@ -138,7 +142,9 @@
 							</tr>
 							<tr>
 								<td id="cell_8A" data-bvb="8" class="event03">A8o</td>
-								<td id="cell_8K" data-bvb="7" class="event04">K8o</td>
+								<td id="cell_8K" data-bvb="7" class="event04 alert-border">
+									K8o
+								</td>
 								<td id="cell_8Q" data-bvb="6" class="event05">Q8o</td>
 								<td id="cell_8J" data-bvb="6" class="event05">J8o</td>
 								<td id="cell_8T" data-bvb="5" class="event06">T8o</td>
@@ -183,7 +189,9 @@
 							</tr>
 							<tr>
 								<td id="cell_5A" data-bvb="8" class="event03">A5o</td>
-								<td id="cell_5K" data-bvb="6" class="event05">K5o</td>
+								<td id="cell_5K" data-bvb="6" class="event05 alert-border">
+									K5o
+								</td>
 								<td id="cell_5Q" data-bvb="5" class="event06">Q5o</td>
 								<td id="cell_5J" data-bvb="4" class="event07">J5o</td>
 								<td id="cell_5T" data-bvb="4" class="event07">T5o</td>
@@ -243,18 +251,28 @@
 							</tr>
 						</table>
 						<div class="switch-btn">
-							<div class="btn-text">Call</div>
+							<div class="btn-text call-btn"><a href="#nash-call">Call</a></div>
 							<label class="switch">
 								<input type="checkbox" id="mySwitch" checked />
 								<span class="slider round"></span>
 							</label>
-							<div class="btn-text">Push</div>
+							<div class="btn-text push-btn"><a href="#nash-jam">Push</a></div>
 						</div>
 					</div>
 				</div>
 				<div id="equity-list">
 					<div class="call-hands hidden"></div>
 					<div class="push-hands"></div>
+				</div>
+				<div class="nash-charts">
+					<div id="nash-jam">
+						Push
+						<img src="./images/nash_push_chart.png" alt="" srcset="" />
+					</div>
+					<div id="nash-call">
+						Call
+						<img src="./images/nash_call_chart.png" alt="" />
+					</div>
 				</div>
 			</main>
 		</div>

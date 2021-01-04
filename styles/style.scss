@@ -87,10 +87,10 @@ header {
 }
 
 .event01 {
-	background-color: rgb(240, 54, 54);
+	//background-color: rgb(240, 54, 54);
 }
 .event02 {
-	background-color: #a5009d;
+	//background-color: #a5009d;
 }
 .event03 {
 	background-color: #e0bbe4;
@@ -116,6 +116,13 @@ header {
 }
 .sc {
 	background-color: rgb(36, 151, 36);
+}
+.alert-border {
+	border: 2px solid red;
+}
+
+.nash-charts img {
+	width: 575px;
 }
 
 .grid {
@@ -242,6 +249,15 @@ input:checked + .slider:before {
 	font-size: 28px;
 	color: red;
 	font-family: 'Russo One', sans-serif;
+}
+
+.btn-text:hover {
+	cursor: pointer;
+}
+
+.btn-text a {
+	text-decoration: none;
+	color: red;
 }
 
 .hidden {

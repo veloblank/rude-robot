@@ -92,14 +92,6 @@ header {
   cursor: default;
 }
 
-.event01 {
-  background-color: #f03636;
-}
-
-.event02 {
-  background-color: #a5009d;
-}
-
 .event03 {
   background-color: #e0bbe4;
   color: #0000ff;
@@ -130,6 +122,14 @@ header {
 
 .sc {
   background-color: #249724;
+}
+
+.alert-border {
+  border: 2px solid red;
+}
+
+.nash-charts img {
+  width: 575px;
 }
 
 .grid {
@@ -260,6 +260,15 @@ input:checked + .slider:before {
   font-size: 28px;
   color: red;
   font-family: 'Russo One', sans-serif;
+}
+
+.btn-text:hover {
+  cursor: pointer;
+}
+
+.btn-text a {
+  text-decoration: none;
+  color: red;
 }
 
 .hidden {
